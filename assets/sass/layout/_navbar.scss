@@ -1,0 +1,21 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: $color-white;
+	z-index: 2;
+	box-shadow: 0px 4px 20px rgba(0, 66, 150, 0.1);
+	border: 1px solid #E6E6E6;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	.logo{
+		max-width: 209px;
+	}
+
+	@include for-size(tablet-portrait-down){
+		.logo{
+			max-width: 157px;
+		}
+	}
+}

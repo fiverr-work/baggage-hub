@@ -2917,6 +2917,8 @@ button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
 
 /*=== Import Fonts ===*/
+@font-face { font-family: "Manrope Regular"; src: url("../fonts/Manrope/Manrope-Regular.ttf") format("truetype"); }
+
 @font-face { font-family: "Manrope Medium"; src: url("../fonts/Manrope/Manrope-Medium.ttf") format("truetype"); }
 
 @font-face { font-family: "Manrope SemiBold"; src: url("../fonts/Manrope/Manrope-Semibold.ttf") format("truetype"); }
@@ -2924,41 +2926,41 @@ textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
 @font-face { font-family: "Manrope Bold"; src: url("../fonts/Manrope/Manrope-Bold.ttf") format("truetype"); }
 
 /*=== Typography Styling ===*/
-body { font-style: normal; font-weight: normal; font-stretch: normal; letter-spacing: normal; }
+body { color: #575482; font-size: 16px; font-family: "Manrope Regular", sans-serif; font-style: normal; font-weight: normal; font-stretch: normal; letter-spacing: normal; line-height: 1.5; }
 
-h1 { font-family: "Manrope Bold"; font-size: 28.4px; font-weight: bold; line-height: 1.2; text-align: left; color: #0f0a4d; }
+h1 { font-family: "Manrope Bold"; font-size: 28px; font-weight: bold; line-height: 1.2; color: #0f0a4d; }
 
-h2 { font-family: "Manrope Bold"; font-size: 20px; font-weight: bold; line-height: 1.2; letter-spacing: 0.03px; text-align: left; color: #0f0a4d; }
+h2 { font-family: "Manrope Bold"; font-size: 20px; font-weight: bold; line-height: 1.2; letter-spacing: 0.03px; color: #0f0a4d; }
 
-h3 { font-family: "Manrope SemiBold"; font-size: 18px; font-weight: 600; line-height: 1.2; letter-spacing: 0.15px; text-align: center; color: #575482; }
+h3 { font-family: "Manrope SemiBold"; font-size: 18px; font-weight: 600; line-height: 1.2; letter-spacing: 0.15px; color: #575482; }
 
-h4 { font-family: "Manrope Bold"; font-size: 16px; font-weight: bold; line-height: 1.3; letter-spacing: 0.15px; text-align: left; color: #0f0a4d; }
+h4 { font-family: "Manrope Bold"; font-size: 16px; font-weight: bold; line-height: 1.3; letter-spacing: 0.15px; color: #0f0a4d; }
 
-h5 { font-family: "Manrope SemiBold"; font-size: 16px; font-weight: 600; line-height: 1.3; letter-spacing: 0.5px; text-align: left; color: #0f0a4d; }
+h5 { font-family: "Manrope SemiBold"; font-size: 16px; font-weight: 600; line-height: 1.3; letter-spacing: 0.5px; color: #0f0a4d; }
 
-.button-med { font-family: "Manrope Medium"; font-size: 16px; font-weight: 500; line-height: 1.2; letter-spacing: 1px; text-align: left; }
+.button-med { font-family: "Manrope Medium"; font-size: 16px; font-weight: 500; line-height: 1.2; letter-spacing: 1px; }
 
-.button-med-3 { font-family: "Manrope Medium"; font-size: 14px; font-weight: 500; line-height: 1.2; letter-spacing: 0.5px; text-align: center; }
+.button-med-3 { font-family: "Manrope Medium"; font-size: 14px; font-weight: 500; line-height: 1.2; letter-spacing: 0.5px; }
 
-.button-semi { font-family: "Manrope SemiBold"; font-size: 14px; font-weight: 600; line-height: 1.2; letter-spacing: 1px; text-align: left; color: #575482; }
+.button-semi, .btn-primary { font-family: "Manrope SemiBold"; font-size: 14px; font-weight: 600; line-height: 1.2; letter-spacing: 1px; color: #575482; }
 
-.small { font-family: "Manrope Bold"; font-size: 12px; font-weight: bold; line-height: 1.2; letter-spacing: 0.3px; text-align: left; color: #0f0a4d; margin-bottom: 6px; }
+.small { font-family: "Manrope Bold"; font-size: 12px; font-weight: bold; line-height: 1.2; letter-spacing: 0.3px; color: #0f0a4d; margin-bottom: 6px; }
 
-.x-large { font-family: "Manrope Medium"; font-size: 24px; font-weight: 500; letter-spacing: 0.5px; text-align: left; line-height: 1.6; color: #000000; }
+.x-large { font-family: "Manrope Medium"; font-size: 24px; font-weight: 500; letter-spacing: 0.5px; line-height: 1.6; color: #000000; }
 
-.large { font-family: "Manrope SemiBold"; font-size: 16px; font-weight: 600; letter-spacing: 0.5px; text-align: left; line-height: 1.6; color: #27225f; }
+.large { font-family: "Manrope SemiBold"; font-size: 16px; font-weight: 600; letter-spacing: 0.5px; line-height: 1.6; color: #27225f; }
 
-.medium { font-family: "Manrope Medium"; font-size: 16px; font-weight: 500; letter-spacing: 0.5px; text-align: left; line-height: 1.6; color: #575482; }
+.medium { font-family: "Manrope Medium"; font-size: 16px; font-weight: 500; letter-spacing: 0.5px; line-height: 1.6; color: #575482; }
 
-.label1 { font-family: "Manrope SemiBold"; font-size: 12px; font-weight: 600; line-height: 1.4; letter-spacing: 0.4px; text-align: left; color: #0f0a4d; }
+.label1 { font-family: "Manrope SemiBold"; font-size: 12px; font-weight: 600; line-height: 1.4; letter-spacing: 0.4px; color: #0f0a4d; }
 
-.label2 { font-family: "Manrope Medium"; font-size: 12px; font-weight: 500; line-height: 1.6; letter-spacing: 0.4px; text-align: left; color: #0f0a4d; }
+.label2 { font-family: "Manrope Medium"; font-size: 12px; font-weight: 500; line-height: 1.6; letter-spacing: 0.4px; color: #0f0a4d; }
 
-select { font-family: "Manrope Medium" !important; font-size: 14px !important; font-weight: 500 !important; line-height: 1.6 !important; letter-spacing: 0.5px !important; text-align: left !important; color: #8785a6 !important; }
+select { font-family: "Manrope Medium" !important; font-size: 14px !important; font-weight: 500 !important; line-height: 1.6 !important; letter-spacing: 0.5px !important; color: #8785a6 !important; }
 
-.placeholder { font-family: "Manrope Medium"; font-size: 14px; font-weight: 500; line-height: 1.6; letter-spacing: 0.5px; text-align: left; color: #8785a6; }
+.placeholder { font-family: "Manrope Medium"; font-size: 14px; font-weight: 500; line-height: 1.6; letter-spacing: 0.5px; color: #8785a6; }
 
-.span-bold { font-family: "Manrope Bold"; font-size: 14px; font-weight: bold; line-height: 1.6; letter-spacing: 0.5px; text-align: left; color: #27225f; }
+.span-bold { font-family: "Manrope Bold"; font-size: 14px; font-weight: bold; line-height: 1.6; letter-spacing: 0.5px; color: #27225f; }
 
 @media (max-width: 1200px) { h1 { font-size: 24px; line-height: 1.2; }
   h2 { font-size: 18px; line-height: 1.2; }
@@ -2974,31 +2976,33 @@ select { font-family: "Manrope Medium" !important; font-size: 14px !important; f
   .placeholder { font-size: 12px; }
   .button-med { font-size: 14px; }
   .button-med-3 { font-size: 12px; }
-  .button-semi { font-size: 12px; } }
+  .button-semi, .btn-primary { font-size: 12px; } }
 
 @media (max-width: 576px) { h1 { font-size: 18px; line-height: 1.2; } }
 
-.get-prices { padding: 16px 24px; width: 153px; height: 51px; background: -webkit-gradient(linear, left top, left bottom, from(#0071FF), to(#0054BE)); background: linear-gradient(180deg, #0071FF 0%, #0054BE 100%); border-radius: 4px; text-align: center; margin-top: 41px; -ms-flex-item-align: end; align-self: flex-end; }
+.get-prices { padding: 16px 24px; width: 153px; height: 51px; background: -webkit-gradient(linear, left top, left bottom, from(#0071ff), to(#0054be)); background: linear-gradient(180deg, #0071ff 0%, #0054be 100%); border-radius: 4px; text-align: center; margin-top: 41px; -ms-flex-item-align: end; align-self: flex-end; }
 
 @media (max-width: 992px) { .get-prices { padding: 12px 18px; width: 140px; height: 45px; margin-top: 0px; } }
 
-.select-service { padding: 14px 18px 16px; width: 100%; height: 47px; background: #FFFFFF; border: 1px solid #27225F; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 4px; text-align: center; color: #27225f; }
+.select-service { padding: 14px 18px 16px; width: 100%; height: 47px; background: #ffffff; border: 1px solid #27225f; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 4px; text-align: center; color: #27225f; }
 
-.book-service { background: #18D1BE; border: 1px solid #18D1BE; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 4px; width: 100%; padding: 8px 0; }
+.book-service { background: #18d1be; border: 1px solid #18d1be; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 4px; width: 100%; padding: 8px 0; }
 
 @media (max-width: 576px) { .book-service { font-size: 14px; } }
 
-.add-item { width: 235px; height: 50px; background: -webkit-gradient(linear, left top, left bottom, from(#0071FF), to(#0054BE)); background: linear-gradient(180deg, #0071FF 0%, #0054BE 100%); border-radius: 4px; text-align: center; }
+.add-item { width: 235px; height: 50px; background: -webkit-gradient(linear, left top, left bottom, from(#0071ff), to(#0054be)); background: linear-gradient(180deg, #0071ff 0%, #0054be 100%); border-radius: 4px; text-align: center; }
 
-.sign-in { padding: 11px 18px; width: 92px; height: 39px; background: #0071FF; border: 1px solid #0071FF; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 2px; color: #ffffff; }
+.btn { min-width: 92px; height: 39px; border: 1px solid; border-radius: 2px; color: #ffffff; padding: 11px 18px; }
+
+.btn-primary { background-color: #439979; border-color: #439979; }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active { background-color: #439979; border-color: #439979; }
 
 input[type="date"]::-webkit-calendar-picker-indicator { opacity: 1; display: block; background: url("../img/icons/Message.svg") no-repeat; width: 20px; height: 20px; border-width: thin; }
 
 input { border: 1px solid #b7b6ca; }
 
-input:not([type='checkbox']) { height: 46px; }
-
-select { border: 1px solid #b7b6ca !important; }
+input:not([type="checkbox"]) { height: 46px; }
 
 .placeholder-style::-webkit-input-placeholder { font-family: "Manrope Medium"; font-size: 14px; font-weight: 500; line-height: 1.6; letter-spacing: 0.5px; text-align: left; color: #8785a6; }
 
@@ -3014,6 +3018,8 @@ select { border: 1px solid #b7b6ca !important; }
 
 .placeholder-style::-moz-placeholder { font-family: "Manrope Medium"; font-size: 14px; font-weight: 500; line-height: 1.6; letter-spacing: 0.5px; text-align: left; color: #8785a6; }
 
+select { padding-left: 16px; height: 46px; width: 100%; border: 1px solid #b7b6ca; border-radius: 2px; -webkit-appearance: none; -moz-appearance: none; background: transparent; background-image: url("../img/icons/arrow-down.svg"); background-repeat: no-repeat; background-position-x: 97%; background-position-y: 50%; }
+
 .cards .card-pick { width: 30%; background: #FFFFFF; border: 1px solid #b7b6ca; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-shadow: 0px 4px 20px rgba(197, 213, 233, 0.15); box-shadow: 0px 4px 20px rgba(197, 213, 233, 0.15); border-radius: 6px; padding: 9px 19px 23px; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; /*****************************  tablet-landscape-down ***************************** */ }
 
 .cards .card-pick .pick-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; }
@@ -3022,7 +3028,7 @@ select { border: 1px solid #b7b6ca !important; }
 
 .cards .card-pick .pick-content { margin-top: 10px; }
 
-.cards .card-pick.clicked { border: 2px solid #0071ff; -webkit-box-shadow: 0px 20px 60px rgba(0, 84, 164, 0.1); box-shadow: 0px 20px 60px rgba(0, 84, 164, 0.1); }
+.cards .card-pick.clicked { border: 2px solid #439979; -webkit-box-shadow: 0px 20px 60px rgba(0, 84, 164, 0.1); box-shadow: 0px 20px 60px rgba(0, 84, 164, 0.1); }
 
 @media (max-width: 992px) { .cards .card-pick { width: 100%; } }
 
@@ -3071,9 +3077,9 @@ select { border: 1px solid #b7b6ca !important; }
 
 .cards .card-option .option-footer { padding: 0 16px 24px; justify-self: flex-end; margin-top: auto; }
 
-.cards .card-option.clicked { min-height: 510px; margin-top: -15px; border: 2px solid #0071ff; -webkit-box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); }
+.cards .card-option.clicked { min-height: 510px; margin-top: -15px; border: 2px solid #439979; -webkit-box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); }
 
-.cards .card-option.clicked .option-header { padding: 27px 0; background: #0071ff; }
+.cards .card-option.clicked .option-header { padding: 27px 0; background: #439979; }
 
 .cards .card-option.clicked .option-header h3 { color: #ffffff; margin-bottom: 0; }
 
@@ -3102,9 +3108,9 @@ select { border: 1px solid #b7b6ca !important; }
 
 .optional-services .cards .card-optional .optional-header .optional-check .dollar { margin-bottom: 0; margin-right: 10px; }
 
-.optional-services .cards .card-optional.clicked { background: #F4F9FF; border: 2px solid #0071ff; }
+.optional-services .cards .card-optional.clicked { background: #F4F9FF; border: 2px solid #439979; }
 
-.optional-services .cards .card-optional.clicked .optional-header .optional-icon { background: #0071ff; }
+.optional-services .cards .card-optional.clicked .optional-header .optional-icon { background: #439979; }
 
 @media (max-width: 1474px) { .optional-services .cards .card-optional { width: 30%; margin-bottom: 20px; } }
 
@@ -3129,9 +3135,9 @@ select { border: 1px solid #b7b6ca !important; }
 
 .shipment-protection .cards .card-shipment .shipment-footer button { -webkit-box-shadow: 0px 20px 24px rgba(15, 10, 77, 0.05); box-shadow: 0px 20px 24px rgba(15, 10, 77, 0.05); }
 
-.shipment-protection .cards .card-shipment.clicked { border: 2px solid #0071ff; }
+.shipment-protection .cards .card-shipment.clicked { border: 2px solid #439979; }
 
-.shipment-protection .cards .card-shipment.clicked .shipment-header { background: #0071ff; }
+.shipment-protection .cards .card-shipment.clicked .shipment-header { background: #439979; }
 
 .shipment-protection .cards .card-shipment.clicked .shipment-header h3 { color: #ffffff; }
 
@@ -3248,7 +3254,7 @@ select { border: 1px solid #b7b6ca !important; }
 
 .van-cards .card-van .van-content .van-info .info-value { margin-bottom: 6px; }
 
-.van-cards .card-van.clicked { border: 2px solid #0071ff; }
+.van-cards .card-van.clicked { border: 2px solid #439979; }
 
 .van-cards .card-van.clicked .van-content { background-color: #f4f9ff; }
 
@@ -3256,55 +3262,43 @@ select { border: 1px solid #b7b6ca !important; }
   .van-cards .card-van:not(:last-child) { margin-bottom: 20px; }
   .van-cards .card-van { width: 100%; } }
 
-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+header.steps-timeline { margin-top: 89px; background: #e6f1ff; margin-bottom: 55px; }
 
-header .logo-button { position: fixed; left: 0; right: 0; background: white; z-index: 3; -webkit-box-shadow: 0px 4px 20px rgba(0, 66, 150, 0.1); box-shadow: 0px 4px 20px rgba(0, 66, 150, 0.1); width: 100%; padding: 18px 150px; }
+header.steps-timeline .steps { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 25px 150px 45px; }
 
-@media (max-width: 768px) { header .logo-button { padding: 18px 80px; } }
+header.steps-timeline .steps .step { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; }
 
-@media (max-width: 576px) { header .logo-button { padding: 18px 20px; } }
+header.steps-timeline .steps .step:not(:last-child) { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
-header .logo-button .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+header.steps-timeline .steps .step div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-header .full-screen { padding-top: 90px; background: #e6f1ff; width: 100%; margin-bottom: 46px; }
+header.steps-timeline .steps .step div span { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; background: #e6f1ff; border: 1px solid #6f6c94; color: #6f6c94; }
 
-header .full-screen .steps { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 25px 150px 45px; max-width: 1440px; margin: auto; }
+header.steps-timeline .steps .step div p { position: absolute; color: #0f0a4d; top: 45px; letter-spacing: 0.5px; font-weight: 500; font-size: 14px; opacity: 0.7; white-space: nowrap; }
 
-header .full-screen .steps .step:not(:last-child) { width: 20%; }
+header.steps-timeline .steps .step .line { width: 100%; height: 1px; background-color: #6f6c94; }
 
-header .full-screen .steps .step { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; }
+header.steps-timeline .steps .step.active div span { background: #0f0a4d; border-color: #0f0a4d; color: #ffffff; }
 
-header .full-screen .steps .step div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+header.steps-timeline .steps .step.active div p { opacity: 1; font-family: "Manrope SemiBold"; }
 
-header .full-screen .steps .step div span { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 40px; height: 40px; border-radius: 50%; background: #e6f1ff; border: 1px solid #6f6c94; color: #6F6C94; }
+header.steps-timeline .steps .step.completed div span { background: #3bb273; border-color: #3bb273; color: #ffffff; }
 
-header .full-screen .steps .step div p { position: absolute; top: 45px; }
+header.steps-timeline .steps .step.completed div p { color: #3bb273; font-family: "Manrope SemiBold"; }
 
-header .full-screen .steps .step div .completed { white-space: nowrap; }
+@media (max-width: 768px) { header.steps-timeline { margin-bottom: 41px; }
+  header.steps-timeline .steps { padding: 20px 80px 45px; }
+  header.steps-timeline .steps .step:not(:last-child) { width: 100%; }
+  header.steps-timeline .steps .step div span { width: 30px; height: 30px; }
+  header.steps-timeline .steps .step div p:not(.active) { display: none; } }
 
-header .full-screen .steps .step .a-after { width: 100%; height: 1px; background-color: #6f6c94; }
+@media (max-width: 576px) { header.steps-timeline .steps { padding: 20px 20px 40px; } }
 
-header .full-screen .steps .completed-step div span { background: #3bb273; color: #ffffff; border-color: #3bb273; }
+.navbar { position: fixed; top: 0; left: 0; right: 0; background: #ffffff; z-index: 2; -webkit-box-shadow: 0px 4px 20px rgba(0, 66, 150, 0.1); box-shadow: 0px 4px 20px rgba(0, 66, 150, 0.1); border: 1px solid #E6E6E6; padding-top: 24px; padding-bottom: 24px; }
 
-header .full-screen .steps .completed-step div p { color: #3bb273; font-family: "Manrope SemiBold"; }
+.navbar .logo { max-width: 209px; }
 
-header .full-screen .steps .active-step div span { background: #0f0a4d; color: #ffffff; }
-
-header .full-screen .steps .active-step div p { color: #0f0a4d; font-family: "Manrope SemiBold"; }
-
-@media (max-width: 768px) { header .full-screen { margin-bottom: 41px; }
-  header .full-screen .steps { padding: 20px 80px 45px; }
-  header .full-screen .steps .step:not(:last-child) { width: 100%; }
-  header .full-screen .steps .step div span { width: 30px; height: 30px; }
-  header .full-screen .steps .step div p:not(.active-step) { display: none; } }
-
-@media (max-width: 576px) { header .full-screen .steps { padding: 20px 20px 40px; } }
-
-.about-page { position: relative; background: #fbfdff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-.about-page main { width: 100%; max-width: 1440px; padding: 0px 150px 200px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background: url("../img/backgrounds/LogoBg.svg") no-repeat center; background-position-y: 71%; /*******************************   tablet-landscape-down   *************************************/ }
-
-.about-page main select { padding: 12px 16px; height: auto; -webkit-appearance: none; -moz-appearance: none; background: transparent; background-image: url("../img/icons/arrow-down.svg"); background-repeat: no-repeat; background-position-x: 97%; background-position-y: 50%; }
+@media (max-width: 768px) { .navbar .logo { max-width: 157px; } }
 
 .about-page main .cards { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
@@ -3325,13 +3319,7 @@ header .full-screen .steps .active-step div p { color: #0f0a4d; font-family: "Ma
   .about-page main .recent-booking { margin-top: 30px; }
   .about-page main .recent-booking h1 { margin-bottom: 20px; } }
 
-@media (max-width: 768px) { .about-page main { padding: 0 80px 100px; } }
-
-@media (max-width: 576px) { .about-page main { padding: 0 20px 70px; } }
-
-.options-page { position: relative; background: #fbfdff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-.options-page main { width: 100%; max-width: 1440px; padding: 0px 150px 200px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background: url("../img/backgrounds/LogoBg.svg") no-repeat center; /*******************************   tablet-landscape-down   *************************************/ }
+.options-page main { /*******************************   tablet-landscape-down   *************************************/ }
 
 .options-page main .pick-options { margin-bottom: 55px; }
 
@@ -3379,9 +3367,7 @@ header .full-screen .steps .active-step div p { color: #0f0a4d; font-family: "Ma
 
 @media (max-width: 576px) { .options-page main { padding: 0 20px 70px; } }
 
-.details-v1-page { position: relative; background: #FFFFFF; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-.details-v1-page main { width: 100%; max-width: 1440px; padding: 0 150px 200px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; /****************************** desktop-large ***************************/ }
+.details-v1-page main { /****************************** desktop-large ***************************/ }
 
 .details-v1-page main h1 { margin-bottom: 38px; }
 
@@ -3454,13 +3440,11 @@ header .full-screen .steps .active-step div p { color: #0f0a4d; font-family: "Ma
 
 .optional-v2 .cards { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
-.optional-v2 .cards > * { -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 6px; }
+.optional-v2 .cards > div { border-radius: 6px; }
 
 @media (max-width: 992px) { .optional-v2 .cards { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
 
-.payement-page { position: relative; background: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-.payement-page main { width: 100%; max-width: 1440px; padding: 0px 150px 200px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; /*******************************   tablet-landscape-down   *************************************/ }
+.payement-page main { /*******************************   tablet-landscape-down   *************************************/ }
 
 .payement-page main h1 { margin-bottom: 38px; }
 

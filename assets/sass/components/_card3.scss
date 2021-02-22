@@ -46,11 +46,11 @@
         &.clicked {
             min-height: 510px;
             margin-top: -15px;
-            border: 2px solid $bright-blue;
+            border: 2px solid $color-primary;
             box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1);
             .option-header {
                 padding: 27px 0;
-                background: $bright-blue;
+                background: $color-primary;
                 h3 {
                     color: #ffffff;
                     margin-bottom: 0;
@@ -59,7 +59,7 @@
             .select-service {
                 background: linear-gradient(180deg, #0071ff 0%, #0054be 100%);
                 border-color: #0071ff;
-                color: $white;
+                color: $color-white;
                 font-family: $primary-semibold;
             }
         }

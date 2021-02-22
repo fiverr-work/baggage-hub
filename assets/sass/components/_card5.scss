@@ -31,10 +31,10 @@
                 }
             }
             &.clicked {
-                border:2px solid $bright-blue;
+                border:2px solid $color-primary;
                 .shipment-header {
-                    background: $bright-blue;
-                    h3 {color: $white;}
+                    background: $color-primary;
+                    h3 {color: $color-white;}
                 }
             }
              /*****************************  desktop-large ****************************** */

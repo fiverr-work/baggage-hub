@@ -21,7 +21,7 @@
         .ship-content {
              // media query
             padding: 12px 56px 24px 20px;
-            @include flex(flex-start, center);     
+            @include flex(flex-start, center);
             flex-wrap: wrap;
             & > div {margin-right: 10px; margin-bottom: 15px}
             .quantity {
@@ -38,7 +38,7 @@
                     width: 20px;
                     height: 20px;
                     border-radius: 50%;
-                    color: $white;
+                    color: $color-white;
                     @include flex(center, center);
                 }
                 .btn-disabled {
@@ -93,7 +93,7 @@
                 .value-ship     { width: 92px;  }
                 .type-of-items  { width: 159px; }
                 .content-ship   { width: 159px; }
-         
+
             }
         }
     }

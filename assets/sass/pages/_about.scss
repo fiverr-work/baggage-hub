@@ -1,81 +1,50 @@
 .about-page {
-    position: relative;
-    background: #fbfdff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    main {
-        width: 100%;
-        max-width: 1440px;
-        padding: 0px 150px 200px;
-        display: flex;
-        flex-direction: column;
-        background: url("../img/backgrounds/LogoBg.svg") no-repeat center;
-        background-position-y: 71%;
-        select {
-            padding: 12px 16px;
-            height: auto;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            background: transparent;
-            background-image: url("../img/icons/arrow-down.svg");
-            background-repeat: no-repeat;
-            background-position-x: 97%;
-            background-position-y: 50%;
-        }
-        .cards {
-            @include flex(space-between, flex-start);
-            
-        }
-        .easy-booking {
-            h1 {
-                margin-bottom: 33px;
-            }
-            .select-items {
-                @include flex(space-between, flex-start);
-                margin-bottom: 40px;
-                gap: 30px;
-                .select-item {
-                    flex: 1;
-                }
-            }
-        }
-        .recent-booking {
-            margin-top: 60px;
-            h1 {
-                margin-bottom: 26px;
-            }
-        }
-        /*******************************   tablet-landscape-down   *************************************/
-        @include for-size(tablet-landscape-down) {
-            .cards {
-                flex-direction: column;
-            }
-            .easy-booking {
-                h1 {
-                    margin-bottom: 30px;
-                }
-                .select-items {
-                    margin-bottom: 30px;
-                    gap: 16px;
-                    flex-direction: column;
-                    .select-item {
-                        width: 100%;
-                    }
-                }
-            }
-            .recent-booking {
-                margin-top: 30px;
-                h1 {
-                    margin-bottom: 20px;
-                }
-            }
-        }
-        @include for-size(tablet-portrait-down) {
-            padding: 0 80px 100px;
-        }
-        @include for-size(phone-only) {
-            padding: 0 20px 70px;
-        }
-    }
+	main {
+		.cards {
+			@include flex(space-between, flex-start);
+		}
+		.easy-booking {
+			h1 {
+				margin-bottom: 33px;
+			}
+			.select-items {
+				@include flex(space-between, flex-start);
+				margin-bottom: 40px;
+				gap: 30px;
+				.select-item {
+					flex: 1;
+				}
+			}
+		}
+		.recent-booking {
+			margin-top: 60px;
+			h1 {
+				margin-bottom: 26px;
+			}
+		}
+		@include for-size(tablet-landscape-down) {
+			.cards {
+				flex-direction: column;
+			}
+			.easy-booking {
+				h1 {
+					margin-bottom: 30px;
+				}
+				.select-items {
+					margin-bottom: 30px;
+					gap: 16px;
+					flex-direction: column;
+					.select-item {
+						width: 100%;
+					}
+				}
+			}
+			.recent-booking {
+				margin-top: 30px;
+				h1 {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
 }

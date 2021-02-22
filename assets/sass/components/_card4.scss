@@ -6,7 +6,7 @@
             background: $pale-grey;
             border: 1px solid #E6E6E6;
             padding: 20px 16px 18px;
-    
+
             .optional-header {
                 @include flex(space-between, center);
                 width: 100%;
@@ -28,15 +28,15 @@
             }
             &.clicked {
                 background: #F4F9FF;
-                border:2px solid $bright-blue;
+                border:2px solid $color-primary;
                 .optional-header {
                     .optional-icon {
-                        background: $bright-blue;
+                        background: $color-primary;
                     }
                 }
             }
              /*****************************  desktop-large ****************************** */
-             @include for-size(desktop-large) { 
+             @include for-size(desktop-large) {
                 width: 30%;
                 margin-bottom: 20px;
            }
@@ -54,5 +54,5 @@
     @include for-size(desktop-large) {
         flex-wrap: wrap;
         width: 100%;
-    } 
-}  
+    }
+}

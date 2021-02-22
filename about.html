@@ -24,66 +24,65 @@
 </head>
 
 <body class="about-page">
-	<!-- Start Header -->
-	<header>
-		<div class="logo-button">
-			<div class="container">
-				<img src="./assets/img/logo/Logo.svg" alt="logo">
-			<button type="button" class="btn btn-primary button-semi sign-in">SIGN IN</button>
-			</div>
-		</div>
-		<div class="full-screen">
 
-			<div class="steps">
-				<!------------------- Start Step1 ------------------>
-				<div class="step active-step">
-					<div>
-						<span class="button-semi">1</span>
-						<p class="placeholder active-step"> About </p>
-					</div>
-					<div class="a-after"></div>
+	<!-- [BEGIN] Navbar -->
+	<nav class="navbar">
+		<div class="container">
+			<img src="./assets/img/logo/Logo.svg" class="logo" alt="logo">
+			<button type="button" class="btn btn-primary text-uppercase">sign in</button>
+		</div>
+	</nav>
+	<!-- [END] Navbar -->
+
+	<!-- [BEGIN] Steps -->
+	<header class="steps-timeline">
+		<div class="steps container">
+			<div class="step active">
+				<div>
+					<span class="button-semi">1</span>
+					<p>About</p>
 				</div>
-				<!-------------------  End Step1 ------------------>
-				<!------------------- step2 ------------------>
-				<div class="step">
-					<div >
-						<span class="button-semi">2</span>
-						<p class="placeholder"> Options </p>
-					</div>
-					<div class="a-after"></div>
+				<div class="line"></div>
+			</div>
+			<div class="step">
+				<div>
+					<span class="button-semi">2</span>
+					<p>Options</p>
 				</div>
-				<div class="step">
-					<div href="#">
-						<span class="button-semi">3</span>
-						<p class="placeholder"> Details </p>
-					</div>
-					<div class="a-after"></div>
+				<div class="line"></div>
+			</div>
+			<div class="step">
+				<div>
+					<span class="button-semi">3</span>
+					<p>Details</p>
 				</div>
-				<div class="step">
-					<div href="#">
-						<span class="button-semi">4</span>
-						<p class="placeholder"> Payment </p>
-					</div>
-					<div class="a-after"></div>
+				<div class="line"></div>
+			</div>
+			<div class="step">
+				<div>
+					<span class="button-semi">4</span>
+					<p>Payment</p>
 				</div>
-				<div class="step">
-					<div>
-						<span class="button-semi">5</span>
-						<p class="placeholder completed"> Order Complete </p>
-					</div>
+				<div class="line"></div>
+			</div>
+			<div class="step">
+				<div>
+					<span class="button-semi">5</span>
+					<p>Order Complete</p>
 				</div>
 			</div>
 		</div>
 	</header>
-	<!-- End Header -->
-	<main>
+	<!-- [END] Steps -->
+
+	<main class="container">
 		<div class="easy-booking">
 			<h1>Instant Quotes with Easy Booking</h1>
 			<!--------------------------------- select items -------------------------------->
 			<div class="select-items">
 				<div class="select-item">
-					<label class="large">Pickup From</label>
-					<select class="form-control" id="Select1">
+					<label class="large">Send From</label>
+					<select>
 						<option selected>Ex. United Kingdom</option>
 						<option value="1">Morocco</option>
 						<option value="2">Egypt</option>
@@ -92,7 +91,7 @@
 				</div>
 				<div class="select-item">
 					<label class="large">Delivery To</label>
-					<select class="form-control" id="Select2">
+					<select>
 						<option selected>Ex: France</option>
 						<option value="1">Morocco</option>
 						<option value="2">Egypt</option>
@@ -107,7 +106,7 @@
 						<img src="./assets/img/icons/Package.svg" alt="package">
 						<div>
 							<label class="label1">Quantity</label>
-							<select class="form-control" id="Select3">
+							<select>
 								<option selected class="label2">1</option>
 								<option value="1">2</option>
 								<option value="2">3</option>
@@ -125,7 +124,7 @@
 						<img src="./assets/img/icons/Package.svg" alt="package">
 						<div>
 							<label class="label1">Quantity</label>
-							<select class="form-control" id="Select4">
+							<select>
 								<option selected class="label2">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -143,7 +142,7 @@
 						<img src="./assets/img/icons/Other.svg" alt="package">
 						<div>
 							<label class="label1">Quantity</label>
-							<select class="form-control" id="Select5">
+							<select>
 								<option selected class="label2">0</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -227,6 +226,7 @@
 			</div>
 		</div>
 	</main>
+
 	<!-- Plugins
 	================================================== -->
 

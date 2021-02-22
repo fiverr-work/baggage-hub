@@ -1,15 +1,17 @@
 .optional-v2 {
-    width: 100%;
-    h4 {margin-bottom: 16px }
-    .cards {
-        @include flex (space-between, flex-start);
-        & > * {
-            box-sizing: border-box;
-            border-radius: 6px;
-        }
-        
-    }
-    @include for-size(tablet-landscape-down) {
-        .cards { flex-direction: column }
-    }  
+	width: 100%;
+	h4 {
+		margin-bottom: 16px;
+	}
+	.cards {
+		@include flex(space-between, flex-start);
+		& > div {
+			border-radius: 6px;
+		}
+	}
+	@include for-size(tablet-landscape-down) {
+		.cards {
+			flex-direction: column;
+		}
+	}
 }

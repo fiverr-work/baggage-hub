@@ -1,217 +1,207 @@
 .payement-page {
-    position: relative;
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    main {
-        width: 100%;
-        max-width: 1440px;
-        padding: 0px 150px 200px;
-        display: flex;
-        flex-direction: column;
-        h1 {
-            margin-bottom: 38px;
-        }
-        .payment {
-            @include flex(space-between, flex-start);
-            .pay-process {
-                width: 65%;
-                padding: 25px 32px 69px 33px;
-                //
-                background: $pale-grey;
-                border-radius: 6px;
+	main {
+		h1 {
+			margin-bottom: 38px;
+		}
+		.payment {
+			@include flex(space-between, flex-start);
+			.pay-process {
+				width: 65%;
+				padding: 25px 32px 69px 33px;
+				background: $pale-grey;
+				border-radius: 6px;
 
-                .parag1-pay {
-                    margin-bottom: 29px;
-                }
-                .card-types {
-                    width: 43%;
-                    @include flex(space-between, center);
-                    margin-bottom: 23px;
-                    h3 {
-                        text-align: start;
-                    }
-                    .bordered-card {
-                        background: #ffffff;
-                        border: 1px solid #b3b3b3;
-                        border-radius: 4px;
-                        width: 70px;
-                        height: 42px;
-                        @include flex(center, center);
-                    }
-                }
-                .card-number {
-                    width: 55%;
-                }
+				.parag1-pay {
+					margin-bottom: 29px;
+				}
+				.card-types {
+					width: 43%;
+					@include flex(space-between, center);
+					margin-bottom: 23px;
+					h3 {
+						text-align: start;
+					}
+					.bordered-card {
+						background: #ffffff;
+						border: 1px solid #b3b3b3;
+						border-radius: 4px;
+						width: 70px;
+						height: 42px;
+						@include flex(center, center);
 
-                .expiry-date {
-                    @include flex(space-between, flex-end);
-                    width: 55%;
-                    margin: 24px 0;
-                    & > div {
-                        width: 45%;
-                    }
-                }
-                .name-card {
-                    width: 55%;
-                }
-                .security-code {
-                    width: 55%;
-                    margin: 24px 0;
-                    @include flex(space-between, flex-end);
-                    & > div {
-                        width: 45%;
-                    }
-                }
-                .form-check-input {
-                    width: 16px;
-                    height: 16px;
-                }
-            }
-            .summary-payement {
-                width: 32%;
-            }
-        }
+					}
+				}
+				.card-number {
+					width: 55%;
+				}
 
-        /*******************************   tablet-landscape-down   *************************************/
-        @include for-size(desktop-large) {
-            .payment {
-                .pay-process {
-                    width: 60%;
-                    padding: 25px 22px 69px 23px;
-                    .card-types {
-                        width: 55%;
-                        .bordered-card {
-                            width: 60px;
-                        }
-                    }
-                    .card-number {
-                        width: 70%;
-                    }
-                    .expiry-date {
-                        width: 70%;
-                        & > div {
-                            width: 46%;
-                        }
-                    }
-                    .name-card {
-                        width: 70%;
-                    }
-                    .security-code {
-                        width: 70%;
-                        & > div {
-                            width: 46%;
-                        }
-                    }
-                }
-                .summary-payement {
-                    width: 38%;
-                }
-            }
-        }
-        @include for-size(desktop-down) {
-            h1 {
-                margin-bottom: 26px;
-            }
-            .payment {
-                flex-direction: column;
-                .pay-process {
-                    padding: 25px 22px 30px 23px;
-                    width: 100%;
-                    .parag1-pay {
-                        margin-bottom: 18px;
-                    }
-                    .card-types {
-                        width: 45%;
-                        margin-bottom: 18px;
-                    }
-                    .card-number {
-                        width: 60%;
-                    }
-                    .expiry-date {
-                        width: 60%;
-                        margin: 18px 0;
-                        & > div {
-                            width: 43%;
-                        }
-                    }
-                    .name-card {
-                        width: 60%;
-                    }
-                    .security-code {
-                        width: 60%;
-                        margin: 18px 0;
-                        @include flex(space-between, flex-end);
-                        & > div {
-                            width: 43%;
-                        }
-                    }
-                }
-                .summary-payement {
-                    width: 100%;
-                }
-            }
-        }
-        @include for-size(tablet-landscape-down) {
-            .payment {
-                .pay-process {
-                    .card-types {
-                        width: 65%;
-                    }
-                    .card-number {
-                        width: 85%;
-                    }
-                    .expiry-date {
-                        width: 85%;
-                        & > div {
-                            width: 43%;
-                        } // media
-                    }
-                    .name-card {
-                        width: 85%;
-                    } // media
-                    .security-code {
-                        // media
-                        width: 85%;
-                        & > div {
-                            width: 43%;
-                        } // media
-                    }
-                }
-            }
-        }
-        @include for-size(tablet-portrait-down) {
-            padding: 0 80px 100px;
-            .payment {
-                .pay-process {
-                    .card-types {
-                        width: 100%;
-                    }
-                    .card-number {
-                        width: 100%;
-                    }
-                    .expiry-date {
-                        width: 100%;
-                        & > div {
-                            width: 43%;
-                        } // media
-                    }
-                    .name-card {
-                        width: 100%;
-                    } // media
-                    .security-code {
-                        // media
-                        width: 100%;
-                        & > div {
-                            width: 44%;
-                        } // media
-                    }
-                }
-            }
-        }
-        @include for-size(phone-only) {
-            padding: 0 20px 70px;
-        }
-    }
+				.expiry-date {
+					@include flex(space-between, flex-end);
+					width: 55%;
+					margin: 24px 0;
+					& > div {
+						width: 45%;
+					}
+				}
+				.name-card {
+					width: 55%;
+				}
+				.security-code {
+					width: 55%;
+					margin: 24px 0;
+					@include flex(space-between, flex-end);
+					& > div {
+						width: 45%;
+					}
+				}
+				.form-check-input {
+					width: 16px;
+					height: 16px;
+				}
+			}
+			.summary-payement {
+				width: 32%;
+			}
+		}
+
+		/*******************************   tablet-landscape-down   *************************************/
+		@include for-size(desktop-large) {
+			.payment {
+				.pay-process {
+					width: 60%;
+					padding: 25px 22px 69px 23px;
+					.card-types {
+						width: 55%;
+						.bordered-card {
+							width: 60px;
+						}
+					}
+					.card-number {
+						width: 70%;
+					}
+					.expiry-date {
+						width: 70%;
+						& > div {
+							width: 46%;
+						}
+					}
+					.name-card {
+						width: 70%;
+					}
+					.security-code {
+						width: 70%;
+						& > div {
+							width: 46%;
+						}
+					}
+				}
+				.summary-payement {
+					width: 38%;
+				}
+			}
+		}
+		@include for-size(desktop-down) {
+			h1 {
+				margin-bottom: 26px;
+			}
+			.payment {
+				flex-direction: column;
+				.pay-process {
+					padding: 25px 22px 30px 23px;
+					width: 100%;
+					.parag1-pay {
+						margin-bottom: 18px;
+					}
+					.card-types {
+						width: 45%;
+						margin-bottom: 18px;
+					}
+					.card-number {
+						width: 60%;
+					}
+					.expiry-date {
+						width: 60%;
+						margin: 18px 0;
+						& > div {
+							width: 43%;
+						}
+					}
+					.name-card {
+						width: 60%;
+					}
+					.security-code {
+						width: 60%;
+						margin: 18px 0;
+						@include flex(space-between, flex-end);
+						& > div {
+							width: 43%;
+						}
+					}
+				}
+				.summary-payement {
+					width: 100%;
+				}
+			}
+		}
+		@include for-size(tablet-landscape-down) {
+			.payment {
+				.pay-process {
+					.card-types {
+						width: 65%;
+					}
+					.card-number {
+						width: 85%;
+					}
+					.expiry-date {
+						width: 85%;
+						& > div {
+							width: 43%;
+						} // media
+					}
+					.name-card {
+						width: 85%;
+					} // media
+					.security-code {
+						// media
+						width: 85%;
+						& > div {
+							width: 43%;
+						} // media
+					}
+				}
+			}
+		}
+		@include for-size(tablet-portrait-down) {
+			padding: 0 80px 100px;
+			.payment {
+				.pay-process {
+					.card-types {
+						width: 100%;
+					}
+					.card-number {
+						width: 100%;
+					}
+					.expiry-date {
+						width: 100%;
+						& > div {
+							width: 43%;
+						} // media
+					}
+					.name-card {
+						width: 100%;
+					} // media
+					.security-code {
+						// media
+						width: 100%;
+						& > div {
+							width: 44%;
+						} // media
+					}
+				}
+			}
+		}
+		@include for-size(phone-only) {
+			padding: 0 20px 70px;
+		}
+	}
 }

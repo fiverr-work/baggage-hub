@@ -24,359 +24,369 @@
 </head>
 
 <body class="details-v1-page">
-    <!-- Start Header -->
-    <header>
-		<div class="logo-button">
-			<div class="container">
-				<img src="./assets/img/logo/Logo.svg" alt="logo">
-			<button type="button" class="btn btn-primary button-semi sign-in">SIGN IN</button>
-			</div>
-		</div>
-		<div class="full-screen">
 
-			<div class="steps">
-				<!------------------- Start Step1 ------------------>
-				<div class="step completed-step">
-					<div>
-						<span class="button-semi">1</span>
-						<p class="placeholder active-step"> About </p>
-					</div>
-					<div class="a-after"></div>
+	<!-- [BEGIN] Navbar -->
+	<nav class="navbar">
+		<div class="container">
+			<img src="./assets/img/logo/Logo.svg" class="logo" alt="logo">
+			<button type="button" class="btn btn-primary text-uppercase">sign in</button>
+		</div>
+	</nav>
+	<!-- [END] Navbar -->
+
+	<!-- [BEGIN] Steps -->
+	<header class="steps-timeline">
+		<div class="steps container">
+			<div class="step completed">
+				<div>
+					<span class="button-semi">1</span>
+					<p>About</p>
 				</div>
-				<!-------------------  End Step1 ------------------>
-				<!------------------- step2 ------------------>
-				<div class="step completed-step">
-					<div >
-						<span class="button-semi">2</span>
-						<p class="placeholder"> Options </p>
-					</div>
-					<div class="a-after"></div>
+				<div class="line"></div>
+			</div>
+			<div class="step completed">
+				<div>
+					<span class="button-semi">2</span>
+					<p>Options</p>
 				</div>
-				<div class="step active-step">
-					<div href="#">
-						<span class="button-semi">3</span>
-						<p class="placeholder"> Details </p>
-					</div>
-					<div class="a-after"></div>
+				<div class="line"></div>
+			</div>
+			<div class="step active">
+				<div>
+					<span class="button-semi">3</span>
+					<p>Details</p>
 				</div>
-				<div class="step">
-					<div href="#">
-						<span class="button-semi">4</span>
-						<p class="placeholder"> Payment </p>
-					</div>
-					<div class="a-after"></div>
+				<div class="line"></div>
+			</div>
+			<div class="step">
+				<div>
+					<span class="button-semi">4</span>
+					<p>Payment</p>
 				</div>
-				<div class="step">
-					<div>
-						<span class="button-semi">5</span>
-						<p class="placeholder completed"> Order Complete </p>
-					</div>
+				<div class="line"></div>
+			</div>
+			<div class="step">
+				<div>
+					<span class="button-semi">5</span>
+					<p>Order Complete</p>
 				</div>
 			</div>
 		</div>
 	</header>
-    <!-- End Header -->
+	<!-- [END] Steps -->
+
 	<main>
-        <h1>To Pickup from MANCHESTER UK and Deliver to PARIS FRANCE</h1>
-        <div class="details">
-            <div class="details-inputs">
-                <!------------------------- Details Inputs --------------------->
-                <div class="pick-details">
-                    <div class="Pickup-Details">
-                        <label class="large">Pickup Details</label>
-                        <input type="text" class="form-control placeholder-style" id="country" placeholder="Country: United Kingdom">
-                        <input type="text" class="form-control placeholder-style" id="adress" placeholder="Find Address">
-                        <input type="text" class="form-control placeholder-style" id="surname" placeholder="Sender name & Surname">
-                        <input type="text" class="form-control placeholder-style" id="tlfn" placeholder="Sender contact telephone">
-                    </div>
-                    <div class="Deliver-Details">
-                        <label class="large">Deliver Details</label>
-                        <input type="text" class="form-control placeholder-style" id="country-send" placeholder="Country: France">
-                        <input type="text" class="form-control placeholder-style" id="adress-send" placeholder="Find Address">
-                        <input type="text" class="form-control placeholder-style" id="surname-send" placeholder="Sender name & Surname">
-                        <input type="text" class="form-control placeholder-style" id="tlfn-send" placeholder="Sender contact telephone">
-                    </div>
-                </div>
-                <div class="shipment-details">
-                    <h2>Shipment Details</h2>
-                    <p class="placeholder">Provide details of the items that you want to shop</p>
-                    <div class="van-cards">
-                    <!-------------------------------- Card Van -------------------------------->
-                    <div class="card-van clicked">
-                        <!-- header -->
-                        <div class="van-header checked">
-                            <img class="header-icon" src="./assets/img/icons/Box.svg" alt="box">
-                            <div class="header-text">
-                                <div>
-                                    <h4>Box Van</h4>
-                                    <p class="label2">To get a quote, add the pick-up and delivery addresses</p> 
-                                </div>
-                                <input type="checkbox" checked>
-                            </div>
-                        </div>
-                        <!-- Content -->
-                        <div class="van-content">
-                            <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/Arrow-v.svg" alt="arrow">
-                                <div>
-                                    <label class="button-semi info-value">465cm</label>
-                                    <p class="small">Height</p> 
-                                </div>
-                            </div>
-                            <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/Arrow-h.svg" alt="arrow">
-                                <div>
-                                   <label class="button-semi info-value">465cm</label>
-                                    <p class="small">Width</p>  
-                                </div>
-                             </div>
-                             <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/Arrow-v.svg" alt="arrow">
-                                <div>
-                                    <label class="button-semi info-value">465cm</label>
-                                    <p class="small">Length</p> 
-                                </div>
-                             </div>
-                             <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/wheel.svg" alt="wheel">
-                                <div>
-                                    <label class="button-semi info-value">Included</label>
-                                    <p class="small">Driver</p>   
-                                </div>
-                             </div>
-                             <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/scales.svg" alt="volume">
-                                <div>
-                                    <label class="button-semi info-value">13cbm</label>
-                                    <p class="small">Volume</p>   
-                                </div>
-                             </div>
-                             <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/scales.svg" alt="capacity">
-                                <div>
-                                    <label class="button-semi info-value">800kg</label>
-                                    <p class="small">Capacity</p>   
-                                </div>
-                             </div>
-                        </div>
-                    </div>
-                    <!-------------------------------- End Van -------------------------------->
-                    <!-------------------------------- Card Van -------------------------------->
-                    <div class="card-van">
-                        <!-- header -->
-                        <div class="van-header">
-                            <img class="header-icon" src="./assets/img/icons/Box.svg" alt="box">
-                            <div class="header-text">
-                                <div>
-                                    <h4>Box Van</h4>
-                                    <p class="label2">To get a quote, add the pick-up and delivery addresses</p> 
-                                </div>
-                                <input type="checkbox">
-                            </div>
-                        </div>
-                        <!-- Content -->
-                        <div class="van-content">
-                            <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/Arrow-v.svg" alt="arrow">
-                                <div>
-                                    <label class="button-semi info-value">465cm</label>
-                                    <p class="small">Height</p> 
-                                </div>
-                            </div>
-                            <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/Arrow-h.svg" alt="arrow">
-                                <div>
-                                   <label class="button-semi info-value">465cm</label>
-                                    <p class="small">Width</p>  
-                                </div>
-                             </div>
-                             <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/Arrow-v.svg" alt="arrow">
-                                <div>
-                                    <label class="button-semi info-value">465cm</label>
-                                    <p class="small">Length</p> 
-                                </div>
-                             </div>
-                             <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/wheel.svg" alt="wheel">
-                                <div>
-                                    <label class="button-semi info-value">Included</label>
-                                    <p class="small">Driver</p>   
-                                </div>
-                             </div>
-                             <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/scales.svg" alt="volume">
-                                <div>
-                                    <label class="button-semi info-value">13cbm</label>
-                                    <p class="small">Volume</p>   
-                                </div>
-                             </div>
-                             <div class="van-info">
-                                <img  class="info-icon" src="./assets/img/icons/scales.svg" alt="capacity">
-                                <div>
-                                    <label class="button-semi info-value">800kg</label>
-                                    <p class="small">Capacity</p>   
-                                </div>
-                             </div>
-                        </div>
-                    </div>
-                    <!-------------------------------- End Van -------------------------------->
-                    </div>
-                    <div class="optional-services optional-v2">
-                        <h4>Optional Services</h4>
-                        <div class="cards">
-                            <div class="card-optional clicked">
-                                <div class="optional-header">
-                                    <div class="optional-icon">
-                                        <img src="./assets/img/icons/optional-icon1.svg" alt="opt1">
-                                    </div>
-                                    <div class="optional-check">
-                                       <p class="button-semi dollar">$9.98</p>
-                                       <input type="checkbox" checked >
-                                    </div>
-                                </div>
-                                <div class="optional-content">
-                                    <h4>Driver Help- Loading</h4>
-                                    <p class="label2">
-                                        Need help with loading the van?
-                                        up to 20kg per item
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-optional">
-                                <div class="optional-header">
-                                    <div class="optional-icon">
-                                        <img src="./assets/img/icons/optional-icon1.svg" alt="opt1">
-                                    </div>
-                                    <div class="optional-check">
-                                       <p class="button-semi dollar">$9.98</p>
-                                       <input type="checkbox" >
-                                    </div>
-                                </div>
-                                <div class="optional-content">
-                                    <h4>Driver Help- Loading</h4>
-                                    <p class="label2">
-                                        Need help with loading the van?
-                                        up to 20kg per item
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card-optional">
-                                <div class="optional-header">
-                                    <div class="optional-icon">
-                                        <img src="./assets/img/icons/optional-icon1.svg" alt="opt1">
-                                    </div>
-                                    <div class="optional-check">
-                                       <p class="button-semi dollar">$9.98</p>
-                                       <input type="checkbox" >
-                                    </div>
-                                </div>
-                                <div class="optional-content">
-                                    <h4>Driver Help- Loading</h4>
-                                    <p class="label2">
-                                        Need help with loading the van?
-                                        up to 20kg per item
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button " class="btn btn-primary button-med add-item">ADD ANOTHER ITEM 
-                        <img src="./assets/img/icons/Plus.svg" alt="add-item">
-                    </button>
-                    <p class="medium parag1">Not sure if your package matches our shipment regulations?
-                        <a class="large" href="#"> Check it here </a>
-                    </p>
-                    <div class="medium parag2">
-                        <h4>Note:</h4> We identifier the courier service provider that offers the most convenient
-                            price for the number of items and the weights you had selected. The same courier
-                            company will collect all your parcels.
-                    </div>
-                </div> 
-                <div class="pick-options-dt">
-                    <h2>Pickup Options</h2>
-                    <p class="medium">When do you want the pickup to take place?</p>
-                    <div class="ship-date">
-                        <label class="large" >Pick-Up Date</label>
-                        <input class="form-control" type="date" placeholder="dd.mm.yy" onfocus="(this.type='date')">    
-                    </div>
-                </div>
-                <div class="contact-details">
-                    <h2>Contact Details</h2>
-                    <p class="medium">You will recieve an order confirmation on this email address when you’re done with the payment</p>
-                    <div class="contact-infos">
-                        <!--------------------------------  Name & Surname -------------------------------->
-                        <div>
-                            <label class="large"  for="name"> Name & Surname </label>
-                            <input type="text" class="form-control" id="name" placeholder="Ex. Jhon"> 
-                        </div>
-                        <!--------------------------------  Email Address -------------------------------->
-                        <div>
-                            <label class="large"  for="Email-Address">Email Address </label>
-                            <input type="email" class="form-control" id="Email-Address" placeholder="Name@domain.com">  
-                        </div>
-                        <!--------------------------------  Phone Number -------------------------------->
-                        <div>
-                            <label class="large"  for="Phone Number"> Phone Number </label>
-                            <input type="text" class="form-control" id="name" placeholder="+1   123 456 7890">  
-                        </div>
-                    </div>
-                    <!--  Special Notes (Optional)-->
-                    <label class="large">Special Notes (Optional)</label>
-                    <textarea class="form-control" id="Textarea2" rows="3" placeholder="placeholder"></textarea>
-                    <div class="condition">
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="Check1">
-                            <label class="form-check-label placeholder" for="Check1">I have read and accept the
-                                <span class="span-bold">Term & Condition</span> </label>
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="Check2">
-                            <label class="form-check-label placeholder" for="Check2">I would like to recieve newsletter emails.</label>
-                        </div>   
-                    </div>
-                
-                </div>
-            </div>
-            <!--------------------- The exeptional card -------------------->
-            <div class="card-option order-summary summary-detail">
-                <div class="option-header">
-                    <h2>Order Summary</h2>
-                </div>
-                <div class="option-content">
-                    <div class="option-item-ex">
-                        <p class="medium">Drop Off to Door Priority Service</p>
-                        <h5>$400</h5>
-                    </div>
-                    <div class="option-item-ex">
-                        <p class="medium">Priority Customer Service</p>
-                        <p class="medium">Included</p>
-                    </div>
-                    <div class="option-item-ex">
-                        <p class="medium">Shipment Tracking</p>
-                        <p class="medium">Included</p>
-                    </div>
-                    <div class="option-item-ex">
-                        <p class="medium">$250 Shipping Protection</p>
-                        <p class="medium">Included</p>
-                    </div>
-                    <div class="option-item-ex">
-                        <p class="medium">Deal Discount</p>
-                        <h5>-$50</h5>
-                    </div>
-                </div>
-                <div class="option-footer-ex">
-                    <div class="pay">
-                        <p class="large">To Pay</p>
-                        <p class="large"> $350</p>
-                    </div>
-                    <button type="button" class="btn btn-info book-service">BOOK SERVICE</button>
-                </div>
-            </div>
-        </div>
-        <!-- ------------------------------ --------------->
-        <button type="button " class="btn btn-primary button-med get-prices pay-now">PAY NOW </button>
-    </main>
+		<h1>To Pickup from MANCHESTER UK and Deliver to PARIS FRANCE</h1>
+		<div class="details">
+			<div class="details-inputs">
+				<!------------------------- Details Inputs --------------------->
+				<div class="pick-details">
+					<div class="Pickup-Details">
+						<label class="large">Pickup Details</label>
+						<input type="text" class="form-control placeholder-style" id="country"
+							placeholder="Country: United Kingdom">
+						<input type="text" class="form-control placeholder-style" id="adress"
+							placeholder="Find Address">
+						<input type="text" class="form-control placeholder-style" id="surname"
+							placeholder="Sender name & Surname">
+						<input type="text" class="form-control placeholder-style" id="tlfn"
+							placeholder="Sender contact telephone">
+					</div>
+					<div class="Deliver-Details">
+						<label class="large">Deliver Details</label>
+						<input type="text" class="form-control placeholder-style" id="country-send"
+							placeholder="Country: France">
+						<input type="text" class="form-control placeholder-style" id="adress-send"
+							placeholder="Find Address">
+						<input type="text" class="form-control placeholder-style" id="surname-send"
+							placeholder="Sender name & Surname">
+						<input type="text" class="form-control placeholder-style" id="tlfn-send"
+							placeholder="Sender contact telephone">
+					</div>
+				</div>
+				<div class="shipment-details">
+					<h2>Shipment Details</h2>
+					<p class="placeholder">Provide details of the items that you want to shop</p>
+					<div class="van-cards">
+						<!-------------------------------- Card Van -------------------------------->
+						<div class="card-van clicked">
+							<!-- header -->
+							<div class="van-header checked">
+								<img class="header-icon" src="./assets/img/icons/Box.svg" alt="box">
+								<div class="header-text">
+									<div>
+										<h4>Box Van</h4>
+										<p class="label2">To get a quote, add the pick-up and delivery addresses</p>
+									</div>
+									<input type="checkbox" checked>
+								</div>
+							</div>
+							<!-- Content -->
+							<div class="van-content">
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/Arrow-v.svg" alt="arrow">
+									<div>
+										<label class="button-semi info-value">465cm</label>
+										<p class="small">Height</p>
+									</div>
+								</div>
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/Arrow-h.svg" alt="arrow">
+									<div>
+										<label class="button-semi info-value">465cm</label>
+										<p class="small">Width</p>
+									</div>
+								</div>
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/Arrow-v.svg" alt="arrow">
+									<div>
+										<label class="button-semi info-value">465cm</label>
+										<p class="small">Length</p>
+									</div>
+								</div>
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/wheel.svg" alt="wheel">
+									<div>
+										<label class="button-semi info-value">Included</label>
+										<p class="small">Driver</p>
+									</div>
+								</div>
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/scales.svg" alt="volume">
+									<div>
+										<label class="button-semi info-value">13cbm</label>
+										<p class="small">Volume</p>
+									</div>
+								</div>
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/scales.svg" alt="capacity">
+									<div>
+										<label class="button-semi info-value">800kg</label>
+										<p class="small">Capacity</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-------------------------------- End Van -------------------------------->
+						<!-------------------------------- Card Van -------------------------------->
+						<div class="card-van">
+							<!-- header -->
+							<div class="van-header">
+								<img class="header-icon" src="./assets/img/icons/Box.svg" alt="box">
+								<div class="header-text">
+									<div>
+										<h4>Box Van</h4>
+										<p class="label2">To get a quote, add the pick-up and delivery addresses</p>
+									</div>
+									<input type="checkbox">
+								</div>
+							</div>
+							<!-- Content -->
+							<div class="van-content">
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/Arrow-v.svg" alt="arrow">
+									<div>
+										<label class="button-semi info-value">465cm</label>
+										<p class="small">Height</p>
+									</div>
+								</div>
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/Arrow-h.svg" alt="arrow">
+									<div>
+										<label class="button-semi info-value">465cm</label>
+										<p class="small">Width</p>
+									</div>
+								</div>
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/Arrow-v.svg" alt="arrow">
+									<div>
+										<label class="button-semi info-value">465cm</label>
+										<p class="small">Length</p>
+									</div>
+								</div>
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/wheel.svg" alt="wheel">
+									<div>
+										<label class="button-semi info-value">Included</label>
+										<p class="small">Driver</p>
+									</div>
+								</div>
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/scales.svg" alt="volume">
+									<div>
+										<label class="button-semi info-value">13cbm</label>
+										<p class="small">Volume</p>
+									</div>
+								</div>
+								<div class="van-info">
+									<img class="info-icon" src="./assets/img/icons/scales.svg" alt="capacity">
+									<div>
+										<label class="button-semi info-value">800kg</label>
+										<p class="small">Capacity</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-------------------------------- End Van -------------------------------->
+					</div>
+					<div class="optional-services optional-v2">
+						<h4>Optional Services</h4>
+						<div class="cards">
+							<div class="card-optional clicked">
+								<div class="optional-header">
+									<div class="optional-icon">
+										<img src="./assets/img/icons/optional-icon1.svg" alt="opt1">
+									</div>
+									<div class="optional-check">
+										<p class="button-semi dollar">$9.98</p>
+										<input type="checkbox" checked>
+									</div>
+								</div>
+								<div class="optional-content">
+									<h4>Driver Help- Loading</h4>
+									<p class="label2">
+										Need help with loading the van?
+										up to 20kg per item
+									</p>
+								</div>
+							</div>
+							<div class="card-optional">
+								<div class="optional-header">
+									<div class="optional-icon">
+										<img src="./assets/img/icons/optional-icon1.svg" alt="opt1">
+									</div>
+									<div class="optional-check">
+										<p class="button-semi dollar">$9.98</p>
+										<input type="checkbox">
+									</div>
+								</div>
+								<div class="optional-content">
+									<h4>Driver Help- Loading</h4>
+									<p class="label2">
+										Need help with loading the van?
+										up to 20kg per item
+									</p>
+								</div>
+							</div>
+							<div class="card-optional">
+								<div class="optional-header">
+									<div class="optional-icon">
+										<img src="./assets/img/icons/optional-icon1.svg" alt="opt1">
+									</div>
+									<div class="optional-check">
+										<p class="button-semi dollar">$9.98</p>
+										<input type="checkbox">
+									</div>
+								</div>
+								<div class="optional-content">
+									<h4>Driver Help- Loading</h4>
+									<p class="label2">
+										Need help with loading the van?
+										up to 20kg per item
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button " class="btn btn-primary button-med add-item">ADD ANOTHER ITEM
+						<img src="./assets/img/icons/Plus.svg" alt="add-item">
+					</button>
+					<p class="medium parag1">Not sure if your package matches our shipment regulations?
+						<a class="large" href="#"> Check it here </a>
+					</p>
+					<div class="medium parag2">
+						<h4>Note:</h4> We identifier the courier service provider that offers the most convenient
+						price for the number of items and the weights you had selected. The same courier
+						company will collect all your parcels.
+					</div>
+				</div>
+				<div class="pick-options-dt">
+					<h2>Pickup Options</h2>
+					<p class="medium">When do you want the pickup to take place?</p>
+					<div class="ship-date">
+						<label class="large">Pick-Up Date</label>
+						<input class="form-control" type="date" placeholder="dd.mm.yy" onfocus="(this.type='date')">
+					</div>
+				</div>
+				<div class="contact-details">
+					<h2>Contact Details</h2>
+					<p class="medium">You will recieve an order confirmation on this email address when you’re done with
+						the payment</p>
+					<div class="contact-infos">
+						<!--------------------------------  Name & Surname -------------------------------->
+						<div>
+							<label class="large" for="name"> Name & Surname </label>
+							<input type="text" class="form-control" id="name" placeholder="Ex. Jhon">
+						</div>
+						<!--------------------------------  Email Address -------------------------------->
+						<div>
+							<label class="large" for="Email-Address">Email Address </label>
+							<input type="email" class="form-control" id="Email-Address" placeholder="Name@domain.com">
+						</div>
+						<!--------------------------------  Phone Number -------------------------------->
+						<div>
+							<label class="large" for="Phone Number"> Phone Number </label>
+							<input type="text" class="form-control" id="name" placeholder="+1   123 456 7890">
+						</div>
+					</div>
+					<!--  Special Notes (Optional)-->
+					<label class="large">Special Notes (Optional)</label>
+					<textarea class="form-control" id="Textarea2" rows="3" placeholder="placeholder"></textarea>
+					<div class="condition">
+						<div class="form-group form-check">
+							<input type="checkbox" class="form-check-input" id="Check1">
+							<label class="form-check-label placeholder" for="Check1">I have read and accept the
+								<span class="span-bold">Term & Condition</span> </label>
+						</div>
+						<div class="form-group form-check">
+							<input type="checkbox" class="form-check-input" id="Check2">
+							<label class="form-check-label placeholder" for="Check2">I would like to recieve newsletter
+								emails.</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--------------------- The exeptional card -------------------->
+			<div class="card-option order-summary summary-detail">
+				<div class="option-header">
+					<h2>Order Summary</h2>
+				</div>
+				<div class="option-content">
+					<div class="option-item-ex">
+						<p class="medium">Drop Off to Door Priority Service</p>
+						<h5>$400</h5>
+					</div>
+					<div class="option-item-ex">
+						<p class="medium">Priority Customer Service</p>
+						<p class="medium">Included</p>
+					</div>
+					<div class="option-item-ex">
+						<p class="medium">Shipment Tracking</p>
+						<p class="medium">Included</p>
+					</div>
+					<div class="option-item-ex">
+						<p class="medium">$250 Shipping Protection</p>
+						<p class="medium">Included</p>
+					</div>
+					<div class="option-item-ex">
+						<p class="medium">Deal Discount</p>
+						<h5>-$50</h5>
+					</div>
+				</div>
+				<div class="option-footer-ex">
+					<div class="pay">
+						<p class="large">To Pay</p>
+						<p class="large"> $350</p>
+					</div>
+					<button type="button" class="btn btn-info book-service">BOOK SERVICE</button>
+				</div>
+			</div>
+		</div>
+		<!-- ------------------------------ --------------->
+		<button type="button " class="btn btn-primary button-med get-prices pay-now">PAY NOW </button>
+	</main>
+
 	<!-- Plugins
 	================================================== -->
 
@@ -391,4 +401,3 @@
 </body>
 
 </html>
-    

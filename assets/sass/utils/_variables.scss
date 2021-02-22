@@ -1,46 +1,48 @@
-// Primary Color
-$bright-blue: #0071ff;
-$dark-indigo: #0f0a4d;
-$deep-lilac: #8785a6;
-$dusk: #575482;
-$dark-slate-blue: #27225f;
-$dark-seafoam-green: #3bb273;
-$ice-blue: #e6f1ff;
-$topaz: #18d1be;
-$cloudy-blue: #b7b6ca;
-$pale-lilac: #e7e7ed;
-$pale-grey: #f9f9fc;
+// Colors
+$color-primary:			#439979;
+$dark-indigo:			#0f0a4d;
+$deep-lilac:			#8785a6;
+$dusk:					#575482;
+$dark-slate-blue:		#27225f;
+$dark-seafoam-green:	#3bb273;
+$ice-blue:				#e6f1ff;
+$topaz:					#18d1be;
+$cloudy-blue:			#b7b6ca;
+$pale-lilac:			#e7e7ed;
+$pale-grey:				#f9f9fc;
 
 //Font sizes
-$font-size-xs: 12px;
-$font-size-sm: 14px;
-$font-size-re: 16px;
-$font-size-rre: 18px;
-$font-size-md: 20px;
-$font-size-lg: 24px;
-$font-size-xl: 28.4px;
+$font-size-xs:			12px;
+$font-size-sm:			14px;
+$font-size-re:			16px;
+$font-size-rre:			18px;
+$font-size-md:			20px;
+$font-size-lg:			24px;
+$font-size-xl:			28px;
 
 // Font Names
-$primary-font: "Manrope";
+$primary-font:			"Manrope";
 
 // Breakpoint
-$breakpoint-xs: 406px;
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-$breakpoint-xxl: 1474px;
+$breakpoint-xs:			406px;
+$breakpoint-sm:			576px;
+$breakpoint-md:			768px;
+$breakpoint-lg:			992px;
+$breakpoint-xl:			1200px;
+$breakpoint-xxl:		1474px;
 
 // Black & White
-$black: #000000;
-$white: #ffffff;
+$color-black:			#000000;
+$color-white:			#ffffff;
 
 //Font Path
-$primary-medium-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Medium.ttf";
-$primary-semibold-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Semibold.ttf";
-$primary-bold-path: "../fonts/" + $primary-font + "/" + $primary-font + "-Bold.ttf";
+$primary-regular-path:	"../fonts/" + $primary-font + "/" + $primary-font + "-Regular.ttf";
+$primary-medium-path:	"../fonts/" + $primary-font + "/" + $primary-font + "-Medium.ttf";
+$primary-semibold-path:	"../fonts/" + $primary-font + "/" + $primary-font + "-Semibold.ttf";
+$primary-bold-path:		"../fonts/" + $primary-font + "/" + $primary-font + "-Bold.ttf";
 
 //Font Family
-$primary-medium: $primary-font + " Medium";
-$primary-semibold: $primary-font + " SemiBold";
-$primary-bold: $primary-font + " Bold";
+$primary-regular:		$primary-font + " Regular";
+$primary-medium:		$primary-font + " Medium";
+$primary-semibold:		$primary-font + " SemiBold";
+$primary-bold:			$primary-font + " Bold";

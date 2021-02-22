@@ -55,7 +55,6 @@ function quantityAdd() {
 		$('.quantity-minus').removeClass("disabled");
 		$('.btn-disabled').css('background', "#0f0a4d");
 	}
-
 }
 
 function quantityMinus() {
@@ -152,8 +151,6 @@ var cardShipment =` <div class="card-shipment">
 		</div>
 	</div>
 </div>`
-
-
 
 $(".add-item").click(function(){
     $(".cards-shipments").append(cardShipment);

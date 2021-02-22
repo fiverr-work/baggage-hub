@@ -3,9 +3,7 @@
 
 // 2 - Utils
 @import "utils/variables";
-@import "utils/functions";
 @import "utils/mixins";
-@import "utils/helpers";
 
 // 3 - Base;
 @import "base/reset";
@@ -22,12 +20,14 @@
 @import "components/order-summary";
 @import "components/card-shipment";
 @import "components/card-van";
+
 // 5 - Layout;
 @import "layout/header";
 @import "layout/navbar";
 @import "layout/footer";
 
 // 6 - Pages;
+@import 'pages/home';
 @import 'pages/about';
 @import 'pages/options';
 @import 'pages/details-v1';

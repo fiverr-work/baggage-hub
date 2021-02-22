@@ -1,30 +1,18 @@
 input[type="date"]::-webkit-calendar-picker-indicator {
-    opacity: 1;
-    display: block;
-    background: url('../img/icons/Message.svg') no-repeat;
-    width: 20px;
-    height: 20px;
-    border-width: thin;
+	opacity: 1;
+	display: block;
+	background: url("../img/icons/Message.svg") no-repeat;
+	width: 20px;
+	height: 20px;
+	border-width: thin;
 }
 input {
-    border: 1px solid $cloudy-blue;
-    &:not([type='checkbox']) {
-        height: 46px;   
-    }    
-}
-select {
-    border: 1px solid $cloudy-blue !important;
+	border: 1px solid $cloudy-blue;
+	&:not([type="checkbox"]) {
+		height: 46px;
+	}
 }
 .placeholder-style::-webkit-input-placeholder {
-    	font-family: $primary-medium;
-        font-size: $font-size-sm;
-        font-weight: 500;
-        line-height: 1.6;
-        letter-spacing: 0.5px;
-        text-align: left;
-        color: $deep-lilac;
-  }
-  .placeholder-style::placeholder {
 	font-family: $primary-medium;
 	font-size: $font-size-sm;
 	font-weight: 500;
@@ -32,7 +20,16 @@ select {
 	letter-spacing: 0.5px;
 	text-align: left;
 	color: $deep-lilac;
-}  
+}
+.placeholder-style::placeholder {
+	font-family: $primary-medium;
+	font-size: $font-size-sm;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $deep-lilac;
+}
 .placeholder-style:-ms-input-placeholder {
 	font-family: $primary-medium;
 	font-size: $font-size-sm;
@@ -40,7 +37,7 @@ select {
 	line-height: 1.6;
 	letter-spacing: 0.5px;
 	text-align: left;
-	color: $deep-lilac;;
+	color: $deep-lilac;
 }
 
 .placeholder-style:-moz-placeholder {
@@ -50,7 +47,7 @@ select {
 	line-height: 1.6;
 	letter-spacing: 0.5px;
 	text-align: left;
-	color: $deep-lilac;;
+	color: $deep-lilac;
 }
 
 .placeholder-style::-moz-placeholder {
@@ -60,5 +57,20 @@ select {
 	line-height: 1.6;
 	letter-spacing: 0.5px;
 	text-align: left;
-	color: $deep-lilac;;
+	color: $deep-lilac;
+}
+
+select {
+	padding-left: 16px;
+	height: 46px;
+	width: 100%;
+	border: 1px solid $cloudy-blue;
+	border-radius: 2px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: transparent;
+	background-image: url("../img/icons/arrow-down.svg");
+	background-repeat: no-repeat;
+	background-position-x: 97%;
+	background-position-y: 50%;
 }

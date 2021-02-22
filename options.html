@@ -24,246 +24,250 @@
 </head>
 
 <body class="options-page">
-    <header>
-		<div class="logo-button">
-			<div class="container">
-				<img src="./assets/img/logo/Logo.svg" alt="logo">
-			<button type="button" class="btn btn-primary button-semi sign-in">SIGN IN</button>
-			</div>
-		</div>
-		<div class="full-screen">
 
-			<div class="steps">
-				<!------------------- Start Step1 ------------------>
-				<div class="step completed-step">
-					<div>
-						<span class="button-semi">1</span>
-						<p class="placeholder active-step"> About </p>
-					</div>
-					<div class="a-after"></div>
+	<!-- [BEGIN] Navbar -->
+	<nav class="navbar">
+		<div class="container">
+			<img src="./assets/img/logo/Logo.svg" class="logo" alt="logo">
+			<button type="button" class="btn btn-primary text-uppercase">sign in</button>
+		</div>
+	</nav>
+	<!-- [END] Navbar -->
+
+	<!-- [BEGIN] Steps -->
+	<header class="steps-timeline">
+		<div class="steps container">
+			<div class="step completed">
+				<div>
+					<span class="button-semi">1</span>
+					<p>About</p>
 				</div>
-				<!-------------------  End Step1 ------------------>
-				<!------------------- step2 ------------------>
-				<div class="step active-step">
-					<div >
-						<span class="button-semi">2</span>
-						<p class="placeholder"> Options </p>
-					</div>
-					<div class="a-after"></div>
+				<div class="line"></div>
+			</div>
+			<div class="step active">
+				<div>
+					<span class="button-semi">2</span>
+					<p>Options</p>
 				</div>
-				<div class="step">
-					<div href="#">
-						<span class="button-semi">3</span>
-						<p class="placeholder"> Details </p>
-					</div>
-					<div class="a-after"></div>
+				<div class="line"></div>
+			</div>
+			<div class="step">
+				<div>
+					<span class="button-semi">3</span>
+					<p>Details</p>
 				</div>
-				<div class="step">
-					<div href="#">
-						<span class="button-semi">4</span>
-						<p class="placeholder"> Payment </p>
-					</div>
-					<div class="a-after"></div>
+				<div class="line"></div>
+			</div>
+			<div class="step">
+				<div>
+					<span class="button-semi">4</span>
+					<p>Payment</p>
 				</div>
-				<div class="step">
-					<div>
-						<span class="button-semi">5</span>
-						<p class="placeholder completed"> Order Complete </p>
-					</div>
+				<div class="line"></div>
+			</div>
+			<div class="step">
+				<div>
+					<span class="button-semi">5</span>
+					<p>Order Complete</p>
 				</div>
 			</div>
 		</div>
 	</header>
-    <!-- <form action="/action_page.php" method="get"></form> -->
+	<!-- [END] Steps -->
+
 	<main>
-        <div class="pick-options">
-            <h1>To Pickup from MANCHESTER UK and Deliver to PARIS FRANCE</h1>
-            <div class="cards">
-                <div class="card-option">
-                    <div class="option-header">
-                        <h3>VALUE ECONOMY</h3>
-                    </div>
-                    <div class="option-content">
-                        <div class="placeholder option-item">
-                            <span class="span-bold"> Drop Off </span>  to <span class="span-bold">Door Economy</span>  Service
-                        </div>
-                        <div class="placeholder option-item">Delivery 7 - 10 Days</div>
-                        <div class="placeholder option-item">Drop off at local centre</div>
-                        <div class="placeholder option-item">Chat customer service</div>
-                    </div>
-                    <div class="option-footer">
-                        <p class="x-large">$285</p>
-                        <button type="button" class="btn button-med-3 select-service ">SELECT SERVICE</button>
-                    </div>
-                </div>
-                <div class="card-option clicked">
-                    <div class="option-header">
-                        <h3>PRIORITY</h3>
-                    </div>
-                    <div class="option-content">
-                        <div class="placeholder option-item">
-                            <span class="span-bold"> Drop Off </span> to <span class="span-bold">Door</span> Priority Service
-                        </div>
-                        <div class="placeholder option-item">Delivery 7 - 10 Days</div>
-                        <div class="placeholder option-item">Email & Chat Customer Service</div>
-                        <div class="placeholder option-item">Shipment Tracking</div>
-                        <div class="placeholder option-item">$250 Shipping Protection</div>
-                    </div>
-                    <div class="option-footer">
-                        <p class="x-large">$400</p>
-                        <button type="button" class="btn button-med-3 select-service ">SELECTED SERVICE</button>
-                    </div>
-                </div>
-                <div class="card-option">
-                    <div class="option-header">
-                        <h3>PRIORITY PLUS</h3>
-                    </div>
-                    <div class="option-content">
-                        <div class="placeholder option-item">
-                            <span class="span-bold"> Drop Off </span> to <span class="span-bold">Door</span> Priority Service
-                        </div>
-                        <div class="placeholder option-item">Delivery 3 - 5 Days</div>
-                        <div class="placeholder option-item">AM or PM Collection</div>
-                        <div class="placeholder option-item">Priority Customer Service</div>
-                        <div class="placeholder option-item">Detailed Shipment Tracking</div>
-                        <div class="placeholder option-item">$500 Shipping Protection</div>
-                    </div>
-                    <div class="option-footer">
-                        <p class="x-large">$500</p>
-                        <button type="button" class="btn button-med-3 select-service ">SELECT SERVICE</button>
-                    </div>
-                </div>
-                <!--------------------- The exeptional card -------------------->
-                <div class="card-option order-summary">
-                    <div class="option-header">
-                        <h2>Order Summary</h2>
-                    </div>
-                    <div class="option-content">
-                        <div class="option-item-ex">
-                            <p class="medium">Drop Off to Door Priority Service</p>
-                            <h5>$400</h5>
-                        </div>
-                        <div class="option-item-ex">
-                            <p class="medium">Priority Customer Service</p>
-                            <p class="medium">Included</p>
-                        </div>
-                        <div class="option-item-ex">
-                            <p class="medium">Shipment Tracking</p>
-                            <p class="medium">Included</p>
-                        </div>
-                        <div class="option-item-ex">
-                            <p class="medium">$250 Shipping Protection</p>
-                            <p class="medium">Included</p>
-                        </div>
-                        <div class="option-item-ex">
-                            <p class="medium">Deal Discount</p>
-                            <h5>-$50</h5>
-                        </div>
-                    </div>
-                    <div class="option-footer-ex">
-                        <div class="pay">
-                            <p class="large">To Pay</p>
-                            <p class="large"> $350</p>
-                        </div>
-                        <button type="button" class="btn btn-info book-service">BOOK SERVICE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="optional-services">
-            <h4>Optional Services</h4>
-            <div class="cards">
-                <div class="card-optional clicked">
-                    <div class="optional-header">
-                        <div class="optional-icon">
-                            <img src="./assets/img/icons/optional-icon1.svg" alt="opt1">
-                        </div>
-                        <div class="optional-check">
-                           <p class="button-semi dollar">$19.98</p>
-                           <input type="checkbox" checked aria-label="1">
-                        </div>
-                    </div>
-                    <div class="optional-content">
-                        <h4>Priority Customer Service</h4>
-                        <p class="label2">
-                            Upgrade to priority email, chat and
-                            telephone customer service
-                        </p>
-                    </div>
-                </div>
-                <div class="card-optional">
-                    <div class="optional-header">
-                        <div class="optional-icon">
-                            <img src="./assets/img/icons/optional-icon2.svg" alt="opt2">
-                        </div>
-                        <div class="optional-check">
-                           <p class="button-semi dollar">$119.98</p>
-                           <input type="checkbox" aria-label="2">
-                        </div>
-                    </div>
-                    <div class="optional-content">
-                        <h4>AM or PM Collection</h4>
-                        <p class="label2">
-                            AM or PM collection of your boxes or
-                            suitcases
-                        </p>
-                    </div>
-                </div>
-                <div class="card-optional">
-                    <div class="optional-header">
-                        <div class="optional-icon">
-                            <img src="./assets/img/icons/optional-icon3.svg" alt="opt3">
-                        </div>
-                        <div class="optional-check">
-                           <p class="button-semi dollar">$99.98</p>
-                           <input type="checkbox" aria-label="3">
-                        </div>
-                    </div>
-                    <div class="optional-content">
-                        <h4>$500 Shipping Protection</h4>
-                        <p class="label2">
-                            Increase shipping protection to
-                            $500 cover
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <textarea class="form-control" id="Textarea1" rows="3"></textarea>
-        <div class="shipment-protection">
-            <h2>Shipment Protection</h2>
-            <div class="cards">
-                <div class="card-shipment clicked">
-                    <div class="shipment-header">
-                        <h3>BASIC PROTECTION</h3>
-                    </div>
-                    <div class="shipment-content">
-                        <p class="placeholder justify">
-                            Your can claim a maximum value of £45 per box subject to <b>Terms</b> and <b>Conditions</b>.
-                        </p>
-                    </div>
-                    <div class="shipment-footer">
-                        <button id='btn-ship1' type="button" class="btn button-med-3 select-service
-                        ship-btn" style="visibility: hidden;"> VALUE OF ITEMS</button>
-                    </div>
-                </div>
-                <div class="card-shipment">
-                    <div class="shipment-header">
-                        <h3>ENHANCED PROTECTION</h3>
-                    </div>
-                    <div class="shipment-content">
-                        <p class="placeholder justify">
-                            You can protect your items to a specified value.
-                        </p>
-                    </div>
-                    <div class="shipment-footer">
-                        <button id='btn-ship2' type="button" class="btn button-med-3 select-service
-                        ship-btn"> VALUE OF ITEMS</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+		<div class="pick-options">
+			<h1>To Pickup from MANCHESTER UK and Deliver to PARIS FRANCE</h1>
+			<div class="cards">
+				<div class="card-option">
+					<div class="option-header">
+						<h3>VALUE ECONOMY</h3>
+					</div>
+					<div class="option-content">
+						<div class="placeholder option-item">
+							<span class="span-bold"> Drop Off </span> to <span class="span-bold">Door Economy</span>
+							Service
+						</div>
+						<div class="placeholder option-item">Delivery 7 - 10 Days</div>
+						<div class="placeholder option-item">Drop off at local centre</div>
+						<div class="placeholder option-item">Chat customer service</div>
+					</div>
+					<div class="option-footer">
+						<p class="x-large">$285</p>
+						<button type="button" class="btn button-med-3 select-service ">SELECT SERVICE</button>
+					</div>
+				</div>
+				<div class="card-option clicked">
+					<div class="option-header">
+						<h3>PRIORITY</h3>
+					</div>
+					<div class="option-content">
+						<div class="placeholder option-item">
+							<span class="span-bold"> Drop Off </span> to <span class="span-bold">Door</span> Priority
+							Service
+						</div>
+						<div class="placeholder option-item">Delivery 7 - 10 Days</div>
+						<div class="placeholder option-item">Email & Chat Customer Service</div>
+						<div class="placeholder option-item">Shipment Tracking</div>
+						<div class="placeholder option-item">$250 Shipping Protection</div>
+					</div>
+					<div class="option-footer">
+						<p class="x-large">$400</p>
+						<button type="button" class="btn button-med-3 select-service ">SELECTED SERVICE</button>
+					</div>
+				</div>
+				<div class="card-option">
+					<div class="option-header">
+						<h3>PRIORITY PLUS</h3>
+					</div>
+					<div class="option-content">
+						<div class="placeholder option-item">
+							<span class="span-bold"> Drop Off </span> to <span class="span-bold">Door</span> Priority
+							Service
+						</div>
+						<div class="placeholder option-item">Delivery 3 - 5 Days</div>
+						<div class="placeholder option-item">AM or PM Collection</div>
+						<div class="placeholder option-item">Priority Customer Service</div>
+						<div class="placeholder option-item">Detailed Shipment Tracking</div>
+						<div class="placeholder option-item">$500 Shipping Protection</div>
+					</div>
+					<div class="option-footer">
+						<p class="x-large">$500</p>
+						<button type="button" class="btn button-med-3 select-service ">SELECT SERVICE</button>
+					</div>
+				</div>
+				<!--------------------- The exeptional card -------------------->
+				<div class="card-option order-summary">
+					<div class="option-header">
+						<h2>Order Summary</h2>
+					</div>
+					<div class="option-content">
+						<div class="option-item-ex">
+							<p class="medium">Drop Off to Door Priority Service</p>
+							<h5>$400</h5>
+						</div>
+						<div class="option-item-ex">
+							<p class="medium">Priority Customer Service</p>
+							<p class="medium">Included</p>
+						</div>
+						<div class="option-item-ex">
+							<p class="medium">Shipment Tracking</p>
+							<p class="medium">Included</p>
+						</div>
+						<div class="option-item-ex">
+							<p class="medium">$250 Shipping Protection</p>
+							<p class="medium">Included</p>
+						</div>
+						<div class="option-item-ex">
+							<p class="medium">Deal Discount</p>
+							<h5>-$50</h5>
+						</div>
+					</div>
+					<div class="option-footer-ex">
+						<div class="pay">
+							<p class="large">To Pay</p>
+							<p class="large"> $350</p>
+						</div>
+						<button type="button" class="btn btn-info book-service">BOOK SERVICE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="optional-services">
+			<h4>Optional Services</h4>
+			<div class="cards">
+				<div class="card-optional clicked">
+					<div class="optional-header">
+						<div class="optional-icon">
+							<img src="./assets/img/icons/optional-icon1.svg" alt="opt1">
+						</div>
+						<div class="optional-check">
+							<p class="button-semi dollar">$19.98</p>
+							<input type="checkbox" checked aria-label="1">
+						</div>
+					</div>
+					<div class="optional-content">
+						<h4>Priority Customer Service</h4>
+						<p class="label2">
+							Upgrade to priority email, chat and
+							telephone customer service
+						</p>
+					</div>
+				</div>
+				<div class="card-optional">
+					<div class="optional-header">
+						<div class="optional-icon">
+							<img src="./assets/img/icons/optional-icon2.svg" alt="opt2">
+						</div>
+						<div class="optional-check">
+							<p class="button-semi dollar">$119.98</p>
+							<input type="checkbox" aria-label="2">
+						</div>
+					</div>
+					<div class="optional-content">
+						<h4>AM or PM Collection</h4>
+						<p class="label2">
+							AM or PM collection of your boxes or
+							suitcases
+						</p>
+					</div>
+				</div>
+				<div class="card-optional">
+					<div class="optional-header">
+						<div class="optional-icon">
+							<img src="./assets/img/icons/optional-icon3.svg" alt="opt3">
+						</div>
+						<div class="optional-check">
+							<p class="button-semi dollar">$99.98</p>
+							<input type="checkbox" aria-label="3">
+						</div>
+					</div>
+					<div class="optional-content">
+						<h4>$500 Shipping Protection</h4>
+						<p class="label2">
+							Increase shipping protection to
+							$500 cover
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<textarea class="form-control" id="Textarea1" rows="3"></textarea>
+		<div class="shipment-protection">
+			<h2>Shipment Protection</h2>
+			<div class="cards">
+				<div class="card-shipment clicked">
+					<div class="shipment-header">
+						<h3>BASIC PROTECTION</h3>
+					</div>
+					<div class="shipment-content">
+						<p class="placeholder justify">
+							Your can claim a maximum value of £45 per box subject to <b>Terms</b> and <b>Conditions</b>.
+						</p>
+					</div>
+					<div class="shipment-footer">
+						<button id='btn-ship1' type="button" class="btn button-med-3 select-service
+						ship-btn" style="visibility: hidden;"> VALUE OF ITEMS</button>
+					</div>
+				</div>
+				<div class="card-shipment">
+					<div class="shipment-header">
+						<h3>ENHANCED PROTECTION</h3>
+					</div>
+					<div class="shipment-content">
+						<p class="placeholder justify">
+							You can protect your items to a specified value.
+						</p>
+					</div>
+					<div class="shipment-footer">
+						<button id='btn-ship2' type="button" class="btn button-med-3 select-service
+						ship-btn"> VALUE OF ITEMS</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
 	<!-- Plugins
 	================================================== -->
 

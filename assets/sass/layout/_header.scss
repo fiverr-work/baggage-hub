@@ -1,75 +1,63 @@
-header {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	align-items: center;
-	.logo-button {
-		position: fixed;
-		left: 0;
-		right: 0;
-		background: white;
-		z-index: 3;
-		box-shadow: 0px 4px 20px rgba(0, 66, 150, 0.1);
-		width: 100%;
-		padding: 18px 150px;
-		@include for-size(tablet-portrait-down) {
-			padding: 18px 80px;
-		}
-		@include for-size(phone-only) {
-			padding: 18px 20px;
-		}
-		.container {
-			@include flex(space-between, center);
-		}
-	}
-	.full-screen {
-		padding-top: 90px;
-		background: $ice-blue;
-		width: 100%;
-		margin-bottom: 46px;
-		.steps {
+header.steps-timeline {
+	margin-top: 89px;
+	background: $ice-blue;
+	margin-bottom: 55px;
+	.steps {
+		position: relative;
+		@include flex(center, center);
+		padding: 25px 150px 45px;
+		.step {
+			@include flex(flex-start, center);
 			position: relative;
-			@include flex(center, center);
-			padding: 25px 150px 45px;
-			max-width: 1440px;
-			margin: auto;
-			@include not-last-child(".step") {
-				width: 20%;
+			&:not(:last-child) {
+				flex: 1;
 			}
-			.step {
-				@include flex(flex-start, center);
-				position: relative;
-				div {
+			div {
+				@include flex(center, center);
+				span {
 					@include flex(center, center);
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					background: $ice-blue;
+					border: 1px solid #6f6c94;
+					color: #6f6c94;
+				}
+				p {
+					position: absolute;
+					color: $dark-indigo;
+					top: 45px;
+					letter-spacing: 0.5px;
+					font-weight: 500;
+					font-size: 14px;
+					opacity: 0.7;
+					white-space: nowrap;
+				}
+			}
+			.line {
+				width: 100%;
+				height: 1px;
+				background-color: #6f6c94;
+			}
+			&.active {
+				div {
 					span {
-						@include flex(center, center);
-						width: 40px;
-						height: 40px;
-						border-radius: 50%;
-						background: $ice-blue;
-						border: 1px solid #6f6c94;
-						color: #6F6C94;
+						background: $dark-indigo;
+						border-color: $dark-indigo;
+						color: $color-white;
 					}
 					p {
-						position: absolute;
-						top: 45px;
+						opacity: 1;
+						font-family: $primary-semibold;
 					}
-					.completed {
-						white-space: nowrap;
-					}
-				}
-				.a-after {
-					width: 100%;
-					height: 1px;
-					background-color: #6f6c94;
 				}
 			}
-			.completed-step {
+			&.completed {
 				div {
 					span {
 						background: $dark-seafoam-green;
-						color: $white;
 						border-color: $dark-seafoam-green;
+						color: $color-white;
 					}
 					p {
 						color: $dark-seafoam-green;
@@ -77,43 +65,31 @@ header {
 					}
 				}
 			}
-			.active-step {
+		}
+	}
+	@include for-size(tablet-portrait-down) {
+		margin-bottom: 41px;
+		.steps {
+			padding: 20px 80px 45px;
+			@include not-last-child(".step") {
+				width: 100%;
+			}
+			.step {
 				div {
 					span {
-						background: $dark-indigo;
-						color: $white;
+						width: 30px;
+						height: 30px;
 					}
-					p {
-						color: $dark-indigo;
-						font-family: $primary-semibold;
-					}
-				}
-			}
-		}
-		@include for-size(tablet-portrait-down) {
-			margin-bottom: 41px;
-			.steps {
-				padding: 20px 80px 45px;
-				@include not-last-child(".step") {
-					width: 100%;
-				}
-				.step {
-					div {
-						span {
-							width: 30px;
-							height: 30px;
-						}
-						p:not(.active-step) {
-							display: none;
-						}
+					p:not(.active) {
+						display: none;
 					}
 				}
 			}
 		}
-		@include for-size(phone-only) {
-			.steps {
-				padding: 20px 20px 40px;
-			}
+	}
+	@include for-size(phone-only) {
+		.steps {
+			padding: 20px 20px 40px;
 		}
 	}
 }
