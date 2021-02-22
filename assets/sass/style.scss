@@ -1,0 +1,35 @@
+// 1 - Vendors;
+@import "vendors/bootstrap";
+
+// 2 - Utils
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/helpers";
+
+// 3 - Base;
+@import "base/reset";
+@import "base/typography";
+
+// 4 - Components;
+@import "components/buttons";
+@import "components/inputs";
+@import "components/card1";
+@import "components/card2";
+@import "components/card3";
+@import "components/card4";
+@import "components/card5";
+@import "components/order-summary";
+@import "components/card-shipment";
+@import "components/card-van";
+// 5 - Layout;
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/footer";
+
+// 6 - Pages;
+@import 'pages/about';
+@import 'pages/options';
+@import 'pages/details-v1';
+@import 'pages/details-v2';
+@import 'pages/payement';

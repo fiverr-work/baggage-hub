@@ -1,0 +1,100 @@
+.shipment-details {
+    width: 100%;
+    .card-shipment {
+        background: $pale-grey;
+        border: 1px solid $cloudy-blue;
+        border-radius: 6px;
+        width: 100%;
+        .ship-header {
+            padding: 19px 20px 18px;
+            border-bottom: 1px solid $cloudy-blue;
+            @include flex(space-between, center);
+            .pack-suit {
+                h5 {
+                    margin-bottom: 0;
+                    margin-left: 10px
+                }
+               @include flex(flex-start, center);
+            }
+        }
+        /****************** Start Card Content ***************/
+        .ship-content {
+             // media query
+            padding: 12px 56px 24px 20px;
+            @include flex(flex-start, center);     
+            flex-wrap: wrap;
+            & > div {margin-right: 10px; margin-bottom: 15px}
+            .quantity {
+                @include flex(center, center);
+                .qt-input {margin: 0 10px;}
+                 // media query
+                input {width: 60px; }
+                button {
+                    background-color: $pale-grey;
+                    margin-top: 23px;
+                }
+                .qt {
+                     // media query
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    color: $white;
+                    @include flex(center, center);
+                }
+                .btn-disabled {
+                    background: #575482;
+                }
+                .btn-disabled2 {
+                    background: #575482;
+                }
+                .btn-active {
+                    background: #0f0a4d;
+                }
+            }
+            .type-of-items  { width: 240px; }
+            .weight-ship    { width: 120px; }
+            .length-ship    { width: 56px;  }
+            .width-ship     { width: 56px;  }
+            .height-ship    { width: 56px;  }
+            .content-ship   { width: 240px; }
+            .value-ship     { width: 120px; }
+            .copy { margin:0 10px;}
+        }
+
+       /****************** End Card Content ***************/
+    }
+    @include for-size(tablet-portrait-down) {
+        input {
+            padding: 3px 6px;
+        }
+        .card-shipment {
+            .ship-content {
+                padding: 8px 21px 16px;
+                .quantity { input {width: 54px; }}
+                .type-of-items  { width: 170px; }
+                .weight-ship    { width: 97px;  }
+                .length-ship    { width: 56px;  }
+                .width-ship     { width: 56px;  }
+                .height-ship    { width: 56px;  }
+                .content-ship   { width: 170px; }
+                .value-ship     { width: 97px; }
+            }
+        }
+    }
+    @include for-size(phone-small) {
+        .card-shipment {
+            .ship-content {
+                padding: 8px 10px 16px;
+                .quantity { input {width: 48px; }}
+                .length-ship    { width: 43px;  }
+                .width-ship     { width: 43px;  }
+                .height-ship    { width: 43px;  }
+                .weight-ship    { width: 92px;  }
+                .value-ship     { width: 92px;  }
+                .type-of-items  { width: 159px; }
+                .content-ship   { width: 159px; }
+         
+            }
+        }
+    }
+}

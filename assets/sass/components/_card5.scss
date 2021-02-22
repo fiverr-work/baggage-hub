@@ -1,0 +1,61 @@
+.shipment-protection {
+    width: 43%;
+    .cards {
+        .card-shipment {
+            width: 260px;
+            background: #FFFFFF;
+            border: 1px solid #E6E6E6;
+
+            .shipment-header {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 16px;
+                padding: 17px 0px;
+                background: $pale-lilac;
+            }
+            .shipment-content {
+                padding: 0px 16px;
+                margin-bottom: 55px;
+                .justify {
+                    text-align: center;
+                }
+                b{
+                    color: $dark-indigo;
+                }
+            }
+            .shipment-footer {
+                padding: 0 16px;
+                padding-bottom: 24px;
+                button{
+                    box-shadow: 0px 20px 24px rgba(#0F0A4D, .05);
+                }
+            }
+            &.clicked {
+                border:2px solid $bright-blue;
+                .shipment-header {
+                    background: $bright-blue;
+                    h3 {color: $white;}
+                }
+            }
+             /*****************************  desktop-large ****************************** */
+             @include for-size(desktop-large) {
+                width: 45%;
+                margin-bottom: 30px;
+           }
+
+           /*****************************  tablet-landscape-down ********************** */
+           @include for-size(tablet-landscape-down) {
+               width: 100%;
+
+           }
+           /****************** End card-option ***********************************************/
+       }
+    }
+    @include for-size(desktop-large) {
+        flex-wrap: wrap;
+        width: 70%;
+    }
+    @include for-size(tablet-landscape-down) {
+        width: 100%;
+    }
+}

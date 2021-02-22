@@ -1,0 +1,238 @@
+/*=== Import Fonts ===*/
+@include font-face($primary-medium, $primary-medium-path);
+@include font-face($primary-semibold, $primary-semibold-path);
+@include font-face($primary-bold, $primary-bold-path);
+
+/*=== Typography Styling ===*/
+body {
+	// color: $dark-1;
+	// font-size: $size-small;
+	// font-family: $primary-regular, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	// line-height: 1.5;
+}
+
+h1 {
+	font-family: $primary-bold;
+	font-size: $font-size-xl;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: left;
+	color: $dark-indigo;
+}
+h2 {
+	font-family: $primary-bold;
+	font-size: $font-size-md;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: 0.03px;
+	text-align: left;
+	color: $dark-indigo;
+}
+h3 {
+	font-family: $primary-semibold;
+	font-size: $font-size-rre;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0.15px;
+	text-align: center;
+	color: $dusk;
+}
+h4 {
+	font-family: $primary-bold;
+	font-size: $font-size-re;
+	font-weight: bold;
+	line-height: 1.3;
+	letter-spacing: 0.15px;
+	text-align: left;
+	color: $dark-indigo;
+}
+h5 {
+	font-family: $primary-semibold;
+	font-size: $font-size-re;
+	font-weight: 600;
+	line-height: 1.3;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $dark-indigo;
+}
+.button-med {
+	font-family: $primary-medium;
+	font-size: $font-size-re;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	text-align: left;
+	// color: $white;
+	// text-align: center;
+}
+.button-med-3 {
+	font-family: $primary-medium;
+	font-size: $font-size-sm;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0.5px;
+	text-align: center;
+}
+.button-semi {
+	font-family: $primary-semibold;
+	font-size: $font-size-sm;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	text-align: left;
+	color: $dusk;
+}
+.small {
+	font-family:  $primary-bold;
+	font-size: $font-size-xs;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: 0.3px;
+	text-align: left;
+	color: $dark-indigo;
+	margin-bottom: 6px;
+}
+// a {
+// 	// @include font-source-sans($primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+// }
+
+
+.x-large {
+	font-family: $primary-medium;
+	font-size: $font-size-lg;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	text-align: left;
+	line-height: 1.6;
+	color: $black;	
+}
+.large {
+	font-family: $primary-semibold;
+	font-size: $font-size-re;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	text-align: left;
+	line-height: 1.6;
+	color: $dark-slate-blue;
+}
+.medium {
+	font-family: $primary-medium;
+	font-size: $font-size-re;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	text-align: left;
+	line-height: 1.6;
+	color: $dusk;
+}
+
+.label1 {
+	font-family: $primary-semibold;
+	font-size: $font-size-xs;
+	font-weight: 600;
+	line-height: 1.4;
+	letter-spacing: 0.4px;
+	text-align: left;
+	color: $dark-indigo;
+}
+.label2 {
+	font-family: $primary-medium;
+	font-size: $font-size-xs;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.4px;
+	text-align: left;
+	color: $dark-indigo;
+}
+select{
+	font-family: $primary-medium !important;
+	font-size: $font-size-sm !important;
+	font-weight: 500 !important;
+	line-height: 1.6 !important;
+	letter-spacing: 0.5px !important;
+	text-align: left !important;
+	color: $deep-lilac !important;
+}
+.placeholder {
+	font-family: $primary-medium;
+	font-size: $font-size-sm;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $deep-lilac;
+}
+.span-bold {
+	font-family: $primary-bold;
+	font-size: $font-size-sm;
+	font-weight: bold;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $dark-slate-blue;
+  }
+
+@include for-size(desktop-down) {
+	h1 {
+		font-size: $font-size-lg;
+		line-height: 1.2;
+	}
+	h2 {
+		font-size: $font-size-rre;
+		line-height: 1.2;
+	}
+	h3 {
+		font-size: $font-size-re;
+		line-height: 1.2;
+	}
+	h4 {
+		font-size: $font-size-sm;
+		line-height: 1.3;
+	}
+	h5 {
+		font-size: $font-size-sm;
+		line-height: 1.3;
+	}
+	.x-large {
+			font-size: $font-size-md;
+			line-height: 1.6;
+	}
+	.large {
+		font-size: $font-size-sm;
+		line-height: 1.6;
+	}
+	.medium {
+		font-size: $font-size-sm;
+		line-height: 1.6;
+	}
+	.label1 {
+		font-size: 10px;
+	}
+	.label2 {
+		font-size: 10px;
+	}
+	select{
+		font-size: $font-size-xs !important;
+	}
+	.placeholder {
+		font-size: $font-size-xs;
+	}
+	.button-med {
+		font-size: $font-size-sm;
+	}
+	.button-med-3 {
+		font-size: $font-size-xs;
+	}
+	.button-semi {
+		font-size: $font-size-xs;
+	}
+}
+@include for-size(phone-only) {
+	h1 {
+		font-size: $font-size-rre;
+		line-height: 1.2;
+	}
+}

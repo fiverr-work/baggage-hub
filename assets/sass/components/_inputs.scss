@@ -1,0 +1,64 @@
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    background: url('../img/icons/Message.svg') no-repeat;
+    width: 20px;
+    height: 20px;
+    border-width: thin;
+}
+input {
+    border: 1px solid $cloudy-blue;
+    &:not([type='checkbox']) {
+        height: 46px;   
+    }    
+}
+select {
+    border: 1px solid $cloudy-blue !important;
+}
+.placeholder-style::-webkit-input-placeholder {
+    	font-family: $primary-medium;
+        font-size: $font-size-sm;
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: $deep-lilac;
+  }
+  .placeholder-style::placeholder {
+	font-family: $primary-medium;
+	font-size: $font-size-sm;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $deep-lilac;
+}  
+.placeholder-style:-ms-input-placeholder {
+	font-family: $primary-medium;
+	font-size: $font-size-sm;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $deep-lilac;;
+}
+
+.placeholder-style:-moz-placeholder {
+	font-family: $primary-medium;
+	font-size: $font-size-sm;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $deep-lilac;;
+}
+
+.placeholder-style::-moz-placeholder {
+	font-family: $primary-medium;
+	font-size: $font-size-sm;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $deep-lilac;;
+}

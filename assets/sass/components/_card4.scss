@@ -1,0 +1,58 @@
+.optional-services {
+    width: 65%;
+    .cards {
+        .card-optional {
+            width: 31%;
+            background: $pale-grey;
+            border: 1px solid #E6E6E6;
+            padding: 20px 16px 18px;
+    
+            .optional-header {
+                @include flex(space-between, center);
+                width: 100%;
+                margin-bottom: 16px;
+                .optional-icon {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background: #8785A6;
+                    @include flex(center, center);
+                }
+                .optional-check {
+                    display: flex;
+                    .dollar {
+                        margin-bottom: 0;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            &.clicked {
+                background: #F4F9FF;
+                border:2px solid $bright-blue;
+                .optional-header {
+                    .optional-icon {
+                        background: $bright-blue;
+                    }
+                }
+            }
+             /*****************************  desktop-large ****************************** */
+             @include for-size(desktop-large) { 
+                width: 30%;
+                margin-bottom: 20px;
+           }
+
+           /*****************************  tablet-landscape-down ********************** */
+           @include for-size(tablet-landscape-down) {
+               width: 100%;
+                &:last-child {
+                   margin-bottom: 0;
+                }
+           }
+           /****************** End card-option ***********************************************/
+       }
+    }
+    @include for-size(desktop-large) {
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+}  

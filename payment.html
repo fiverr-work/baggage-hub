@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+	<title>Payement</title>
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- meta character set -->
+	<meta charset="UTF-8" />
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Meta Description, Keywords and Author -->
+	<meta name="Keywords" content="">
+	<meta name="author" content="">
+	<meta name="Description" content="">
+
+	<!-- Stylesheet
+	================================================== -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<!-- Favicon
+	================================================== -->
+	<link rel="shortcut icon" href="./assets/img/favicon/favicon.ico">
+</head>
+
+<body class="payement-page">
+    <header>
+		<div class="logo-button">
+			<div class="container">
+				<img src="./assets/img/logo/Logo.svg" alt="logo">
+			<button type="button" class="btn btn-primary button-semi sign-in">SIGN IN</button>
+			</div>
+		</div>
+		<div class="full-screen">
+
+			<div class="steps">
+				<!------------------- Start Step1 ------------------>
+				<div class="step  completed-step">
+					<div>
+						<span class="button-semi">1</span>
+						<p class="placeholder active-step"> About </p>
+					</div>
+					<div class="a-after"></div>
+				</div>
+				<!-------------------  End Step1 ------------------>
+				<!------------------- step2 ------------------>
+				<div class="step completed-step">
+					<div >
+						<span class="button-semi">2</span>
+						<p class="placeholder"> Options </p>
+					</div>
+					<div class="a-after"></div>
+				</div>
+				<div class="step  completed-step">
+					<div>
+						<span class="button-semi">3</span>
+						<p class="placeholder"> Details </p>
+					</div>
+					<div class="a-after"></div>
+				</div>
+				<div class="step active-step">
+					<div>
+						<span class="button-semi">4</span>
+						<p class="placeholder"> Payment </p>
+					</div>
+					<div class="a-after"></div>
+				</div>
+				<div class="step">
+					<div>
+						<span class="button-semi">5</span>
+						<p class="placeholder completed"> Order Complete </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+    <!-- <form action="/action_page.php" method="get"></form> -->
+	<main> 
+        <h1>To Pickup from MANCHESTER UK and Deliver to PARIS FRANCE</h1>
+        <div class="payment">
+            <div class="pay-process">
+                <div class="medium parag1-pay">
+                    The card you use to set up your payment today will only be used for your broadband and cells payment.
+                    Your payment details used for any existing TV passes will stay the same. You can change your payment details at any time in
+                    <h4 style="display: inline;">My Account</h4> . For more info, see <a href="#" class="wawryer" >wawryer.com/agreement</a> </div>
+                <p class="medium"> Your regular monthly payment will not start until your broadband and phone goes live.</p>
+                <div class="card-types">
+                    <!-- bold -->
+                    <h3>Valid card types</h3>
+                        <div class="bordered-card">
+                            <img src="./assets/img/icons/visa.svg" alt="visa">
+                        </div>
+                        <div class="bordered-card">
+                            <img src="./assets/img/icons/mastercard.svg" alt="mastercard">
+                        </div>
+                </div>
+                <div class="form-group card-number">
+                    <label for="card-num" class="large">Card Number</label>
+                    <input type="text" class="form-control placeholder-style" id="card-num" placeholder="xxxx xxxx xxxx xxxx">
+                </div>
+                <div class="expiry-date">
+                    <div class="form-group month">
+                        <label for="exMonth" class="large">Expiry Date</label>
+                        <select id="exMonth" class="form-control placeholder">
+                            <option value="0" selected>MM</option>
+                            <option value="01">January</option>
+                            <option value="02">February</option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>                    
+                    </div> 
+                    <div class="form-group year">
+                        <select id="exYear" class="form-control">
+                            <option value="0">YYYY</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                            <option value="2031">2031</option>
+                        </select>                    
+                    </div>         
+                </div>
+                <div class="name-card">
+                    <label class="large">Name on Card</label>
+                    <input type="text" class="form-control placeholder-style" placeholder="Name as it appears on the card">  
+                </div>
+                <div class="security-code">
+                    <div class="secure-code">
+                        <label class="large">Security Code</label>
+                        <input type="text" class="form-control placeholder-style" placeholder="CVV code">  
+                    </div>
+                    <div>
+                        <img src="./assets/img/icons/security-code.svg" alt="security code">
+                    </div>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="Check1">
+                    <label class="form-check-label placeholder" for="Check1">I have read and agree to the
+                      <span class="large">WAWRYER Terms of Use</span>.</label>
+                </div>
+                
+            </div>  
+            <!--------------------- The exeptional card -------------------->
+            <div class="card-option order-summary summary-payement">
+                <div class="option-header">
+                    <h2>Order Summary</h2>
+                </div>
+                <div class="option-content">
+                    <div class="option-item-ex">
+                        <p class="medium">Drop Off to Door Priority Service</p>
+                        <h5>$400</h5>
+                    </div>
+                    <div class="option-item-ex">
+                        <p class="medium">Priority Customer Service</p>
+                        <p class="medium">Included</p>
+                    </div>
+                    <div class="option-item-ex">
+                        <p class="medium">Shipment Tracking</p>
+                        <p class="medium">Included</p>
+                    </div>
+                    <div class="option-item-ex">
+                        <p class="medium">$250 Shipping Protection</p>
+                        <p class="medium">Included</p>
+                    </div>
+                    <div class="option-item-ex">
+                        <p class="medium">Deal Discount</p>
+                        <h5>-$50</h5>
+                    </div>
+                </div>
+                <div class="option-footer-ex">
+                    <div class="pay">
+                        <p class="large">To Pay</p>
+                        <p class="large"> $350</p>
+                    </div>
+                    <button type="button" class="btn btn-info book-service">BOOK SERVICE</button>
+                </div>
+            </div>
+        </div>
+    </main>
+	<!-- Plugins
+	================================================== -->
+
+	<!-- jQuery -->
+	<script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+	<!-- PooperJS -->
+	<script src="./assets/js/popper.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<!-- Application -->
+	<script src="./assets/js/main.js"></script>
+</body>
+
+</html>

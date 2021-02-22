@@ -1,0 +1,111 @@
+.options-page {
+    position: relative;
+    background: #fbfdff;
+    @include flex(center, flex-start);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    main {
+        width: 100%;
+        max-width: 1440px;
+        padding: 0px 150px 200px;
+        display: flex;
+        flex-direction: column;
+        background: url("../img/backgrounds/LogoBg.svg") no-repeat center;
+        .pick-options {
+            h1 {
+                margin-bottom: 54px;
+            }
+            margin-bottom: 55px;
+        }
+        .optional-services {
+            h4 {
+                margin-bottom: 8px;
+            }
+            margin-bottom: 89px;
+            .cards {
+                gap: 18px;
+                align-items: stretch;
+                .card-optional {
+                    min-width: 261px;
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .cards {
+            @include flex(space-between, flex-start);
+            & > div {
+                border-radius: 6px;
+            }
+        }
+        textarea {
+            background-color: $pale-grey;
+            border-color: #e6e6e6;
+            margin-bottom: 61px;
+            height: 162px;
+        }
+        .shipment-protection {
+            h2 {
+                margin-bottom: 26px;
+            }
+            .card-shipment{
+                min-width: 260px;
+                height: 240px;
+                h3{
+                    padding: 17px 21px;
+                }
+                .shipment-header{
+                    padding: 0;
+                }
+                .shipment-content{
+                    margin-bottom: 0;
+                }
+                .shipment-footer{
+                    padding-bottom: 0;
+                    margin-top: 50px;
+                }
+            }
+        }
+
+        /*******************************   tablet-landscape-down   *************************************/
+        @include for-size(desktop-down) {
+            .pick-options {
+                margin-bottom: 10px;
+            }
+            .optional-services {
+                margin-bottom: 10px;
+            }
+        }
+        @include for-size(tablet-landscape-down) {
+            padding: 12px 16px;
+            .cards {
+                flex-direction: column;
+                & > div {
+                    min-height: auto;
+                }
+            }
+            .pick-options {
+                h1 {
+                    margin-bottom: 30px;
+                }
+            }
+            textarea {
+                margin-bottom: 40px;
+                height: 159px;
+            }
+            .shipment-protection {
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        @include for-size(tablet-portrait-down) {
+            padding: 0 80px 100px;
+        }
+        @include for-size(phone-only) {
+            padding: 0 20px 70px;
+        }
+    }
+}

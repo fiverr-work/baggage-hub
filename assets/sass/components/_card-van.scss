@@ -1,0 +1,59 @@
+.van-cards{
+    @include flex(space-between, flex-start);
+    margin-bottom: 40px;
+   .card-van {
+        background: #FFFFFF;
+        border: 1px solid $cloudy-blue;
+        box-sizing: border-box;
+        border-radius: 6px;
+        // media
+        width: 48%;
+        .van-header {
+            // media
+            padding: 24px 16px 18px 18px;
+            @include flex(space-between, flex-start);
+            .header-icon {
+                margin-right: 16px;
+            }
+            .header-text {
+                @include flex(space-between, flex-start);
+            }
+        }
+        .van-content {
+            // media
+            padding: 20px 20px 0;
+            border-top: 1px solid $cloudy-blue;
+            background: $pale-grey;
+            @include flex(space-between, center);
+            flex-wrap: wrap;
+            border-radius: 0px 0px 6px 6px;
+            .van-info {
+                @include flex(flex-start, center);
+                // media
+                width: 30%;
+                margin-bottom: 20px;
+                .info-icon {
+                    margin-right: 5px;
+                }
+                .info-value {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+        &.clicked {
+            border: 2px solid $bright-blue;
+            .van-content {
+                background-color: #f4f9ff;
+            }
+        }
+    }
+    @include for-size(tablet-landscape-down) {
+            margin-bottom: 30px;
+            flex-direction: column;
+            @include not-last-child ('.card-van') {
+                margin-bottom: 20px;
+            }
+            .card-van { width: 100%;} 
+                   
+    } 
+}
