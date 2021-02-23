@@ -1,58 +1,71 @@
 .optional-services {
-    width: 65%;
-    .cards-4 {
-        .card-optional {
-            width: 31%;
-            background: $pale-grey;
-            border: 1px solid #E6E6E6;
-            padding: 20px 16px 18px;
+	.cards-4 {
+		.card-optional {
+			background: $pale-grey;
+			border: 1px solid $cloudy-blue;
+			border-radius: 6px;
+			width: 333px;
+			padding: 20px 10px 20px 20px;
+			cursor: pointer;
 
-            .optional-header {
-                @include flex(space-between, center);
-                width: 100%;
-                margin-bottom: 16px;
-                .optional-icon {
-                    width: 45px;
-                    height: 45px;
-                    border-radius: 50%;
-                    background: #8785A6;
-                    @include flex(center, center);
-                }
-                .optional-check {
-                    display: flex;
-                    .dollar {
-                        margin-bottom: 0;
-                        margin-right: 10px;
-                    }
-                }
-            }
-            &.clicked {
-                background: #F4F9FF;
-                border:2px solid $color-primary;
-                .optional-header {
-                    .optional-icon {
-                        background: $color-primary;
-                    }
-                }
-            }
-             /*****************************  desktop-large ****************************** */
-             @include for-size(desktop-large) {
-                width: 30%;
-                margin-bottom: 20px;
-           }
+			.optional-header {
+				@include flex(space-between, center);
+				width: 100%;
+				margin-bottom: 16px;
+				.optional-icon {
+					width: 45px;
+					height: 45px;
+					border-radius: 50%;
+					background-color: $dark-indigo;
+					@include flex(center, center);
+				}
+				.optional-check {
+					display: flex;
+					.dollar {
+						margin-bottom: 0;
+						margin-right: 10px;
+						@include flex(flex-start, center);
 
-           /*****************************  tablet-landscape-down ********************** */
-           @include for-size(tablet-landscape-down) {
-               width: 100%;
-                &:last-child {
-                   margin-bottom: 0;
-                }
-           }
-           /****************** End card-option ***********************************************/
-       }
-    }
-    @include for-size(desktop-large) {
-        flex-wrap: wrap;
-        width: 100%;
-    }
+						&::after{
+							content: 'ADD OPTION';
+							background-color: $color-primary;
+							border-radius: 4px;
+							display: inline-block;
+							width: 99px;
+							height: 30px;
+							margin-left: 12px;
+							color: $color-white;
+							@include flex(center, center);
+							font-size: $font-size-xs;
+						}
+					}
+				}
+			}
+			/*****************************  desktop-large ****************************** */
+			@include for-size(desktop-large) {
+				width: 30%;
+				margin-bottom: 20px;
+			}
+
+			/*****************************  tablet-landscape-down ********************** */
+			@include for-size(tablet-landscape-down) {
+				width: 100%;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			/****************** End card-option ***********************************************/
+		}
+		input[type=checkbox]{
+			display: none;
+			&:checked + .card-optional{
+				border: 2px solid $color-primary !important;
+			}
+			&:checked + .card-optional .dollar{
+				&::after{
+					content: 'REMOVE';
+				}
+			}
+		}
+	}
 }

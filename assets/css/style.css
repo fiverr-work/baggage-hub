@@ -3077,11 +3077,15 @@ select { font-family: "Manrope Medium" !important; font-size: 14px !important; f
 
 .add-item { width: 235px; height: 50px; background: -webkit-gradient(linear, left top, left bottom, from(#439979), to(#439979)); background: linear-gradient(180deg, #439979 0%, #439979 100%); border-radius: 4px; text-align: center; }
 
-.btn { min-width: 92px; height: 39px; border: 1px solid; border-radius: 2px; color: #ffffff; padding: 11px 18px; }
+.btn { min-width: 92px; border: 1px solid; border-radius: 2px; color: #ffffff; padding: 11px 18px; }
 
 .btn-primary { background-color: #439979; border-color: #439979; }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active { background-color: #439979; border-color: #439979; }
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active { background-color: #ffffff; border-color: #439979; color: #439979; }
+
+.btn-dark-outline { background: none; border-color: #27225f; color: #27225f; border-radius: 4px; }
+
+.btn-dark-outline:hover, .btn-dark-outline:focus, .btn-dark-outline:active { background-color: #27225f; border-color: #27225f; color: #ffffff; }
 
 input[type="date"]::-webkit-calendar-picker-indicator { opacity: 1; display: block; background: url("../img/icons/Message.svg") no-repeat; width: 20px; height: 20px; border-width: thin; }
 
@@ -3145,67 +3149,50 @@ select { padding-left: 16px; height: 46px; width: 100%; border: 1px solid #b7b6c
 
 @media (max-width: 992px) { .cards-2 .card-booking { width: 100%; } }
 
-.cards-3 { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; display: -webkit-box; display: -ms-flexbox; display: flex; gap: 30px; }
+.cards-3 { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; display: -webkit-box; display: -ms-flexbox; display: flex; gap: 30px; margin-bottom: 90px; }
 
-.cards-3 .card-option { cursor: pointer; width: 20%; margin-right: auto; background: #ffffff; border: 1px solid #e7e7ed; -webkit-box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1); box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; min-height: 470px; /*****************************  desktop-large ****************************** */ /*****************************  tablet-landscape-down ********************** */ /*****************************  phone-only ********************** */ /****************** End card-option ***********************************************/ }
+.cards-3 .card-option { background: #ffffff; border: 1px solid #e7e7ed; -webkit-box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1); box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1); display: -webkit-box; display: -ms-flexbox; display: flex; border-radius: 6px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; min-height: 470px; }
 
-.cards-3 .card-option:last-child { width: 30%; margin-left: auto; margin-right: 0; }
+.cards-3 .card-option .option-header { background: #e7e7ed; margin-bottom: 6px; padding: 19px 22px; text-align: center; }
 
-.cards-3 .card-option .option-header { background: #e7e7ed; margin-bottom: 6px; padding: 16px 0; text-align: center; }
+.cards-3 .card-option .option-content { text-align: center; padding: 6px 16px 22px; color: #575482; }
 
-.cards-3 .card-option .option-content { padding: 16px 16px 0px; }
+.cards-3 .card-option .option-content b { color: #0f0a4d; }
 
-.cards-3 .card-option .option-content .option-item:not(:last-child) { border-bottom: 1px solid #e7e7ed; }
+.cards-3 .card-option .option-footer { padding: 0 16px 24px; text-align: center; margin-top: auto; }
 
-.cards-3 .card-option .option-content .option-item { color: #575482; }
+.cards-3 .card-option .option-footer button { line-height: 1.2; width: 100%; font-size: 14px; }
 
-.cards-3 .card-option .option-content .option-item:not(:first-child) { padding-top: 9px; }
+.cards-3 .card-option.active { min-height: 510px; margin-top: -15px; border: 2px solid #439979; -webkit-box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); }
 
-.cards-3 .card-option .option-content .option-item:not(:last-child) { padding-bottom: 9px; }
+.cards-3 .card-option.active .option-header { padding: 27px 0; background: #439979; }
 
-.cards-3 .card-option .option-footer { padding: 0 16px 24px; justify-self: flex-end; margin-top: auto; }
+.cards-3 .card-option.active .option-header h3 { color: #ffffff; margin-bottom: 0; }
 
-.cards-3 .card-option.clicked { min-height: 510px; margin-top: -15px; border: 2px solid #439979; -webkit-box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); }
+.cards-3 .card-option.active .select-service { background: #439979; border-color: #439979; color: #ffffff; font-family: "Manrope SemiBold"; }
 
-.cards-3 .card-option.clicked .option-header { padding: 27px 0; background: #439979; }
-
-.cards-3 .card-option.clicked .option-header h3 { color: #ffffff; margin-bottom: 0; }
-
-.cards-3 .card-option.clicked .select-service { background: -webkit-gradient(linear, left top, left bottom, from(#0071ff), to(#0054be)); background: linear-gradient(180deg, #0071ff 0%, #0054be 100%); border-color: #0071ff; color: #ffffff; font-family: "Manrope SemiBold"; }
-
-@media (max-width: 1474px) { .cards-3 .card-option { width: 45%; margin-right: 0; margin-bottom: 30px; }
-  .cards-3 .card-option.clicked { margin-top: 0; }
-  .cards-3 .card-option:last-child { width: 45%; } }
-
-@media (max-width: 992px) { .cards-3 .card-option { width: 100%; }
-  .cards-3 .card-option:last-child { width: 100%; margin-bottom: 0px; } }
-
-@media (max-width: 576px) { .cards-3 .card-option .option-footer { padding-top: 51px; } }
-
-@media (max-width: 1200px) { .cards-3 { -ms-flex-wrap: wrap; flex-wrap: wrap; } }
-
-.optional-services { width: 65%; }
-
-.optional-services .cards-4 .card-optional { width: 31%; background: #f9f9fc; border: 1px solid #E6E6E6; padding: 20px 16px 18px; /*****************************  desktop-large ****************************** */ /*****************************  tablet-landscape-down ********************** */ /****************** End card-option ***********************************************/ }
+.optional-services .cards-4 .card-optional { background: #f9f9fc; border: 1px solid #b7b6ca; border-radius: 6px; width: 333px; padding: 20px 10px 20px 20px; cursor: pointer; /*****************************  desktop-large ****************************** */ /*****************************  tablet-landscape-down ********************** */ /****************** End card-option ***********************************************/ }
 
 .optional-services .cards-4 .card-optional .optional-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; margin-bottom: 16px; }
 
-.optional-services .cards-4 .card-optional .optional-header .optional-icon { width: 45px; height: 45px; border-radius: 50%; background: #8785A6; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.optional-services .cards-4 .card-optional .optional-header .optional-icon { width: 45px; height: 45px; border-radius: 50%; background-color: #0f0a4d; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .optional-services .cards-4 .card-optional .optional-header .optional-check { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.optional-services .cards-4 .card-optional .optional-header .optional-check .dollar { margin-bottom: 0; margin-right: 10px; }
+.optional-services .cards-4 .card-optional .optional-header .optional-check .dollar { margin-bottom: 0; margin-right: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.optional-services .cards-4 .card-optional.clicked { background: #F4F9FF; border: 2px solid #439979; }
-
-.optional-services .cards-4 .card-optional.clicked .optional-header .optional-icon { background: #439979; }
+.optional-services .cards-4 .card-optional .optional-header .optional-check .dollar::after { content: 'ADD OPTION'; background-color: #439979; border-radius: 4px; display: inline-block; width: 99px; height: 30px; margin-left: 12px; color: #ffffff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 12px; }
 
 @media (max-width: 1474px) { .optional-services .cards-4 .card-optional { width: 30%; margin-bottom: 20px; } }
 
 @media (max-width: 992px) { .optional-services .cards-4 .card-optional { width: 100%; }
   .optional-services .cards-4 .card-optional:last-child { margin-bottom: 0; } }
 
-@media (max-width: 1474px) { .optional-services { -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; } }
+.optional-services .cards-4 input[type=checkbox] { display: none; }
+
+.optional-services .cards-4 input[type=checkbox]:checked + .card-optional { border: 2px solid #439979 !important; }
+
+.optional-services .cards-4 input[type=checkbox]:checked + .card-optional .dollar::after { content: 'REMOVE'; }
 
 .shipment-protection { width: 43%; }
 
@@ -3465,53 +3452,31 @@ header.steps-timeline .steps .step.completed div p { color: #3bb273; font-family
 
 @media (max-width: 768px) { .about-page .what-people-say { margin-top: 60px; } }
 
-.options-page main { /*******************************   tablet-landscape-down   *************************************/ }
+.options-page main .title { margin-bottom: 50px; }
 
-.options-page main .pick-options { margin-bottom: 55px; }
+.options-page main .title h1 { display: inline-block; margin-right: 37px; }
 
-.options-page main .pick-options h1 { margin-bottom: 54px; }
+.options-page main .title .change { display: inline-block; background: none; font-size: 10px; text-decoration: underline; color: #0f0a4d; font-family: "Manrope Bold"; }
 
 .options-page main .optional-services { margin-bottom: 89px; }
 
 .options-page main .optional-services h4 { margin-bottom: 8px; }
 
-.options-page main .optional-services .cards { gap: 18px; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
+.options-page main .optional-services .cards-4 { gap: 38px; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
 
-.options-page main .optional-services .cards .card-optional { min-width: 261px; }
+.options-page main .optional-services .cards-4 .card-optional p { margin-bottom: 0; }
 
-.options-page main .optional-services .cards .card-optional p { margin-bottom: 0; }
+.options-page main .cards-4 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
-.options-page main .cards { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
-
-.options-page main .cards > div { border-radius: 6px; }
-
-.options-page main textarea { background-color: #f9f9fc; border-color: #e6e6e6; margin-bottom: 61px; height: 162px; }
-
-.options-page main .shipment-protection h2 { margin-bottom: 26px; }
-
-.options-page main .shipment-protection .card-shipment { min-width: 260px; height: 240px; }
-
-.options-page main .shipment-protection .card-shipment h3 { padding: 17px 21px; }
-
-.options-page main .shipment-protection .card-shipment .shipment-header { padding: 0; }
-
-.options-page main .shipment-protection .card-shipment .shipment-content { margin-bottom: 0; }
-
-.options-page main .shipment-protection .card-shipment .shipment-footer { padding-bottom: 0; margin-top: 50px; }
+.options-page main .cards-4 > div { border-radius: 6px; }
 
 @media (max-width: 1200px) { .options-page main .pick-options { margin-bottom: 10px; }
   .options-page main .optional-services { margin-bottom: 10px; } }
 
 @media (max-width: 992px) { .options-page main { padding: 12px 16px; }
-  .options-page main .cards { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-  .options-page main .cards > div { min-height: auto; }
-  .options-page main .pick-options h1 { margin-bottom: 30px; }
-  .options-page main textarea { margin-bottom: 40px; height: 159px; }
-  .options-page main .shipment-protection h2 { margin-bottom: 20px; } }
-
-@media (max-width: 768px) { .options-page main { padding: 0 80px 100px; } }
-
-@media (max-width: 576px) { .options-page main { padding: 0 20px 70px; } }
+  .options-page main .cards-4 { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .options-page main .cards-4 > div { min-height: auto; }
+  .options-page main .pick-options h1 { margin-bottom: 30px; } }
 
 .details-v1-page main { /****************************** desktop-large ***************************/ }
 

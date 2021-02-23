@@ -1,63 +1,42 @@
 .options-page {
 	main {
-		.pick-options {
+		.title {
+			margin-bottom: 50px;
 			h1 {
-				margin-bottom: 54px;
+				display: inline-block;
+				margin-right: 37px;
 			}
-			margin-bottom: 55px;
+			.change{
+				display: inline-block;
+				background: none;
+				font-size: 10px;
+				text-decoration: underline;
+				color: $dark-indigo;
+				font-family: $primary-bold;
+			}
 		}
 		.optional-services {
 			h4 {
 				margin-bottom: 8px;
 			}
 			margin-bottom: 89px;
-			.cards {
-				gap: 18px;
+			.cards-4 {
+				gap: 38px;
 				align-items: stretch;
 				.card-optional {
-					min-width: 261px;
 					p {
 						margin-bottom: 0;
 					}
 				}
 			}
 		}
-		.cards {
+		.cards-4 {
 			@include flex(space-between, flex-start);
 			& > div {
 				border-radius: 6px;
 			}
 		}
-		textarea {
-			background-color: $pale-grey;
-			border-color: #e6e6e6;
-			margin-bottom: 61px;
-			height: 162px;
-		}
-		.shipment-protection {
-			h2 {
-				margin-bottom: 26px;
-			}
-			.card-shipment {
-				min-width: 260px;
-				height: 240px;
-				h3 {
-					padding: 17px 21px;
-				}
-				.shipment-header {
-					padding: 0;
-				}
-				.shipment-content {
-					margin-bottom: 0;
-				}
-				.shipment-footer {
-					padding-bottom: 0;
-					margin-top: 50px;
-				}
-			}
-		}
 
-		/*******************************   tablet-landscape-down   *************************************/
 		@include for-size(desktop-down) {
 			.pick-options {
 				margin-bottom: 10px;
@@ -66,9 +45,10 @@
 				margin-bottom: 10px;
 			}
 		}
+
 		@include for-size(tablet-landscape-down) {
 			padding: 12px 16px;
-			.cards {
+			.cards-4 {
 				flex-direction: column;
 				& > div {
 					min-height: auto;
@@ -79,21 +59,6 @@
 					margin-bottom: 30px;
 				}
 			}
-			textarea {
-				margin-bottom: 40px;
-				height: 159px;
-			}
-			.shipment-protection {
-				h2 {
-					margin-bottom: 20px;
-				}
-			}
-		}
-		@include for-size(tablet-portrait-down) {
-			padding: 0 80px 100px;
-		}
-		@include for-size(phone-only) {
-			padding: 0 20px 70px;
 		}
 	}
 }

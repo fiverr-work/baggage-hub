@@ -34,7 +34,6 @@
 }
 .btn {
 	min-width: 92px;
-	height: 39px;
 	border: 1px solid;
 	border-radius: 2px;
 	color: $color-white;
@@ -49,7 +48,22 @@
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: $color-primary;
+		background-color: $color-white;
 		border-color: $color-primary;
+		color: $color-primary;
+	}
+}
+.btn-dark-outline {
+	background: none;
+	border-color: $dark-slate-blue;
+	color: $dark-slate-blue;
+	border-radius: 4px;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: $dark-slate-blue;
+		border-color: $dark-slate-blue;
+		color: $color-white;
 	}
 }
