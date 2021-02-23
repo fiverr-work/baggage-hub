@@ -2,7 +2,7 @@
     @include flex(space-between, flex-start);
     margin-bottom: 40px;
    .card-van {
-        background: #FFFFFF;
+        background: $color-white;
         border: 1px solid $cloudy-blue;
         box-sizing: border-box;
         border-radius: 6px;

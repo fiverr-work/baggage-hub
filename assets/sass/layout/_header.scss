@@ -80,7 +80,12 @@ header.steps-timeline {
 						width: 30px;
 						height: 30px;
 					}
-					p:not(.active) {
+					p{
+						top: 35px;
+					}
+				}
+				&:not(.active) {
+					p{
 						display: none;
 					}
 				}

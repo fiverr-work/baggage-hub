@@ -1,42 +1,45 @@
+.cards-1 {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 41px;
+	.card-pick {
+		background: $color-white;
+		border: 1px solid $cloudy-blue;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 20px rgba(197, 213, 233, 0.15);
+		border-radius: 6px;
+		padding: 9px 20px 23px;
+		flex: 1;
+		text-align: left;
 
-.cards {
-    .card-pick {
-        width: 30%;
-        background: #FFFFFF;
-        border: 1px solid $cloudy-blue;
-        box-sizing: border-box;
-        box-shadow: 0px 4px 20px rgba(197, 213, 233, 0.15);
-        border-radius: 6px;
-        padding: 9px 19px 23px;
-        flex: 1;
-
-        .pick-header {
-            @include flex(space-between, center);
-            width: 100%;
-            select {
-                background-color: $pale-grey;
-                font-size: $font-size-xs;
-                padding: 9px 11px;
-                border-radius: 2px;
-                min-width: 60px;
-                background-position-x: 80%;
-            }
-        }
-        .pick-content {
-            margin-top: 10px;
-        }
-        &.clicked {
-            border: 2px solid $color-primary;
-            box-shadow: 0px 20px 60px rgba(0, 84, 164, 0.1);
-        }
-        /*****************************  tablet-landscape-down ***************************** */
-        @include for-size(tablet-landscape-down) {
-            width: 100%;
-        }
-    }
-    @include for-size(tablet-landscape-down) {
-        @include not-last-child('.card-pick') {
-            margin-bottom: 26px;
-        }
-    }
+		.pick-header {
+			@include flex(space-between, center);
+			width: 100%;
+			select {
+				border-radius: 2px;
+				width: 60px;
+				height: 36px;
+				display: block;
+				background-position-x: 80%;
+			}
+		}
+		.pick-content {
+			margin-top: 5px;
+			h4{
+				margin-bottom: 4px;
+			}
+		}
+		&.clicked {
+			border: 3px solid $color-primary;
+			box-shadow: 0px 20px 60px rgba(0, 84, 164, 0.1);
+		}
+	}
+	@include for-size(tablet-landscape-down) {
+		flex-direction: column;
+		gap: 20px;
+		margin-bottom: 30px;
+		.card-pick{
+			flex: 100%;
+		}
+	}
 }

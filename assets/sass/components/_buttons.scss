@@ -1,24 +1,13 @@
 .get-prices {
 	padding: 16px 24px;
-	width: 153px;
-	height: 51px;
-	background: linear-gradient(180deg, #0071ff 0%, #0054be 100%);
+	background: linear-gradient(180deg, #439979 0%, #439979 100%);
 	border-radius: 4px;
-	text-align: center;
-	margin-top: 41px;
-	align-self: flex-end;
-	@include for-size(tablet-landscape-down) {
-		padding: 12px 18px;
-		width: 140px;
-		height: 45px;
-		margin-top: 0px;
-	}
 }
 .select-service {
 	padding: 14px 18px 16px;
 	width: 100%;
 	height: 47px;
-	background: #ffffff;
+	background: $color-white;
 	border: 1px solid #27225f;
 	box-sizing: border-box;
 	border-radius: 4px;
@@ -39,7 +28,7 @@
 .add-item {
 	width: 235px;
 	height: 50px;
-	background: linear-gradient(180deg, #0071ff 0%, #0054be 100%);
+	background: linear-gradient(180deg, #439979 0%, #439979 100%);
 	border-radius: 4px;
 	text-align: center;
 }

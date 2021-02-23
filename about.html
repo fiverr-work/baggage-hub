@@ -76,9 +76,10 @@
 	<!-- [END] Steps -->
 
 	<main class="container">
-		<div class="easy-booking">
+
+		<!-- [BEGIN] Instant Quotes with Easy Booking -->
+		<form action="" class="easy-booking">
 			<h1>Instant Quotes with Easy Booking</h1>
-			<!--------------------------------- select items -------------------------------->
 			<div class="select-items">
 				<div class="select-item">
 					<label class="large">Send From</label>
@@ -99,9 +100,8 @@
 					</select>
 				</div>
 			</div>
-			<!-------------------------------  cards --------------------------------- -->
-			<div class="cards">
-				<button class="card-pick clicked">
+			<div class="cards-1">
+				<div class="card-pick clicked">
 					<div class="pick-header">
 						<img src="./assets/img/icons/Package.svg" alt="package">
 						<div>
@@ -118,8 +118,8 @@
 						<h4>Small Box or Suitcase</h4>
 						<div class="placeholder">Max billable weight 25lbs or 12kg</div>
 					</div>
-				</button>
-				<button class="card-pick">
+				</div>
+				<div class="card-pick">
 					<div class="pick-header">
 						<img src="./assets/img/icons/Package.svg" alt="package">
 						<div>
@@ -136,8 +136,8 @@
 						<h4>Large Box or Suitcase</h4>
 						<div class="placeholder">Max billable weight 50lbs or 25kg</div>
 					</div>
-				</button>
-				<button class="card-pick">
+				</div>
+				<div class="card-pick">
 					<div class="pick-header">
 						<img src="./assets/img/icons/Other.svg" alt="package">
 						<div>
@@ -154,15 +154,16 @@
 						<h4>Bulky Box or Suitcase</h4>
 						<div class="placeholder">Max billable weight 75lbs or 34kg</div>
 					</div>
-				</button>
+				</div>
 			</div>
-		</div>
-		<!-------------------------------  end Easy booking ----------------------------- -->
-		<button type="button " class="btn btn-primary button-med get-prices">GET PRICES</button>
-		<!-------------------------------  recent booking ----------------------------- -->
-		<div class="recent-booking">
+			<button type="submit" class="btn btn-primary text-uppercase button-med get-prices">GET PRICES</button>
+		</form>
+		<!-- [END] Instant Quotes with Easy Booking -->
+
+		<!-- [BEGIN] Recent booking -->
+		<section class="recent-booking">
 			<h1>Recent Bookings</h1>
-			<div class="cards">
+			<div class="cards-2">
 				<div class="card-booking">
 					<div class="book-content">
 						<h2>El Paso</h2>
@@ -224,8 +225,212 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+		<!-- [END] Recent booking -->
+
 	</main>
+
+	<!-- [BEGIN] What People Say -->
+	<section class="what-people-say">
+		<div class="container">
+			<header>
+				<h1>What People Say</h1>
+				<p>What verified people saying about shipping their Luggage, Boxes and more.</p>
+			</header>
+			<div class="owl-carousel owl-carousel-review">
+				<div class="review">
+					<div class="review__top">
+						<div class="review__top__stars">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+						</div>
+						<p>80 minutes ago</p>
+					</div>
+					<div class="review__body">
+						<h2>Love the service</h2>
+						<p>Worked great, very easy and cost effective.</p>
+					</div>
+					<p class="review__name text-uppercase">Divakar</p>
+				</div>
+				<div class="review">
+					<div class="review__top">
+						<div class="review__top__stars">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/empty-star.svg" alt="">
+						</div>
+						<p>82 minutes ago</p>
+					</div>
+					<div class="review__body">
+						<h2>Right on time delivery</h2>
+						<p>Right on time delivery. Thank you</p>
+					</div>
+					<p class="review__name text-uppercase">Samin</p>
+				</div>
+				<div class="review">
+					<div class="review__top">
+						<div class="review__top__stars">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+						</div>
+						<p>84 minutes ago</p>
+					</div>
+					<div class="review__body">
+						<h2>Delivered fast and ever...</h2>
+						<p>It was delivered fast and everything was safe, great service</p>
+					</div>
+					<p class="review__name text-uppercase">Steven Drury</p>
+				</div>
+				<div class="review">
+					<div class="review__top">
+						<div class="review__top__stars">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/empty-star.svg" alt="">
+							<img src="./assets/img/icons/empty-star.svg" alt="">
+						</div>
+						<p>24 hours ago</p>
+					</div>
+					<div class="review__body">
+						<h2>Only way to travel </h2>
+						<p>We were moving into temporary housing halfway across the country during a padamic. </p>
+					</div>
+					<p class="review__name text-uppercase">Amy</p>
+				</div>
+				<div class="review">
+					<div class="review__top">
+						<div class="review__top__stars">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+						</div>
+						<p>80 minutes ago</p>
+					</div>
+					<div class="review__body">
+						<h2>Love the service</h2>
+						<p>Worked great, very easy and cost effective.</p>
+					</div>
+					<p class="review__name text-uppercase">Mark M</p>
+				</div>
+				<div class="review">
+					<div class="review__top">
+						<div class="review__top__stars">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+							<img src="./assets/img/icons/full-star.svg" alt="">
+						</div>
+						<p>80 minutes ago</p>
+					</div>
+					<div class="review__body">
+						<h2>Love the service</h2>
+						<p>Worked great, very easy and cost effective.</p>
+					</div>
+					<p class="review__name text-uppercase">Divakar</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- [END] What People Say -->
+
+	<!-- [BEGIN] Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-12">
+					<h5>GET IN TOUCH</h5>
+					<p>
+						Americas & UK
+						<br><br>
+						<b>US REGIONAL OFFICE</b>
+						Baggage Hub Americas<br>
+						2017 Pittsburgh Avenue, Suite B<br>
+						Charleston, SC 29405
+						<br><br>
+						US REGIONAL OFFICE</>
+						Baggage Hub INC<br>
+						2017 Pittsburgh Avenue, Suite B<br>
+						Charleston, SC 29405
+						<br><br>
+						UK REGIONAL OFFICE<br>
+						Baggage Hub Ltd<br>
+						268 Bath Rd<br>
+						Slough SL1 4DX
+					</p>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12">
+					<h5>GET IN TOUCH</h5>
+					<p>
+						Europe, Middle East & Asia
+						<br><br>
+						<b>EUROPEAN REGIONAL OFFICE</b>
+						Baggage Hub NL<br>
+						ZUIDERWEG 70<br>
+						2289 BR Rijswijk Zh<br>
+						Netherlands
+						<br><br>
+						<b>ASIA REGIONAL OFFICE</b>
+						Baggage Hub INC<br>
+						105 Second Lok Yang Road<br>
+						Singapore 628174
+						<br><br>
+						<b>DUBAI REGIONAL OFFICE</b>
+						Jebel Ali Free Zone,<br>
+						PO Box: 35608<br>
+						Dubai, UAE
+					</p>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12">
+					<h5>LEARN MORE</h5>
+					<p>
+						How it Works<br>
+						Student Shipping<br>
+						Relocation Shipping<br>
+						International Shipping<br>
+						USA Domestic Shipping
+						<br><br><br><br>
+						Inclusions and Exclusions<br>
+						Prohibited Items<br>
+						Track an Item
+					</p>
+				</div>
+				<div class="col-md-3 col-sm-6 col-12">
+					<h5>DESTINATIONS</h5>
+					<p>
+						Shipping to UK<br>
+						Shipping to USA<br>
+						Shipping to Hong Kong<br>
+						Shipping to Australia
+						<br><br>
+						Shipping to Atlanta<br>
+						Shipping to Texas<br>
+						Shipping to New York<br>
+						Shipping to Washington<br>
+						Shipping to San Francisco<br>
+						Shipping to Calafornia
+					</p>
+				</div>
+			</div>
+			<div class="pre-footer">
+				<img src="./assets/img/logo/logo-2.svg" width="60" height="60" alt="Logo">
+				<p>© Copyright 2021 Baggage Hub Americas Inc All rights reserved | Privacy Policy | Sitemap | Terms &
+					Conditions</p>
+			</div>
+		</div>
+	</footer>
+	<!-- [END] Footer -->
 
 	<!-- Plugins
 	================================================== -->
@@ -236,6 +441,8 @@
 	<script src="./assets/js/popper.min.js"></script>
 	<!-- Bootstrap -->
 	<script src="./assets/js/bootstrap.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="./assets/js/owl.carousel.min.js"></script>
 	<!-- Application -->
 	<script src="./assets/js/main.js"></script>
 </body>

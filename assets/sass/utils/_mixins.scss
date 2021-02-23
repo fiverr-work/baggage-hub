@@ -90,3 +90,12 @@
 		src: url($ttf-path) format("truetype");
 	}
 }
+
+@mixin lines-limit($lines, $line-hight){
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $lines; // number of lines to show
+	-webkit-box-orient: vertical;
+	line-height: $line-hight;
+}

@@ -10,7 +10,7 @@
         padding: 16px 0 !important;
         h2 {
            text-align: center !important;
-            color: #ffffff !important; 
+            color: $color-white !important;
         }
     }
     .option-content {
@@ -22,7 +22,7 @@
             @include flex(space-between, center);
             padding-top: 10px;
             padding-bottom: 10px;
-          
+
             p, h5 {
                 margin-bottom: 0px !important;
             }
@@ -35,7 +35,7 @@
         padding: 13px 0;
         .pay {
             @include flex(space-between, center);
-        }     
+        }
     }
      /*****************************  phone-only ********************** */
      @include for-size(phone-only) {

@@ -36,13 +36,19 @@ $color-black:			#000000;
 $color-white:			#ffffff;
 
 //Font Path
-$primary-regular-path:	"../fonts/" + $primary-font + "/" + $primary-font + "-Regular.ttf";
-$primary-medium-path:	"../fonts/" + $primary-font + "/" + $primary-font + "-Medium.ttf";
-$primary-semibold-path:	"../fonts/" + $primary-font + "/" + $primary-font + "-Semibold.ttf";
-$primary-bold-path:		"../fonts/" + $primary-font + "/" + $primary-font + "-Bold.ttf";
+$primary-extra-light-path:	"../fonts/" + $primary-font + "/" + $primary-font + "-ExtraLight.ttf";
+$primary-light-path:		"../fonts/" + $primary-font + "/" + $primary-font + "-Light.ttf";
+$primary-regular-path:		"../fonts/" + $primary-font + "/" + $primary-font + "-Regular.ttf";
+$primary-medium-path:		"../fonts/" + $primary-font + "/" + $primary-font + "-Medium.ttf";
+$primary-semibold-path:		"../fonts/" + $primary-font + "/" + $primary-font + "-Semibold.ttf";
+$primary-bold-path:			"../fonts/" + $primary-font + "/" + $primary-font + "-Bold.ttf";
+$primary-extra-bold-path:	"../fonts/" + $primary-font + "/" + $primary-font + "-ExtraBold.ttf";
 
 //Font Family
-$primary-regular:		$primary-font + " Regular";
-$primary-medium:		$primary-font + " Medium";
-$primary-semibold:		$primary-font + " SemiBold";
-$primary-bold:			$primary-font + " Bold";
+$primary-extra-light:		$primary-font + " Extra Light";
+$primary-light:				$primary-font + " Light";
+$primary-regular:			$primary-font + " Regular";
+$primary-medium:			$primary-font + " Medium";
+$primary-semibold:			$primary-font + " SemiBold";
+$primary-bold:				$primary-font + " Bold";
+$primary-extra-bold:		$primary-font + " Extra Bold";

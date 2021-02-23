@@ -3,14 +3,14 @@
 	h4 {
 		margin-bottom: 16px;
 	}
-	.cards {
+	.cards-details {
 		@include flex(space-between, flex-start);
 		& > div {
 			border-radius: 6px;
 		}
 	}
 	@include for-size(tablet-landscape-down) {
-		.cards {
+		.cards-details {
 			flex-direction: column;
 		}
 	}

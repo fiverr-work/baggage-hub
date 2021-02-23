@@ -1,3 +1,12 @@
+$(() => {
+	$(".owl-carousel.owl-carousel-review").owlCarousel({
+		dots: false,
+		nav: false,
+		margin: 30,
+		autoWidth: true
+	});
+})
+
 /******************** add class card-pick ********************/
 $(".card-pick").on("click", function(){
 	let cardList = $(".card-pick")

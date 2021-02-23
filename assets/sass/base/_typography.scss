@@ -1,8 +1,11 @@
 /*=== Import Fonts ===*/
+@include font-face($primary-extra-light, $primary-extra-light-path);
+@include font-face($primary-light, $primary-light-path);
 @include font-face($primary-regular, $primary-regular-path);
 @include font-face($primary-medium, $primary-medium-path);
 @include font-face($primary-semibold, $primary-semibold-path);
 @include font-face($primary-bold, $primary-bold-path);
+@include font-face($primary-extra-bold, $primary-extra-bold-path);
 
 /*=== Typography Styling ===*/
 body {
@@ -79,7 +82,7 @@ h5 {
 	color: $dusk;
 }
 .small {
-	font-family:  $primary-bold;
+	font-family: $primary-bold;
 	font-size: $font-size-xs;
 	font-weight: bold;
 	line-height: 1.2;
@@ -129,7 +132,7 @@ h5 {
 	letter-spacing: 0.4px;
 	color: $dark-indigo;
 }
-select{
+select {
 	font-family: $primary-medium !important;
 	font-size: $font-size-sm !important;
 	font-weight: 500 !important;
@@ -152,7 +155,7 @@ select{
 	line-height: 1.6;
 	letter-spacing: 0.5px;
 	color: $dark-slate-blue;
-  }
+}
 
 @include for-size(desktop-down) {
 	h1 {
@@ -176,8 +179,8 @@ select{
 		line-height: 1.3;
 	}
 	.x-large {
-			font-size: $font-size-md;
-			line-height: 1.6;
+		font-size: $font-size-md;
+		line-height: 1.6;
 	}
 	.large {
 		font-size: $font-size-sm;
@@ -193,7 +196,7 @@ select{
 	.label2 {
 		font-size: 10px;
 	}
-	select{
+	select {
 		font-size: $font-size-xs !important;
 	}
 	.placeholder {
