@@ -11,6 +11,10 @@ input {
 	&:not([type="checkbox"]) {
 		height: 46px;
 	}
+	&:focus{
+		border-color: rgba($color-primary, 0.25) !important;
+		box-shadow: 0 0 0 0.2rem rgba($color-primary, 0.25) !important;
+	}
 }
 .placeholder-style::-webkit-input-placeholder {
 	font-family: $primary-medium;

@@ -8,159 +8,122 @@ $(() => {
 })
 
 /******************** add class card-pick ********************/
-$(".card-pick").on("click", function(){
+$(".card-pick").on("click", function () {
 	let cardList = $(".card-pick")
 	for (let index = 0; index < cardList.length; index++) {
 		$(cardList[index]).removeClass("clicked");
 	}
 	$(this).addClass("clicked");
 });
-/********************* add class card-optional ******************/
-$('.card-optional').find('input:checkbox').change(function(){
-	let cardOptional = $(this).parents().eq(2);
-	let cardList = $(".card-optional");
-	for (let j = 0; j < cardList.length; j++) {
-		$(cardList[j]).removeClass("clicked");
-	}
-	let inputList = $('.card-optional').find('input:checkbox');
-	for (let index = 0; index < inputList.length ; index++) {
-		if(inputList[index] != this)
-			$(inputList[index]).prop("checked", false);
-	}
-    if($(this).is(":checked")) {
-		$(cardOptional).addClass("clicked");
-    }
-	else {
-		$(cardOptional).removeClass("clicked");
-	}
-})
-
-/********************* add class card-van ******************/
-$('.card-van').find('input:checkbox').change(function(){
-
-	let cardVan = $(this).parents().eq(2);
-	let cardList = $(".card-van");
-	for (let j = 0; j < cardList.length; j++) {
-		$(cardList[j]).removeClass("clicked");
-	}
-	let inputList = $('.card-van').find('input:checkbox');
-	for (let index = 0; index < inputList.length ; index++) {
-		if(inputList[index] != this)
-			$(inputList[index]).prop("checked", false);
-	}
-    if($(this).is(":checked")) {
-		$(cardVan).addClass("clicked");
-    }
-	else {
-		$(cardVan).removeClass("clicked");
-	}
-});
-
-/*****************************  Quantity handle ***************************/
-function quantityAdd() {
-	var quantity = parseInt($('#quantity1').val());
-	$('#quantity1').val(quantity + 1);
-	if (quantity > 0 && $('.quantity-minus').hasClass("disabled")) {
-		$('.quantity-minus').removeClass("disabled");
-		$('.btn-disabled').css('background', "#0f0a4d");
-	}
-}
-
-function quantityMinus() {
-	var quantity = parseInt($('#quantity1').val());
-	if (quantity > 1)
-		$('#quantity1').val(quantity - 1);
-	if (quantity == 2 && !$('.quantity-minus').hasClass("disabled")) {
-		$('.quantity-minus').addClass("disabled");
-		$('.btn-disabled').css('background', "#575482");
-	}
-}
-function quantityAdd2() {
-	var quantity = parseInt($('#quantity2').val());
-	$('#quantity2').val(quantity + 1);
-	if (quantity > 0 && $('.quantity-minus').hasClass("disabled")) {
-		$('.quantity-minus').removeClass("disabled");
-		$('.btn-disabled2').css('background', "#0f0a4d");
-	}
-}
-
-function quantityMinus2() {
-	var quantity = parseInt($('#quantity2').val());
-	if (quantity > 1)
-		$('#quantity2').val(quantity - 1);
-	if (quantity == 2 && !$('.quantity-minus').hasClass("disabled")) {
-		$('.quantity-minus').addClass("disabled");
-		$('.btn-disabled2').css('background', "#575482");
-	}
-}
 
 // ADD ITEM
 
-var cardShipment =` <div class="card-shipment">
-	<div class="ship-header">
-      	<div class="pack-suit">
-			<img src="./assets/img/icons/Package.svg" alt="package" />
-			<h5>Package or Suitcase</h5>
-       </div>
-      <img src="./assets/img/icons/trash.svg" alt="trash" />
-    </div>
-	<div class="ship-content">
-		<div class="quantity">
-			<button type="button" class="quantity-minus disabled" onclick="quantityMinus()">
-				<div class="btn-disabled qt">
-					<img src="./assets/img/icons/minus.svg" alt="minus" />
-				</div>
-			</button>
-			<div class="qt-input">
-				<label class="label1"  for="quantity1"> Quantity </label>
-				<input type="text" id="quantity1" class="form-control" value="1" min="1" />
-			</div>
-			<button type="button" onclick="quantityAdd()" >
-				<div class="btn-active qt">
-					<img src="./assets/img/icons/add.svg" alt="add" />
-				</div>
-			</button>
-		</div>
+var cardShipment = `
+<div class="card-shipment">
+							<div class="ship-header">
+								<div class="pack-suit">
+									<img src="./assets/img/icons/Package.svg" alt="package">
+									<h5>Package or Suitcase</h5>
+								</div>
+								<button id="delete1" class="trash">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M16.5 4.00001H12.3334V2.60834C12.3138 2.07486 12.0835 1.57089 11.693 1.20692C11.3025 0.842948 10.7836 0.64867 10.25 0.666676H7.75002C7.21648 0.64867 6.69757 0.842948 6.30704 1.20692C5.91652 1.57089 5.68624 2.07486 5.66669 2.60834V4.00001H1.50002C1.27901 4.00001 1.06704 4.08781 0.910765 4.24409C0.754484 4.40037 0.666687 4.61233 0.666687 4.83334C0.666687 5.05436 0.754484 5.26632 0.910765 5.4226C1.06704 5.57888 1.27901 5.66668 1.50002 5.66668H2.33335V14.8333C2.33335 15.4964 2.59675 16.1323 3.06559 16.6011C3.53443 17.07 4.17031 17.3333 4.83335 17.3333H13.1667C13.8297 17.3333 14.4656 17.07 14.9345 16.6011C15.4033 16.1323 15.6667 15.4964 15.6667 14.8333V5.66668H16.5C16.721 5.66668 16.933 5.57888 17.0893 5.4226C17.2456 5.26632 17.3334 5.05436 17.3334 4.83334C17.3334 4.61233 17.2456 4.40037 17.0893 4.24409C16.933 4.08781 16.721 4.00001 16.5 4.00001ZM7.33335 12.3333C7.33335 12.5544 7.24556 12.7663 7.08928 12.9226C6.933 13.0789 6.72103 13.1667 6.50002 13.1667C6.27901 13.1667 6.06705 13.0789 5.91077 12.9226C5.75448 12.7663 5.66669 12.5544 5.66669 12.3333V9.00001C5.66669 8.77899 5.75448 8.56703 5.91077 8.41075C6.06705 8.25447 6.27901 8.16668 6.50002 8.16668C6.72103 8.16668 6.933 8.25447 7.08928 8.41075C7.24556 8.56703 7.33335 8.77899 7.33335 9.00001V12.3333ZM7.33335 2.60834C7.33335 2.47501 7.50835 2.33334 7.75002 2.33334H10.25C10.4917 2.33334 10.6667 2.47501 10.6667 2.60834V4.00001H7.33335V2.60834ZM12.3334 12.3333C12.3334 12.5544 12.2456 12.7663 12.0893 12.9226C11.933 13.0789 11.721 13.1667 11.5 13.1667C11.279 13.1667 11.067 13.0789 10.9108 12.9226C10.7545 12.7663 10.6667 12.5544 10.6667 12.3333V9.00001C10.6667 8.77899 10.7545 8.56703 10.9108 8.41075C11.067 8.25447 11.279 8.16668 11.5 8.16668C11.721 8.16668 11.933 8.25447 12.0893 8.41075C12.2456 8.56703 12.3334 8.77899 12.3334 9.00001V12.3333Z"
+											fill="#575482" />
+									</svg>
+								</button>
+								<button class="d-none">
+									<svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.534139 0.454916C0.777638 0.206533 1.15867 0.183953 1.42718 0.387175L1.50411 0.454916L6.99992 6.06118L12.4957 0.454916C12.7392 0.206533 13.1203 0.183953 13.3888 0.387175L13.4657 0.454916C13.7092 0.703299 13.7313 1.09198 13.5321 1.36587L13.4657 1.44434L7.4849 7.54508C7.2414 7.79347 6.86037 7.81605 6.59186 7.61282L6.51493 7.54508L0.534139 1.44434C0.26629 1.17112 0.26629 0.728137 0.534139 0.454916Z"
+											fill="#575482" />
+									</svg>
+								</button>
+							</div>
+							<div class="ship-content">
+								<div>
+									<div class="quantity">
+										<label class="label1" for="quantity1"> Quantity </label>
+										<select id="quantity1">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+										</select>
+									</div>
 
-		<div class="type-of-items">
-			<label class="label1"  > Type of items </label>
-			<input type="text" class="form-control"  placeholder="Package or suitcase" />
-		</div>
+									<div class="type-of-items">
+										<label class="label1" for="type-items"> Type of items </label>
+										<input type="text" class="form-control" id="type-items"
+											placeholder="Package or suitcase">
+									</div>
 
-		<div class="weight-ship">
-			<label class="label1" > Weight </label>
-			<input type="text" class="form-control"  placeholder="Up to 2Kg" />
-		</div>
+									<div class="weight-ship">
+										<label class="label1" for="Weight"> Weight </label>
+										<input type="text" class="form-control" id="Weight" placeholder="Up to 2Kg">
+									</div>
 
-		<div class="length-ship">
-			<label class="label1" > Length </label>
-			<input type="text" class="form-control"  placeholder="cm" />
-		</div>
+									<div class="length-ship">
+										<label class="label1" for="Length"> Length </label>
+										<input type="text" class="form-control" id="Length" placeholder="cm">
+									</div>
 
-		<div class="width-ship">
-			<label class="label1"  > Width </label>
-			<input type="text" class="form-control" placeholder="cm" />
-		</div>
+									<div class="width-ship">
+										<label class="label1" for="Width"> Width </label>
+										<input type="text" class="form-control" id="Width" placeholder="cm">
+									</div>
 
-		<div class="height-ship">
-			<label class="label1" > Height </label>
-			<input type="text" class="form-control"  placeholder="cm" />
-		</div>
+									<div class="height-ship">
+										<label class="label1" for="Height"> Height </label>
+										<input type="text" class="form-control" id="Height" placeholder="cm">
+									</div>
+									<button id="copy1">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M15 7.5H12.5V4.725C12.4978 4.13557 12.2627 3.57091 11.8459 3.15411C11.4291 2.73732 10.8644 2.5022 10.275 2.5H4.725C4.13557 2.5022 3.57091 2.73732 3.15411 3.15411C2.73732 3.57091 2.5022 4.13557 2.5 4.725V10.275C2.5022 10.8644 2.73732 11.4291 3.15411 11.8459C3.57091 12.2627 4.13557 12.4978 4.725 12.5H7.5V15C7.5 15.663 7.76339 16.2989 8.23223 16.7678C8.70107 17.2366 9.33696 17.5 10 17.5H15C15.663 17.5 16.2989 17.2366 16.7678 16.7678C17.2366 16.2989 17.5 15.663 17.5 15V10C17.5 9.33696 17.2366 8.70107 16.7678 8.23223C16.2989 7.76339 15.663 7.5 15 7.5ZM7.5 10V10.8333H4.725C4.57692 10.8333 4.43491 10.7745 4.3302 10.6698C4.22549 10.5651 4.16667 10.4231 4.16667 10.275V4.725C4.16667 4.57692 4.22549 4.43491 4.3302 4.3302C4.43491 4.22549 4.57692 4.16667 4.725 4.16667H10.275C10.4231 4.16667 10.5651 4.22549 10.6698 4.3302C10.7745 4.43491 10.8333 4.57692 10.8333 4.725V7.5H10C9.33696 7.5 8.70107 7.76339 8.23223 8.23223C7.76339 8.70107 7.5 9.33696 7.5 10Z"
+												fill="#575482" />
+										</svg>
+									</button>
+								</div>
+								<div>
+									<div class="content-ship">
+										<label class="label1" for="Content"> Content </label>
+										<input type="text" class="form-control" id="Content" placeholder="/">
+									</div>
 
-		<img src="./assets/img/icons/copy.svg" alt="copy" class="copy" />
+									<div class="value-ship">
+										<label class="label1" for="Value"> Value </label>
+										<input type="text" class="form-control" id="Value" placeholder="£">
+									</div>
+								</div>
+							</div>
+							<div class="ship-footer">
+								<label for="delete1" class="trash">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M15 6H12V2.67C11.9974 1.96268 11.7152 1.28509 11.2151 0.784935C10.7149 0.284783 10.0373 0.00263436 9.33 0H2.67C1.96268 0.00263436 1.28509 0.284783 0.784935 0.784935C0.284783 1.28509 0.00263436 1.96268 0 2.67V9.33C0.00263436 10.0373 0.284783 10.7149 0.784935 11.2151C1.28509 11.7152 1.96268 11.9974 2.67 12H6V15C6 15.7956 6.31607 16.5587 6.87868 17.1213C7.44129 17.6839 8.20435 18 9 18H15C15.7956 18 16.5587 17.6839 17.1213 17.1213C17.6839 16.5587 18 15.7956 18 15V9C18 8.20435 17.6839 7.44129 17.1213 6.87868C16.5587 6.31607 15.7956 6 15 6ZM6 9V10H2.67C2.49231 10 2.32189 9.92941 2.19624 9.80376C2.07059 9.67811 2 9.5077 2 9.33V2.67C2 2.49231 2.07059 2.32189 2.19624 2.19624C2.32189 2.07059 2.49231 2 2.67 2H9.33C9.5077 2 9.67811 2.07059 9.80376 2.19624C9.92941 2.32189 10 2.49231 10 2.67V6H9C8.20435 6 7.44129 6.31607 6.87868 6.87868C6.31607 7.44129 6 8.20435 6 9Z"
+											fill="#575482" />
+									</svg>
+								</label>
+								<label for="delete1" class="trash">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M16.5 4.00001H12.3334V2.60834C12.3138 2.07486 12.0835 1.57089 11.693 1.20692C11.3025 0.842948 10.7836 0.64867 10.25 0.666676H7.75002C7.21648 0.64867 6.69757 0.842948 6.30704 1.20692C5.91652 1.57089 5.68624 2.07486 5.66669 2.60834V4.00001H1.50002C1.27901 4.00001 1.06704 4.08781 0.910765 4.24409C0.754484 4.40037 0.666687 4.61233 0.666687 4.83334C0.666687 5.05436 0.754484 5.26632 0.910765 5.4226C1.06704 5.57888 1.27901 5.66668 1.50002 5.66668H2.33335V14.8333C2.33335 15.4964 2.59675 16.1323 3.06559 16.6011C3.53443 17.07 4.17031 17.3333 4.83335 17.3333H13.1667C13.8297 17.3333 14.4656 17.07 14.9345 16.6011C15.4033 16.1323 15.6667 15.4964 15.6667 14.8333V5.66668H16.5C16.721 5.66668 16.933 5.57888 17.0893 5.4226C17.2456 5.26632 17.3334 5.05436 17.3334 4.83334C17.3334 4.61233 17.2456 4.40037 17.0893 4.24409C16.933 4.08781 16.721 4.00001 16.5 4.00001ZM7.33335 12.3333C7.33335 12.5544 7.24556 12.7663 7.08928 12.9226C6.933 13.0789 6.72103 13.1667 6.50002 13.1667C6.27901 13.1667 6.06705 13.0789 5.91077 12.9226C5.75448 12.7663 5.66669 12.5544 5.66669 12.3333V9.00001C5.66669 8.77899 5.75448 8.56703 5.91077 8.41075C6.06705 8.25447 6.27901 8.16668 6.50002 8.16668C6.72103 8.16668 6.933 8.25447 7.08928 8.41075C7.24556 8.56703 7.33335 8.77899 7.33335 9.00001V12.3333ZM7.33335 2.60834C7.33335 2.47501 7.50835 2.33334 7.75002 2.33334H10.25C10.4917 2.33334 10.6667 2.47501 10.6667 2.60834V4.00001H7.33335V2.60834ZM12.3334 12.3333C12.3334 12.5544 12.2456 12.7663 12.0893 12.9226C11.933 13.0789 11.721 13.1667 11.5 13.1667C11.279 13.1667 11.067 13.0789 10.9108 12.9226C10.7545 12.7663 10.6667 12.5544 10.6667 12.3333V9.00001C10.6667 8.77899 10.7545 8.56703 10.9108 8.41075C11.067 8.25447 11.279 8.16668 11.5 8.16668C11.721 8.16668 11.933 8.25447 12.0893 8.41075C12.2456 8.56703 12.3334 8.77899 12.3334 9.00001V12.3333Z"
+											fill="#575482" />
+									</svg>
+								</label>
+							</div>
+						</div>
+`
 
-		<div class="content-ship">
-			<label class="label1"  > Content </label>
-			<input type="text" class="form-control"  placeholder="/" />
-		</div>
-
-		<div class="value-ship">
-			<label class="label1"> Value </label>
-			<input type="text" class="form-control"  placeholder="£" />
-		</div>
-	</div>
-</div>`
-
-$(".add-item").click(function(){
-    $(".cards-shipments").append(cardShipment);
+$(".add-item").click(function () {
+	$(".cards-shipments").append(cardShipment);
 });

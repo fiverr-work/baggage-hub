@@ -4,7 +4,7 @@
 			background: $pale-grey;
 			border: 1px solid $cloudy-blue;
 			border-radius: 6px;
-			width: 333px;
+			min-width: 333px;
 			padding: 20px 10px 20px 20px;
 			cursor: pointer;
 
@@ -41,20 +41,14 @@
 					}
 				}
 			}
-			/*****************************  desktop-large ****************************** */
-			@include for-size(desktop-large) {
-				width: 30%;
-				margin-bottom: 20px;
-			}
+		}
+		@include for-size(tablet-landscape-down) {
+			align-items: center;
 
-			/*****************************  tablet-landscape-down ********************** */
-			@include for-size(tablet-landscape-down) {
-				width: 100%;
-				&:last-child {
-					margin-bottom: 0;
-				}
+			.card-optional{
+				margin-bottom: 0;
+				min-width: auto;
 			}
-			/****************** End card-option ***********************************************/
 		}
 		input[type=checkbox]{
 			display: none;

@@ -7,19 +7,18 @@
 			@include flex(space-between, flex-start);
 			border-bottom: 1px solid $cloudy-blue;
 			margin-bottom: 19px;
+			gap: 54px;
 			.details-inputs {
 				width: 65%;
 				.pick-details {
 					@include flex(space-between, flex-start);
 					margin-bottom: 60px;
-					@include not-last-child("input") {
-						margin-bottom: 16px;
-					} // media-q
-					.Pickup-Details {
-						width: 48%;
+					gap: 30px;
+					& > div {
+						flex: 1;
 					}
-					.Deliver-Details {
-						width: 48%;
+					input {
+						margin-top: 16px;
 					}
 				}
 				.shipment-details {
@@ -27,14 +26,12 @@
 						margin-bottom: 30px;
 					}
 					.add-item {
-						// media
 						img {
 							margin-left: 8px;
 						}
 						margin: 30px 0 20px;
 					}
 					.parag2 {
-						// media
 						margin: 28px 0 48px;
 						h4 {
 							display: inline;
@@ -47,17 +44,14 @@
 				}
 				.pick-options-dt {
 					.ship-date {
-						// media
 						width: 43%;
 						margin-bottom: 60px;
 					}
 				}
 				.contact-details {
 					.contact-infos {
-						//media
 						@include flex(space-between, flex-start);
 						& > div {
-							//media
 							width: 32%;
 						}
 						margin-bottom: 24px;
@@ -77,10 +71,9 @@
 				width: 32%;
 			}
 		}
-		/****************************** desktop-large ***************************/
 		@include for-size(desktop-large) {
 			.details {
-				flex-direction: column;
+				gap: 30px;
 				.details-inputs {
 					width: 100%;
 					.pick-details {
@@ -113,6 +106,7 @@
 		}
 		@include for-size(tablet-landscape-down) {
 			.details {
+				flex-direction: column;
 				.summary-detail {
 					width: 100%;
 				}
@@ -121,7 +115,10 @@
 		@include for-size(tablet-portrait-down) {
 			padding: 0 80px 100px;
 			.details {
+				gap: 0;
 				flex-direction: column;
+				border: none;
+				margin-bottom: 0;
 				.details-inputs {
 					width: 100%;
 					.pick-details {
@@ -138,11 +135,20 @@
 						.contact-infos {
 							flex-direction: column;
 							& > div {
-								//media
 								width: 100%;
 								margin-bottom: 16px;
 							}
 							margin-bottom: 8px;
+						}
+						.condition {
+							margin-top: 27px;
+							margin-bottom: 27px;
+							.form-check {
+								margin: 0;
+								&:last-child {
+									display: none;
+								}
+							}
 						}
 					}
 					.shipment-details {
@@ -152,8 +158,14 @@
 						.add-item {
 							margin: 0px 0 20px;
 						}
-						.parag2 {
-							margin: 0 0 30px;
+						.parag1 {
+							a{
+								color: #0071FF;
+								border-bottom: none;
+							}
+						}
+							.parag2 {
+							display: none;
 						}
 					}
 					.pick-options-dt {
@@ -162,9 +174,12 @@
 						}
 					}
 				}
+				.order-summary{
+					margin-bottom: 0;
+				}
 			}
 			.pay-now {
-				margin-top: 11px;
+				display: none;
 			}
 		}
 		@include for-size(phone-only) {

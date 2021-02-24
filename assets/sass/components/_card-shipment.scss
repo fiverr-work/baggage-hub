@@ -1,100 +1,155 @@
 .shipment-details {
-    width: 100%;
-    .card-shipment {
-        background: $pale-grey;
-        border: 1px solid $cloudy-blue;
-        border-radius: 6px;
-        width: 100%;
-        .ship-header {
-            padding: 19px 20px 18px;
-            border-bottom: 1px solid $cloudy-blue;
-            @include flex(space-between, center);
-            .pack-suit {
-                h5 {
-                    margin-bottom: 0;
-                    margin-left: 10px
-                }
-               @include flex(flex-start, center);
-            }
-        }
-        /****************** Start Card Content ***************/
-        .ship-content {
-             // media query
-            padding: 12px 56px 24px 20px;
-            @include flex(flex-start, center);
-            flex-wrap: wrap;
-            & > div {margin-right: 10px; margin-bottom: 15px}
-            .quantity {
-                @include flex(center, center);
-                .qt-input {margin: 0 10px;}
-                 // media query
-                input {width: 60px; }
-                button {
-                    background-color: $pale-grey;
-                    margin-top: 23px;
-                }
-                .qt {
-                     // media query
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    color: $color-white;
-                    @include flex(center, center);
-                }
-                .btn-disabled {
-                    background: #575482;
-                }
-                .btn-disabled2 {
-                    background: #575482;
-                }
-                .btn-active {
-                    background: #0f0a4d;
-                }
-            }
-            .type-of-items  { width: 240px; }
-            .weight-ship    { width: 120px; }
-            .length-ship    { width: 56px;  }
-            .width-ship     { width: 56px;  }
-            .height-ship    { width: 56px;  }
-            .content-ship   { width: 240px; }
-            .value-ship     { width: 120px; }
-            .copy { margin:0 10px;}
-        }
+	width: 100%;
+	.card-shipment {
+		background: $pale-grey;
+		border: 1px solid $cloudy-blue;
+		border-radius: 6px;
+		width: 100%;
+		&:last-child{
+			margin-bottom: 0 !important;
+		}
+		input {
+			background: $pale-grey;
+			border-color: $cloudy-blue;
+			padding: 12px 16px;
+			font-size: $font-size-xs;
+			border-radius: 2px;
+			&::placeholder {
+				color: $deep-lilac;
+			}
+		}
+		label {
+			color: $dark-indigo;
+			margin-bottom: 9px;
+		}
+		.ship-header {
+			padding: 19px 20px 18px;
+			border-bottom: 1px solid $cloudy-blue;
+			@include flex(space-between, center);
+			.pack-suit {
+				h5 {
+					margin-bottom: 0;
+					margin-left: 10px;
+				}
+				@include flex(flex-start, center);
+			}
+			.trash {
+				background: none;
+				cursor: pointer;
+				&:hover {
+					svg {
+						path {
+							fill: $color-primary;
+						}
+					}
+				}
+			}
+		}
+		.ship-content {
+			padding: 12px 20px 24px 20px;
 
-       /****************** End Card Content ***************/
-    }
-    @include for-size(tablet-portrait-down) {
-        input {
-            padding: 3px 6px;
-        }
-        .card-shipment {
-            .ship-content {
-                padding: 8px 21px 16px;
-                .quantity { input {width: 54px; }}
-                .type-of-items  { width: 170px; }
-                .weight-ship    { width: 97px;  }
-                .length-ship    { width: 56px;  }
-                .width-ship     { width: 56px;  }
-                .height-ship    { width: 56px;  }
-                .content-ship   { width: 170px; }
-                .value-ship     { width: 97px; }
-            }
-        }
-    }
-    @include for-size(phone-small) {
-        .card-shipment {
-            .ship-content {
-                padding: 8px 10px 16px;
-                .quantity { input {width: 48px; }}
-                .length-ship    { width: 43px;  }
-                .width-ship     { width: 43px;  }
-                .height-ship    { width: 43px;  }
-                .weight-ship    { width: 92px;  }
-                .value-ship     { width: 92px;  }
-                .type-of-items  { width: 159px; }
-                .content-ship   { width: 159px; }
-
-            }
-        }
-    }
+			& > div {
+				@include flex(flex-start, center);
+				flex-wrap: wrap;
+				gap: 12px;
+				&:last-child {
+					margin-top: 16px;
+					width: 58%;
+				}
+			}
+			.quantity {
+				flex: 1;
+				select {
+					background-position-x: 80%;
+				}
+			}
+			.type-of-items {
+				flex: 7;
+			}
+			.weight-ship {
+				flex: 4;
+			}
+			.length-ship {
+				flex: 2;
+			}
+			.width-ship {
+				flex: 2;
+			}
+			.height-ship {
+				flex: 2;
+			}
+			.copy {
+				flex: 0;
+			}
+			.content-ship {
+				flex: 3;
+			}
+			.value-ship {
+				flex: 1;
+			}
+		}
+		.ship-footer{
+			display: none;
+			padding: 18px 22px;
+			text-align: right;
+			border-top: 1px solid $cloudy-blue;
+			&>:first-child{
+				margin-right: 18px;
+			}
+		}
+	}
+	@include for-size(tablet-portrait-down) {
+		.card-shipment {
+			.ship-header {
+				.trash {
+					display: none;
+				}
+				.d-none{
+					display: block !important;
+					background: none;
+				}
+			}
+			.ship-content {
+				padding: 8px 21px 16px;
+				& > div {
+					&:first-child {
+						.quantity {
+							flex: 10%;
+						}
+						.type-of-items {
+							flex: 70%;
+						}
+						.weight-ship {
+							flex: 30%;
+						}
+						.length-ship {
+							flex: 16%;
+						}
+						.width-ship {
+							flex: 16%;
+						}
+						.height-ship {
+							flex: 16%;
+						}
+						.copy {
+							display: none;
+						}
+					}
+						&:last-child {
+						width: 100%;
+					}
+				}
+			}
+			.ship-footer{
+				display: block;
+			}
+		}
+	}
+	@include for-size(phone-small) {
+		.card-shipment {
+			.ship-content {
+				padding: 8px 10px 16px;
+			}
+		}
+	}
 }

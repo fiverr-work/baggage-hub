@@ -1,8 +1,6 @@
 .cards-3 {
-	justify-content: space-between;
-	display: flex;
-	gap: 30px;
-	margin-bottom: 90px;
+	gap: 35px;
+	@include flex(space-between, stretch);
 	.card-option {
 		background: $color-white;
 		border: 1px solid $pale-lilac;
@@ -10,19 +8,23 @@
 		display: flex;
 		border-radius: 6px;
 		flex-direction: column;
-		min-height: 470px;
+		min-height: 382px;
 
 		.option-header {
 			background: $pale-lilac;
-			margin-bottom: 6px;
-			padding: 19px 22px;
+			padding: 22px;
 			text-align: center;
+			h3{
+				margin-bottom: 0;
+			}
 		}
 		.option-content {
 			text-align: center;
-			padding: 6px 16px 22px;
+			padding: 6px 16px 5px;
 			color: $dusk;
-
+			ul{
+				margin-bottom: 0;
+			}
 			b{
 				color: $dark-indigo;
 			}
@@ -38,16 +40,15 @@
 			}
 		}
 		&.active {
-			min-height: 510px;
-			margin-top: -15px;
+			min-height: 382px;
+			margin-top: -17px;
 			border: 2px solid $color-primary;
 			box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1);
 			.option-header {
-				padding: 27px 0;
+				padding: 22px 0;
 				background: $color-primary;
 				h3 {
 					color: $color-white;
-					margin-bottom: 0;
 				}
 			}
 			.select-service {
@@ -57,5 +58,8 @@
 				font-family: $primary-semibold;
 			}
 		}
+	}
+	@include for-size(desktop-down){
+		gap: 20px;
 	}
 }
