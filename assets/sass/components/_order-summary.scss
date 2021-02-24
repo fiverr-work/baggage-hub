@@ -1,10 +1,10 @@
 .order-summary {
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 6px;
+	overflow: hidden;
 	.option-header {
 		background-color: $dark-indigo;
 		margin-bottom: 0px;
-		border-top-left-radius: 6px;
-		border-top-right-radius: 6px;
 		padding: 16px 0;
 		h2 {
 			text-align: center;

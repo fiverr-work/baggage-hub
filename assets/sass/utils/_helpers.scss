@@ -4,3 +4,32 @@ main{
 		padding-bottom: 30px;
 	}
 }
+section{
+	header {
+		text-align: center;
+		margin-bottom: 56px;
+		h1 {
+			margin-bottom: 16px;
+			font-size: 38px;
+			font-weight: 800;
+			font-family: $primary-extra-bold;
+		}
+		p {
+			font-size: $font-size-md;
+			color: $dusk;
+			margin-bottom: 0;
+		}
+	}
+
+	@include for-size(tablet-landscape-down) {
+		header {
+			margin-bottom: 30px;
+			h1 {
+				font-size: $font-size-xl;
+			}
+			p {
+				font-size: $font-size-sm;
+			}
+		}
+	}
+}

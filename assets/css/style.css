@@ -2942,6 +2942,16 @@ main { padding-bottom: 50px; }
 
 @media (max-width: 992px) { main { padding-bottom: 30px; } }
 
+section header { text-align: center; margin-bottom: 56px; }
+
+section header h1 { margin-bottom: 16px; font-size: 38px; font-weight: 800; font-family: "Manrope Extra Bold"; }
+
+section header p { font-size: 20px; color: #575482; margin-bottom: 0; }
+
+@media (max-width: 992px) { section header { margin-bottom: 30px; }
+  section header h1 { font-size: 28px; }
+  section header p { font-size: 14px; } }
+
 * { margin: 0px; padding: 0px; -webkit-box-sizing: border-box; box-sizing: border-box; border: 0; vertical-align: baseline; }
 
 /** 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using `em` units. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
@@ -2988,7 +2998,7 @@ input[type="search"] { -webkit-appearance: none; -moz-appearance: none; -webkit-
 textarea { overflow: auto; vertical-align: top; resize: vertical; }
 
 /** 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3. 2. Improve image quality when scaled in IE 7. */
-img { border: 0; /* 1 */ -ms-interpolation-mode: bicubic; /* 2 */ }
+img { max-width: 100%; border: 0; /* 1 */ -ms-interpolation-mode: bicubic; /* 2 */ }
 
 /** 1. Correct font size not being inherited in all browsers. 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5, and Chrome. 3. Improve appearance and consistency in all browsers. */
 button, input, select, textarea { font-size: 100%; /* 1 */ margin: 0; /* 2 */ vertical-align: baseline; /* 3 */ *vertical-align: middle; /* 3 */ }
@@ -3091,6 +3101,10 @@ select { font-family: "Manrope Medium" !important; font-size: 14px !important; f
 
 .btn-dark-outline:hover, .btn-dark-outline:focus, .btn-dark-outline:active { background-color: #27225f; border-color: #27225f; color: #ffffff; }
 
+.btn-info-outline { background: none; border-color: #0071FF; color: #0071FF; border-radius: 4px; }
+
+.btn-info-outline:hover, .btn-info-outline:focus, .btn-info-outline:active { background-color: #0071FF; border-color: #0071FF; color: #ffffff; }
+
 input[type="date"]::-webkit-calendar-picker-indicator { opacity: 1; display: block; background: url("../img/icons/Message.svg") no-repeat; width: 20px; height: 20px; border-width: thin; }
 
 input { border: 1px solid #b7b6ca; }
@@ -3173,7 +3187,7 @@ select { padding-left: 16px; height: 46px; width: 100%; border: 1px solid #b7b6c
 
 .cards-3 .card-option .option-footer button { line-height: 1.2; width: 100%; font-size: 14px; }
 
-.cards-3 .card-option.active { min-height: 382px; margin-top: -17px; border: 2px solid #439979; -webkit-box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); }
+.cards-3 .card-option.active { min-height: 382px; margin-top: -17px; border-color: #439979; -webkit-box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1); }
 
 .cards-3 .card-option.active .option-header { padding: 22px 0; background: #439979; }
 
@@ -3234,9 +3248,9 @@ select { padding-left: 16px; height: 46px; width: 100%; border: 1px solid #b7b6c
 
 @media (max-width: 992px) { .shipment-protection { width: 100%; } }
 
-.order-summary { -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); /*****************************  phone-only ********************** */ }
+.order-summary { -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15); border-radius: 6px; overflow: hidden; /*****************************  phone-only ********************** */ }
 
-.order-summary .option-header { background-color: #0f0a4d; margin-bottom: 0px; border-top-left-radius: 6px; border-top-right-radius: 6px; padding: 16px 0; }
+.order-summary .option-header { background-color: #0f0a4d; margin-bottom: 0px; padding: 16px 0; }
 
 .order-summary .option-header h2 { text-align: center; color: #ffffff; margin-bottom: 0; }
 
@@ -3386,6 +3400,21 @@ header.steps-timeline .steps .step.completed div p { color: #3bb273; font-family
 
 @media (max-width: 576px) { header.steps-timeline .steps { padding: 20px 20px 40px; } }
 
+header.hero { margin-bottom: 100px; }
+
+header.hero h1 { font-size: 65px; font-family: "Manrope Extra Bold"; margin-bottom: 23px; }
+
+header.hero p { margin-bottom: 32px; line-height: 1.7; font-size: 18px; }
+
+header.hero .buttons { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 16px; }
+
+header.hero .buttons a:first-child { line-height: 1.5; font-size: 14px; }
+
+@media (max-width: 768px) { header.hero { margin-bottom: 70px; }
+  header.hero h1 { font-size: 45px; }
+  header.hero .buttons { margin-bottom: 30px; }
+  header.hero .buttons a { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; } }
+
 .navbar { position: fixed; top: 0; left: 0; right: 0; background: #ffffff; z-index: 2; -webkit-box-shadow: 0px 4px 20px rgba(0, 66, 150, 0.1); box-shadow: 0px 4px 20px rgba(0, 66, 150, 0.1); border: 1px solid #E6E6E6; padding-top: 24px; padding-bottom: 24px; }
 
 .navbar .logo { max-width: 209px; }
@@ -3411,6 +3440,74 @@ header.steps-timeline .steps .step.completed div p { color: #3bb273; font-family
 .footer .pre-footer p { font-size: 10px; font-family: "Manrope SemiBold"; }
 
 @media (max-width: 576px) { .footer { display: none; text-align: center; } }
+
+.what-people-say { overflow: hidden; margin-top: 100px; margin-bottom: 70px; }
+
+.what-people-say .review { background-color: #f2f3f5; border-radius: 16px; padding: 40px 24px 28px; width: 288px; height: 295px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.what-people-say .review__top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 20px; }
+
+.what-people-say .review__top__stars { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 1px; }
+
+.what-people-say .review__top__stars img { width: 16px; }
+
+.what-people-say .review__top p { color: #8785a6; font-family: "Manrope SemiBold"; font-size: 14px; margin-bottom: 0; }
+
+.what-people-say .review__body h2 { margin-bottom: 9px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; line-height: 1.5; }
+
+.what-people-say .review__body p { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; line-height: 1.5; }
+
+.what-people-say .review__name { margin-top: auto; margin-bottom: 0; }
+
+.what-people-say .owl-carousel .owl-stage-outer { overflow: visible; }
+
+@media (max-width: 768px) { .what-people-say { margin-top: 60px; } }
+
+@media (max-width: 992px) { .what-people-say { margin-top: 70px; margin-bottom: 30px; }
+  .what-people-say .review { padding: 30px 14px 18px; width: 258px; height: 265px; } }
+
+.home-page { margin-top: 100px; }
+
+.home-page .how-it-works { background-color: #439979; padding-top: 38px; padding-bottom: 90px; background-image: url(../img/backgrounds/lines.svg); background-repeat: no-repeat; background-position: left top; }
+
+.home-page .how-it-works * { color: #ffffff; }
+
+.home-page .how-it-works .row h2 { margin-bottom: 14px; margin-top: 14px; }
+
+.home-page .what-we-deliver { margin-top: 100px; margin-bottom: 100px; }
+
+.home-page .what-we-deliver header { margin-bottom: 100px; }
+
+.home-page .what-we-deliver .row { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
+
+.home-page .what-we-deliver .row .item { position: relative; border-radius: 16px; padding: 32px; height: 435px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.home-page .what-we-deliver .row .item.bg-blue { background-color: #e6f1ff; }
+
+.home-page .what-we-deliver .row .item.bg-blue span { color: #b3d4ff; }
+
+.home-page .what-we-deliver .row .item.bg-green { background-color: #e8faf9; }
+
+.home-page .what-we-deliver .row .item.bg-green span { color: #8ce8df; }
+
+.home-page .what-we-deliver .row .item.bg-gray { background-color: #e7e7ed; }
+
+.home-page .what-we-deliver .row .item.bg-gray span { color: #b7b6ca; }
+
+.home-page .what-we-deliver .row .item__header img { position: absolute; left: 0; top: -40px; }
+
+.home-page .what-we-deliver .row .item__header span { position: absolute; right: 32px; top: 32px; font-size: 42px; font-weight: 800; font-family: "Manrope Extra Bold"; }
+
+.home-page .what-we-deliver .row .item__body { margin-top: auto; height: 130px; }
+
+@media (max-width: 992px) { .home-page .how-it-works { background-image: none; padding-top: 50px; padding-bottom: 50px; }
+  .home-page .how-it-works .row { text-align: center; }
+  .home-page .how-it-works .row p { max-width: 80%; margin-left: auto; margin-right: auto; margin-bottom: 30px; }
+  .home-page .what-we-deliver { margin-top: 50px; margin-bottom: 50px; }
+  .home-page .what-we-deliver header { margin-bottom: 50px; }
+  .home-page .what-we-deliver .row .item { margin-bottom: 30px; }
+  .home-page .what-we-deliver .row .item img { top: 0; }
+  .home-page .what-we-deliver .row .item__body { height: 120px; } }
 
 .about-page main .easy-booking h1 { margin-bottom: 33px; }
 
@@ -3439,34 +3536,6 @@ header.steps-timeline .steps .step.completed div p { color: #3bb273; font-family
 
 @media (max-width: 768px) { .about-page main .easy-booking h1 { display: none; }
   .about-page main .recent-booking h1 { display: none; } }
-
-.about-page .what-people-say { overflow: hidden; margin-top: 100px; margin-bottom: 70px; }
-
-.about-page .what-people-say header { text-align: center; margin-bottom: 56px; }
-
-.about-page .what-people-say header h1 { margin-bottom: 16px; font-size: 38px; font-weight: 800; font-family: "Manrope Extra Bold"; }
-
-.about-page .what-people-say header p { font-size: 20px; color: #575482; margin-bottom: 0; }
-
-.about-page .what-people-say .review { background-color: #f2f3f5; border-radius: 16px; padding: 40px 24px 28px; width: 288px; height: 295px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-
-.about-page .what-people-say .review__top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 20px; }
-
-.about-page .what-people-say .review__top__stars { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 1px; }
-
-.about-page .what-people-say .review__top__stars img { width: 16px; }
-
-.about-page .what-people-say .review__top p { color: #8785a6; font-family: "Manrope SemiBold"; font-size: 14px; margin-bottom: 0; }
-
-.about-page .what-people-say .review__body h2 { margin-bottom: 9px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; line-height: 1.5; }
-
-.about-page .what-people-say .review__body p { overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; line-height: 1.5; }
-
-.about-page .what-people-say .review__name { margin-top: auto; margin-bottom: 0; }
-
-.about-page .what-people-say .owl-carousel .owl-stage-outer { overflow: visible; }
-
-@media (max-width: 768px) { .about-page .what-people-say { margin-top: 60px; } }
 
 .options-page main .title { margin-bottom: 50px; }
 
@@ -3501,6 +3570,7 @@ header.steps-timeline .steps .step.completed div p { color: #3bb273; font-family
   .options-page main .cards-3 { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 25px; }
   .options-page main .cards-3 .card-option { width: 50%; }
   .options-page main .cards-3 .card-option.active { margin-top: 0; }
+  .options-page main .cards-4 { margin-bottom: 30px; }
   .options-page main .optional-services { margin-top: 40px; margin-bottom: 40px; }
   .options-page main .optional-services .cards-4 { gap: 15px; } }
 

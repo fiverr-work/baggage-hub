@@ -1,0 +1,61 @@
+.what-people-say {
+	overflow: hidden;
+	margin-top: 100px;
+	margin-bottom: 70px;
+	.review {
+		background-color: #f2f3f5;
+		border-radius: 16px;
+		padding: 40px 24px 28px;
+		width: 288px;
+		height: 295px;
+		display: flex;
+		flex-direction: column;
+		&__top {
+			@include flex(space-between, center);
+			margin-bottom: 20px;
+			&__stars {
+				display: flex;
+				gap: 1px;
+				img {
+					width: 16px;
+				}
+			}
+			p {
+				color: $deep-lilac;
+				font-family: $primary-semibold;
+				font-size: $font-size-sm;
+				margin-bottom: 0;
+			}
+		}
+		&__body {
+			h2 {
+				margin-bottom: 9px;
+				@include lines-limit(1, 1.5);
+			}
+			p {
+				@include lines-limit(4, 1.5);
+			}
+		}
+		&__name {
+			margin-top: auto;
+			margin-bottom: 0;
+		}
+	}
+	.owl-carousel .owl-stage-outer{
+		overflow: visible;
+	}
+
+	@include for-size(tablet-portrait-down) {
+		margin-top: 60px;
+	}
+
+	@include for-size(tablet-landscape-down) {
+		margin-top: 70px;
+		margin-bottom: 30px;
+		.review {
+			padding: 30px 14px 18px;
+			width: 258px;
+			height: 265px;
+		}
+	}
+}

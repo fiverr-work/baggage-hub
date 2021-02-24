@@ -1,0 +1,36 @@
+header.hero {
+	margin-bottom: 100px;
+	h1 {
+		font-size: 65px;
+		font-family: $primary-extra-bold;
+		margin-bottom: 23px;
+	}
+	p {
+		margin-bottom: 32px;
+		line-height: 1.7;
+		font-size: $font-size-rre;
+	}
+	.buttons {
+		display: flex;
+		gap: 16px;
+		a {
+			&:first-child {
+				line-height: 1.5;
+				font-size: $font-size-sm;
+			}
+		}
+	}
+
+	@include for-size(tablet-portrait-down) {
+		margin-bottom: 70px;
+		h1 {
+			font-size: 45px;
+		}
+		.buttons {
+			margin-bottom: 30px;
+			a {
+				flex: 1;
+			}
+		}
+	}
+}
