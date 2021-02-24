@@ -2947,7 +2947,7 @@ main { padding-bottom: 50px; }
 /** 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using `em` units. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
 html { font-size: 100%; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -ms-text-size-adjust: 100%; /* 2 */ }
 
-body { overflow-x: hidden; }
+body { overflow-x: hidden; min-height: 100vh; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -3513,86 +3513,76 @@ header.steps-timeline .steps .step.completed div p { color: #3bb273; font-family
   .options-page main .optional-services .cards-4 > div { min-height: auto; }
   .options-page main .pick-options h1 { margin-bottom: 30px; } }
 
-.details-v1-page main h1 { margin-bottom: 38px; }
+.details-page main h1 { margin-bottom: 38px; }
 
-.details-v1-page main .details { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; border-bottom: 1px solid #b7b6ca; margin-bottom: 19px; gap: 54px; }
+.details-page main .details { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; border-bottom: 1px solid #b7b6ca; margin-bottom: 19px; gap: 54px; }
 
-.details-v1-page main .details .details-inputs { width: 65%; }
+.details-page main .details .details-inputs { width: 65%; }
 
-.details-v1-page main .details .details-inputs .pick-details { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-bottom: 60px; gap: 30px; }
+.details-page main .details .details-inputs .pick-details { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-bottom: 60px; gap: 30px; }
 
-.details-v1-page main .details .details-inputs .pick-details > div { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+.details-page main .details .details-inputs .pick-details > div { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
-.details-v1-page main .details .details-inputs .pick-details input { margin-top: 16px; }
+.details-page main .details .details-inputs .pick-details input { margin-top: 16px; }
 
-.details-v1-page main .details .details-inputs .shipment-details .card-shipment { margin-bottom: 30px; }
+.details-page main .details .details-inputs .shipment-details .card-shipment { margin-bottom: 30px; }
 
-.details-v1-page main .details .details-inputs .shipment-details .add-item { margin: 30px 0 20px; }
+.details-page main .details .details-inputs .shipment-details .add-item { margin: 30px 0 20px; }
 
-.details-v1-page main .details .details-inputs .shipment-details .add-item img { margin-left: 8px; }
+.details-page main .details .details-inputs .shipment-details .add-item img { margin-left: 8px; }
 
-.details-v1-page main .details .details-inputs .shipment-details .parag2 { margin: 28px 0 48px; }
+.details-page main .details .details-inputs .shipment-details .parag2 { margin: 28px 0 48px; }
 
-.details-v1-page main .details .details-inputs .shipment-details .parag2 h4 { display: inline; }
+.details-page main .details .details-inputs .shipment-details .parag2 h4 { display: inline; }
 
-.details-v1-page main .details .details-inputs a { color: #0f0a4d; border-bottom: 1px solid #0f0a4d; }
+.details-page main .details .details-inputs a { color: #0f0a4d; border-bottom: 1px solid #0f0a4d; }
 
-.details-v1-page main .details .details-inputs .pick-options-dt .ship-date { width: 43%; margin-bottom: 60px; }
+.details-page main .details .details-inputs .pick-options-dt .ship-date { width: 43%; margin-bottom: 60px; }
 
-.details-v1-page main .details .details-inputs .contact-details .contact-infos { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-bottom: 24px; }
+.details-page main .details .details-inputs .contact-details .contact-infos { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-bottom: 24px; }
 
-.details-v1-page main .details .details-inputs .contact-details .contact-infos > div { width: 32%; }
+.details-page main .details .details-inputs .contact-details .contact-infos > div { width: 32%; }
 
-.details-v1-page main .details .details-inputs .contact-details .condition { margin: 24px 0 60px; }
+.details-page main .details .details-inputs .contact-details .condition { margin: 24px 0 60px; }
 
-.details-v1-page main .details .details-inputs .contact-details .condition .form-check .form-check-input { width: 16px; height: 16px; }
+.details-page main .details .details-inputs .contact-details .condition .form-check .form-check-input { width: 16px; height: 16px; }
 
-.details-v1-page main .details .summary-detail { width: 32%; }
+.details-page main .details .summary-detail { width: 32%; }
 
-@media (max-width: 1474px) { .details-v1-page main .details { gap: 30px; }
-  .details-v1-page main .details .details-inputs { width: 100%; }
-  .details-v1-page main .details .details-inputs .pick-details { margin-bottom: 30px; }
-  .details-v1-page main .details .details-inputs .contact-details .condition { margin-bottom: 30px; }
-  .details-v1-page main .details .details-inputs .shipment-details .parag2 { margin-bottom: 30px; }
-  .details-v1-page main .details .details-inputs .pick-options-dt .ship-date { margin-bottom: 30px; }
-  .details-v1-page main .details .summary-detail { width: 50%; margin-bottom: 40px; }
-  .details-v1-page main .pay-now { margin-top: 11px; } }
+@media (max-width: 1474px) { .details-page main .details { gap: 30px; }
+  .details-page main .details .details-inputs { width: 100%; }
+  .details-page main .details .details-inputs .pick-details { margin-bottom: 30px; }
+  .details-page main .details .details-inputs .contact-details .condition { margin-bottom: 30px; }
+  .details-page main .details .details-inputs .shipment-details .parag2 { margin-bottom: 30px; }
+  .details-page main .details .details-inputs .pick-options-dt .ship-date { margin-bottom: 30px; }
+  .details-page main .details .summary-detail { width: 50%; margin-bottom: 40px; }
+  .details-page main .pay-now { margin-top: 11px; } }
 
-@media (max-width: 992px) { .details-v1-page main .details { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-  .details-v1-page main .details .summary-detail { width: 100%; } }
+@media (max-width: 992px) { .details-page main .details { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .details-page main .details .summary-detail { width: 100%; } }
 
-@media (max-width: 768px) { .details-v1-page main { padding: 0 80px 100px; }
-  .details-v1-page main .details { gap: 0; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; border: none; margin-bottom: 0; }
-  .details-v1-page main .details .details-inputs { width: 100%; }
-  .details-v1-page main .details .details-inputs .pick-details { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-  .details-v1-page main .details .details-inputs .pick-details .Pickup-Details { width: 100%; margin-bottom: 30px; }
-  .details-v1-page main .details .details-inputs .pick-details .Deliver-Details { width: 100%; }
-  .details-v1-page main .details .details-inputs .contact-details .contact-infos { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-bottom: 8px; }
-  .details-v1-page main .details .details-inputs .contact-details .contact-infos > div { width: 100%; margin-bottom: 16px; }
-  .details-v1-page main .details .details-inputs .contact-details .condition { margin-top: 27px; margin-bottom: 27px; }
-  .details-v1-page main .details .details-inputs .contact-details .condition .form-check { margin: 0; }
-  .details-v1-page main .details .details-inputs .contact-details .condition .form-check:last-child { display: none; }
-  .details-v1-page main .details .details-inputs .shipment-details .card-shipment { margin-bottom: 20px; }
-  .details-v1-page main .details .details-inputs .shipment-details .add-item { margin: 0px 0 20px; }
-  .details-v1-page main .details .details-inputs .shipment-details .parag1 a { color: #0071FF; border-bottom: none; }
-  .details-v1-page main .details .details-inputs .shipment-details .parag2 { display: none; }
-  .details-v1-page main .details .details-inputs .pick-options-dt .ship-date { width: 100%; }
-  .details-v1-page main .details .order-summary { margin-bottom: 0; }
-  .details-v1-page main .pay-now { display: none; } }
+@media (max-width: 768px) { .details-page main { padding: 0 80px 100px; }
+  .details-page main .details { gap: 0; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; border: none; margin-bottom: 0; }
+  .details-page main .details .details-inputs { width: 100%; }
+  .details-page main .details .details-inputs .pick-details { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .details-page main .details .details-inputs .pick-details .Pickup-Details { width: 100%; margin-bottom: 30px; }
+  .details-page main .details .details-inputs .pick-details .Deliver-Details { width: 100%; }
+  .details-page main .details .details-inputs .contact-details .contact-infos { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-bottom: 8px; }
+  .details-page main .details .details-inputs .contact-details .contact-infos > div { width: 100%; margin-bottom: 16px; }
+  .details-page main .details .details-inputs .contact-details .condition { margin-top: 27px; margin-bottom: 27px; }
+  .details-page main .details .details-inputs .contact-details .condition .form-check { margin: 0; }
+  .details-page main .details .details-inputs .contact-details .condition .form-check:last-child { display: none; }
+  .details-page main .details .details-inputs .shipment-details .card-shipment { margin-bottom: 20px; }
+  .details-page main .details .details-inputs .shipment-details .add-item { margin: 0px 0 20px; }
+  .details-page main .details .details-inputs .shipment-details .parag1 a { color: #0071FF; border-bottom: none; }
+  .details-page main .details .details-inputs .shipment-details .parag2 { display: none; }
+  .details-page main .details .details-inputs .pick-options-dt .ship-date { width: 100%; }
+  .details-page main .details .order-summary { margin-bottom: 0; }
+  .details-page main .pay-now { display: none; } }
 
-@media (max-width: 576px) { .details-v1-page main { padding: 0 20px 70px; } }
+@media (max-width: 576px) { .details-page main { padding: 0 20px 70px; } }
 
-.optional-v2 { width: 100%; }
-
-.optional-v2 h4 { margin-bottom: 16px; }
-
-.optional-v2 .cards-details { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
-
-.optional-v2 .cards-details > div { border-radius: 6px; }
-
-@media (max-width: 992px) { .optional-v2 .cards-details { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
-
-.payement-page main { /*******************************   tablet-landscape-down   *************************************/ }
+.payement-page { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
 .payement-page main h1 { margin-bottom: 38px; }
 
@@ -3600,13 +3590,13 @@ header.steps-timeline .steps .step.completed div p { color: #3bb273; font-family
 
 .payement-page main .payment .pay-process { width: 65%; padding: 25px 32px 69px 33px; background: #f9f9fc; border-radius: 6px; }
 
-.payement-page main .payment .pay-process .parag1-pay { margin-bottom: 29px; }
+.payement-page main .payment .pay-process > p { margin-bottom: 30px; }
 
-.payement-page main .payment .pay-process .card-types { width: 43%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 23px; }
+.payement-page main .payment .pay-process > p b { font-family: "Manrope Bold"; }
 
-.payement-page main .payment .pay-process .card-types h3 { text-align: start; }
+.payement-page main .payment .pay-process .card-types { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 32px; }
 
-.payement-page main .payment .pay-process .card-types .bordered-card { background: #ffffff; border: 1px solid #b3b3b3; border-radius: 4px; width: 70px; height: 42px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.payement-page main .payment .pay-process .card-types .bordered-card { background: #ffffff; border: 1px solid #b3b3b3; border-radius: 4px; width: 70px; height: 42px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 16px; }
 
 .payement-page main .payment .pay-process .card-number { width: 55%; }
 
@@ -3614,11 +3604,17 @@ header.steps-timeline .steps .step.completed div p { color: #3bb273; font-family
 
 .payement-page main .payment .pay-process .expiry-date > div { width: 45%; }
 
+.payement-page main .payment .pay-process .expiry-date select { background-position-x: 92%; background-color: #ffffff; }
+
 .payement-page main .payment .pay-process .name-card { width: 55%; }
 
-.payement-page main .payment .pay-process .security-code { width: 55%; margin: 24px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+.payement-page main .payment .pay-process .security-code { width: 55%; margin: 24px 0; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.payement-page main .payment .pay-process .security-code > div { width: 45%; }
+.payement-page main .payment .pay-process .security-code > div:first-child { width: 45%; margin-right: 20px; }
+
+.payement-page main .payment .pay-process .security-code > div:last-child { position: relative; top: 37px; }
+
+.payement-page main .payment .pay-process .form-check label { margin-left: 9px; }
 
 .payement-page main .payment .pay-process .form-check-input { width: 16px; height: 16px; }
 
@@ -3632,7 +3628,7 @@ header.steps-timeline .steps .step.completed div p { color: #3bb273; font-family
   .payement-page main .payment .pay-process .expiry-date > div { width: 46%; }
   .payement-page main .payment .pay-process .name-card { width: 70%; }
   .payement-page main .payment .pay-process .security-code { width: 70%; }
-  .payement-page main .payment .pay-process .security-code > div { width: 46%; }
+  .payement-page main .payment .pay-process .security-code > div:last-child { position: static; }
   .payement-page main .payment .summary-payement { width: 38%; } }
 
 @media (max-width: 1200px) { .payement-page main h1 { margin-bottom: 26px; }
@@ -3666,4 +3662,6 @@ header.steps-timeline .steps .step.completed div p { color: #3bb273; font-family
   .payement-page main .payment .pay-process .security-code > div { width: 44%; } }
 
 @media (max-width: 576px) { .payement-page main { padding: 0 20px 70px; } }
+
+.payement-page .footer { margin-top: auto; }
 /*# sourceMappingURL=style.css.map */
